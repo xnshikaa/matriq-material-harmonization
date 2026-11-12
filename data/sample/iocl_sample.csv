@@ -1,0 +1,11 @@
+originalMaterialCode,originalDescription,materialCategory,materialType,dimensions,unit,grade,technicalSpecification,manufacturer
+P-9281,SEAMLESS PIPE 150mm CS A106-B,Piping,Seamless Pipe,150 mm,MM,Grade B,ASTM A106,Maharashtra Seamless
+V-4412,2" 150LB FLANGED GATE VALVE CS BODY,Valves,Gate Valve,2 in,INCH,WCB,API 600,Audco
+FLG-881,4 INCH 300 LBS WELDING NECK FLANGE CARBON STEEL,Piping,WNRF Flange,4 in,INCH,A105,ASME B16.5,Flash Forge
+TB-1109,HE TUBE OD 3/4 INCH STAINLESS STEEL 316L,Tubing,Heat Exchanger Tube,0.75 in,INCH,SS316L,ASTM A213,Ratnamani
+GSK-302,GASKET SPWD 150# 150mm SS316/GRAPHITE,Sealing,Spiral Wound Gasket,150 mm,MM,SS316,ASME B16.20,Flexitallic
+BLT-702,STUD BOLT B7 WITH HEAVY HEX NUTS 2H 5/8" X 3-1/2",Fasteners,Stud Bolt,5/8 in x 3.5 in,INCH,Grade B7,ASTM A193,Unbrako
+ELB-991,ELBOW 90 DEG LONG RADIUS 150MM SCH40 A234 WPB,Piping,Elbow 90 LR,150 mm,MM,WPB,ASTM A234,Remi Metals
+CAB-601,Armoured Power Cable 4C x 16 sq.mm XLPE/PVC,Electrical,Power Cable,16 sq.mm,SQMM,Copper,IS 7098,Polycab
+MOT-550,Induction Motor 15 kW 415V 1440 RPM TEFC,Electrical,Motor,15 kW,KW,Cast Iron,IS 325,Siemens
+VALV-990,Ball Valve 1 inch 800# Forged CS Screwed NPT,Valves,Ball Valve,1 in,INCH,A105,API 602,L&T

@@ -1,0 +1,11 @@
+originalMaterialCode,originalDescription,materialCategory,materialType,dimensions,unit,grade,technicalSpecification,manufacturer
+MAT-1003,Carbon steel seamless pipe 6 in A106 Grade B,Piping,Seamless Pipe,6 in,INCH,Grade B,ASTM A106,Jindal SAW
+MAT-2045,Gate valve API 600 class 150 2 inch flanged WCB,Valves,Gate Valve,2 inch,INCH,WCB,API 600,BHEL
+MAT-3012,Flange weld neck RF 4" class 300 ASTM A105,Piping,WNRF Flange,4 inch,INCH,A105,ASME B16.5,Unimech
+MAT-4050,Stainless steel 316L seamless tube 19.05 mm OD,Tubing,Heat Exchanger Tube,19.05 mm,MM,SS316L,ASTM A213,Sandvik
+MAT-5080,Spiral wound gasket 6" class 150 SS316 with graphite filler,Sealing,Spiral Wound Gasket,6 inch,INCH,SS316,ASME B16.20,Champion
+MAT-6019,B7 stud bolt 5/8 in x 3.5 in with two 2H nuts,Fasteners,Stud Bolt,5/8 in x 3.5 in,INCH,Grade B7,ASTM A193,Sundram Fasteners
+MAT-7033,90 deg LR elbow 6 inch NB Schedule 40 ASTM A234-WPB,Piping,Elbow 90 LR,6 inch,INCH,WPB,ASTM A234,Tubacex
+MAT-8022,Explosion proof lighting fixture 2x18W LED Zone 1,Electrical,Lighting,2x18W,WATT,Aluminium,IS/IEC 60079,Bajaj
+MAT-9099,Centrifugal water pump capacity 50 m3/hr head 40m,Machinery,Centrifugal Pump,50 m3/hr,M3/HR,Cast Iron,API 610,Sulzer
+MAT-9555,Line pipe 12 inch seamless API 5L PSL2 Grade X65,Piping,Line Pipe,12 inch,INCH,X65,API 5L,Jindal

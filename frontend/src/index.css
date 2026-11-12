@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #F2F0E9;
+    --card-white: #FFFFFF;
+    --navy-primary: #172C48;
+    --navy-muted: #334A6A;
+    --cobalt: #315BEA;
+    --cobalt-hover: #2548C2;
+    --signal-lime: #D6ED65;
+    --industrial-orange: #E77848;
+    --soft-border: #DFE3E9;
+    --border-dark: #CBD2DC;
+    --text-primary: #111A24;
+    --text-secondary: #566579;
+    --text-muted: #8493A8;
+  }
+
+  body {
+    background-color: var(--bg-ivory);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  code, pre, .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+/* Custom architectural scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #E8E5DD;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C9D2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #172C48;
+}
+
+/* Technical grid background pattern */
+.bg-tech-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(23, 44, 72, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 44, 72, 0.04) 1px, transparent 1px);
+}

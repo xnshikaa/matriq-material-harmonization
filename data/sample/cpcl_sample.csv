@@ -1,0 +1,11 @@
+originalMaterialCode,originalDescription,materialCategory,materialType,dimensions,unit,grade,technicalSpecification,manufacturer
+PIPE-001,Pipe seamless 6 inch ASTM A106 Gr.B,Piping,Seamless Pipe,6 inch,INCH,Grade B,ASTM A106,MSL India
+VALVE-102,Gate Valve 2 inch 150# Flanged WCB,Valves,Gate Valve,2 inch,INCH,WCB,API 600,L&T Valves
+FLANGE-05,Flange WNRF 4 inch 300# A105,Piping,WNRF Flange,4 inch,INCH,A105,ASME B16.5,Unimech
+TUBE-201,Heat Exchanger Tube 19.05mm OD SS316L,Tubing,Heat Exchanger Tube,19.05 mm,MM,SS316L,ASTM A213,Sandvik
+PUMP-301,Centrifugal Water Pump 50 m3/hr,Machinery,Centrifugal Pump,50 m3/hr,M3/HR,CI,API 610,Kirloskar
+GASKET-11,Spiral Wound Gasket 6 inch 150# SS316 with Graphite,Sealing,Spiral Wound Gasket,6 inch,INCH,SS316,ASME B16.20,Champion
+BOLT-501,Stud Bolt with 2 Nuts 5/8 inch x 3.5 inch B7/2H,Fasteners,Stud Bolt,5/8 x 3.5 in,INCH,Grade B7,ASTM A193,TVS
+FITTING-44,90 Deg Elbow LR 6 inch Sch 40 CS ASTM A234 WPB,Piping,Elbow 90 LR,6 inch,INCH,WPB,ASTM A234,Tubacex
+INSTR-801,Pressure Gauge 0-10 Bar 1/2 inch NPT SS316,Instrumentation,Pressure Gauge,1/2 in NPT,INCH,SS316,EN 837-1,Wika
+LINE-999,Subsea Flowline Pipe 12 inch API 5L PSL2 X65,Piping,Line Pipe,12 inch,INCH,X65,API 5L,Welspun

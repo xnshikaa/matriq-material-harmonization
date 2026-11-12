@@ -1,0 +1,103 @@
+companyName,originalMaterialCode,originalDescription,materialCategory,materialType,dimensions,unit,grade,technicalSpecification,manufacturer
+CPCL,CPCL-MAT-0001,"Seamless Pipe 2 inch ASTM A106 Gr.B",Piping,Seamless Pipe,"2 inch",INCH,Grade B,ASTM A106,Bharat Heavy Industries
+IOCL,IOCL-P-0002,"SEAMLESS PIPE 50 MM ASTM A106 GR.B",Piping,Seamless Pipe,"50 mm",MM,Grade B,ASTM A106,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0003,"Seamless Pipe 2 in ASTM A106 Gr.B",Piping,Seamless Pipe,"2 inch",INCH,Grade B,ASTM A106,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0004,"Seamless Pipe 3 inch ASTM A106 Gr.B",Piping,Seamless Pipe,"3 inch",INCH,Grade B,ASTM A106,Bharat Heavy Industries
+IOCL,IOCL-P-0005,"SEAMLESS PIPE 80 MM ASTM A106 GR.B",Piping,Seamless Pipe,"80 mm",MM,Grade B,ASTM A106,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0006,"Seamless Pipe 3 in ASTM A106 Gr.B",Piping,Seamless Pipe,"3 inch",INCH,Grade B,ASTM A106,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0007,"Seamless Pipe 4 inch ASTM A106 Gr.B",Piping,Seamless Pipe,"4 inch",INCH,Grade B,ASTM A106,Bharat Heavy Industries
+IOCL,IOCL-P-0008,"SEAMLESS PIPE 100 MM ASTM A106 GR.B",Piping,Seamless Pipe,"100 mm",MM,Grade B,ASTM A106,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0009,"Seamless Pipe 4 in ASTM A106 Gr.B",Piping,Seamless Pipe,"4 inch",INCH,Grade B,ASTM A106,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0010,"Seamless Pipe 6 inch ASTM A106 Gr.B",Piping,Seamless Pipe,"6 inch",INCH,Grade B,ASTM A106,Bharat Heavy Industries
+IOCL,IOCL-P-0011,"SEAMLESS PIPE 150 MM ASTM A106 GR.B",Piping,Seamless Pipe,"150 mm",MM,Grade B,ASTM A106,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0012,"Seamless Pipe 6 in ASTM A106 Gr.B",Piping,Seamless Pipe,"6 inch",INCH,Grade B,ASTM A106,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0013,"Seamless Pipe 8 inch ASTM A106 Gr.B",Piping,Seamless Pipe,"8 inch",INCH,Grade B,ASTM A106,Bharat Heavy Industries
+IOCL,IOCL-P-0014,"SEAMLESS PIPE 200 MM ASTM A106 GR.B",Piping,Seamless Pipe,"200 mm",MM,Grade B,ASTM A106,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0015,"Seamless Pipe 8 in ASTM A106 Gr.B",Piping,Seamless Pipe,"8 inch",INCH,Grade B,ASTM A106,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0016,"Seamless Pipe 10 inch ASTM A106 Gr.B",Piping,Seamless Pipe,"10 inch",INCH,Grade B,ASTM A106,Bharat Heavy Industries
+IOCL,IOCL-P-0017,"SEAMLESS PIPE 250 MM ASTM A106 GR.B",Piping,Seamless Pipe,"250 mm",MM,Grade B,ASTM A106,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0018,"Seamless Pipe 10 in ASTM A106 Gr.B",Piping,Seamless Pipe,"10 inch",INCH,Grade B,ASTM A106,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0019,"Seamless Pipe 12 inch ASTM A106 Gr.B",Piping,Seamless Pipe,"12 inch",INCH,Grade B,ASTM A106,Bharat Heavy Industries
+IOCL,IOCL-P-0020,"SEAMLESS PIPE 300 MM ASTM A106 GR.B",Piping,Seamless Pipe,"300 mm",MM,Grade B,ASTM A106,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0021,"Seamless Pipe 12 in ASTM A106 Gr.B",Piping,Seamless Pipe,"12 inch",INCH,Grade B,ASTM A106,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0022,"Gate Valve 2 inch 150# Flanged WCB API 600",Valves,Gate Valve,"2 inch",INCH,WCB,API 600,Bharat Heavy Industries
+IOCL,IOCL-P-0023,"GATE VALVE 50 MM 150# FLANGED WCB API 600",Valves,Gate Valve,"50 mm",MM,WCB,API 600,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0024,"Gate Valve 2 in 150# Flanged WCB API 600",Valves,Gate Valve,"2 inch",INCH,WCB,API 600,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0025,"Gate Valve 3 inch 150# Flanged WCB API 600",Valves,Gate Valve,"3 inch",INCH,WCB,API 600,Bharat Heavy Industries
+IOCL,IOCL-P-0026,"GATE VALVE 80 MM 150# FLANGED WCB API 600",Valves,Gate Valve,"80 mm",MM,WCB,API 600,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0027,"Gate Valve 3 in 150# Flanged WCB API 600",Valves,Gate Valve,"3 inch",INCH,WCB,API 600,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0028,"Gate Valve 4 inch 150# Flanged WCB API 600",Valves,Gate Valve,"4 inch",INCH,WCB,API 600,Bharat Heavy Industries
+IOCL,IOCL-P-0029,"GATE VALVE 100 MM 150# FLANGED WCB API 600",Valves,Gate Valve,"100 mm",MM,WCB,API 600,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0030,"Gate Valve 4 in 150# Flanged WCB API 600",Valves,Gate Valve,"4 inch",INCH,WCB,API 600,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0031,"Gate Valve 6 inch 150# Flanged WCB API 600",Valves,Gate Valve,"6 inch",INCH,WCB,API 600,Bharat Heavy Industries
+IOCL,IOCL-P-0032,"GATE VALVE 150 MM 150# FLANGED WCB API 600",Valves,Gate Valve,"150 mm",MM,WCB,API 600,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0033,"Gate Valve 6 in 150# Flanged WCB API 600",Valves,Gate Valve,"6 inch",INCH,WCB,API 600,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0034,"Gate Valve 8 inch 150# Flanged WCB API 600",Valves,Gate Valve,"8 inch",INCH,WCB,API 600,Bharat Heavy Industries
+IOCL,IOCL-P-0035,"GATE VALVE 200 MM 150# FLANGED WCB API 600",Valves,Gate Valve,"200 mm",MM,WCB,API 600,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0036,"Gate Valve 8 in 150# Flanged WCB API 600",Valves,Gate Valve,"8 inch",INCH,WCB,API 600,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0037,"Gate Valve 10 inch 150# Flanged WCB API 600",Valves,Gate Valve,"10 inch",INCH,WCB,API 600,Bharat Heavy Industries
+IOCL,IOCL-P-0038,"GATE VALVE 250 MM 150# FLANGED WCB API 600",Valves,Gate Valve,"250 mm",MM,WCB,API 600,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0039,"Gate Valve 10 in 150# Flanged WCB API 600",Valves,Gate Valve,"10 inch",INCH,WCB,API 600,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0040,"Gate Valve 12 inch 150# Flanged WCB API 600",Valves,Gate Valve,"12 inch",INCH,WCB,API 600,Bharat Heavy Industries
+IOCL,IOCL-P-0041,"GATE VALVE 300 MM 150# FLANGED WCB API 600",Valves,Gate Valve,"300 mm",MM,WCB,API 600,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0042,"Gate Valve 12 in 150# Flanged WCB API 600",Valves,Gate Valve,"12 inch",INCH,WCB,API 600,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0043,"WNRF Flange 2 inch 300# ASTM A105",Piping,WNRF Flange,"2 inch",INCH,A105,ASME B16.5,Bharat Heavy Industries
+IOCL,IOCL-P-0044,"WNRF FLANGE 50 MM 300# ASTM A105",Piping,WNRF Flange,"50 mm",MM,A105,ASME B16.5,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0045,"WNRF Flange 2 in 300# ASTM A105",Piping,WNRF Flange,"2 inch",INCH,A105,ASME B16.5,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0046,"WNRF Flange 3 inch 300# ASTM A105",Piping,WNRF Flange,"3 inch",INCH,A105,ASME B16.5,Bharat Heavy Industries
+IOCL,IOCL-P-0047,"WNRF FLANGE 80 MM 300# ASTM A105",Piping,WNRF Flange,"80 mm",MM,A105,ASME B16.5,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0048,"WNRF Flange 3 in 300# ASTM A105",Piping,WNRF Flange,"3 inch",INCH,A105,ASME B16.5,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0049,"WNRF Flange 4 inch 300# ASTM A105",Piping,WNRF Flange,"4 inch",INCH,A105,ASME B16.5,Bharat Heavy Industries
+IOCL,IOCL-P-0050,"WNRF FLANGE 100 MM 300# ASTM A105",Piping,WNRF Flange,"100 mm",MM,A105,ASME B16.5,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0051,"WNRF Flange 4 in 300# ASTM A105",Piping,WNRF Flange,"4 inch",INCH,A105,ASME B16.5,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0052,"WNRF Flange 6 inch 300# ASTM A105",Piping,WNRF Flange,"6 inch",INCH,A105,ASME B16.5,Bharat Heavy Industries
+IOCL,IOCL-P-0053,"WNRF FLANGE 150 MM 300# ASTM A105",Piping,WNRF Flange,"150 mm",MM,A105,ASME B16.5,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0054,"WNRF Flange 6 in 300# ASTM A105",Piping,WNRF Flange,"6 inch",INCH,A105,ASME B16.5,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0055,"WNRF Flange 8 inch 300# ASTM A105",Piping,WNRF Flange,"8 inch",INCH,A105,ASME B16.5,Bharat Heavy Industries
+IOCL,IOCL-P-0056,"WNRF FLANGE 200 MM 300# ASTM A105",Piping,WNRF Flange,"200 mm",MM,A105,ASME B16.5,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0057,"WNRF Flange 8 in 300# ASTM A105",Piping,WNRF Flange,"8 inch",INCH,A105,ASME B16.5,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0058,"WNRF Flange 10 inch 300# ASTM A105",Piping,WNRF Flange,"10 inch",INCH,A105,ASME B16.5,Bharat Heavy Industries
+IOCL,IOCL-P-0059,"WNRF FLANGE 250 MM 300# ASTM A105",Piping,WNRF Flange,"250 mm",MM,A105,ASME B16.5,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0060,"WNRF Flange 10 in 300# ASTM A105",Piping,WNRF Flange,"10 inch",INCH,A105,ASME B16.5,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0061,"WNRF Flange 12 inch 300# ASTM A105",Piping,WNRF Flange,"12 inch",INCH,A105,ASME B16.5,Bharat Heavy Industries
+IOCL,IOCL-P-0062,"WNRF FLANGE 300 MM 300# ASTM A105",Piping,WNRF Flange,"300 mm",MM,A105,ASME B16.5,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0063,"WNRF Flange 12 in 300# ASTM A105",Piping,WNRF Flange,"12 inch",INCH,A105,ASME B16.5,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0064,"Heat Exchanger Tube 2 inch SS316L ASTM A213",Tubing,Heat Exchanger Tube,"2 inch",INCH,SS316L,ASTM A213,Bharat Heavy Industries
+IOCL,IOCL-P-0065,"HEAT EXCHANGER TUBE 50 MM SS316L ASTM A213",Tubing,Heat Exchanger Tube,"50 mm",MM,SS316L,ASTM A213,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0066,"Heat Exchanger Tube 2 in SS316L ASTM A213",Tubing,Heat Exchanger Tube,"2 inch",INCH,SS316L,ASTM A213,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0067,"Heat Exchanger Tube 3 inch SS316L ASTM A213",Tubing,Heat Exchanger Tube,"3 inch",INCH,SS316L,ASTM A213,Bharat Heavy Industries
+IOCL,IOCL-P-0068,"HEAT EXCHANGER TUBE 80 MM SS316L ASTM A213",Tubing,Heat Exchanger Tube,"80 mm",MM,SS316L,ASTM A213,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0069,"Heat Exchanger Tube 3 in SS316L ASTM A213",Tubing,Heat Exchanger Tube,"3 inch",INCH,SS316L,ASTM A213,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0070,"Heat Exchanger Tube 4 inch SS316L ASTM A213",Tubing,Heat Exchanger Tube,"4 inch",INCH,SS316L,ASTM A213,Bharat Heavy Industries
+IOCL,IOCL-P-0071,"HEAT EXCHANGER TUBE 100 MM SS316L ASTM A213",Tubing,Heat Exchanger Tube,"100 mm",MM,SS316L,ASTM A213,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0072,"Heat Exchanger Tube 4 in SS316L ASTM A213",Tubing,Heat Exchanger Tube,"4 inch",INCH,SS316L,ASTM A213,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0073,"Heat Exchanger Tube 6 inch SS316L ASTM A213",Tubing,Heat Exchanger Tube,"6 inch",INCH,SS316L,ASTM A213,Bharat Heavy Industries
+IOCL,IOCL-P-0074,"HEAT EXCHANGER TUBE 150 MM SS316L ASTM A213",Tubing,Heat Exchanger Tube,"150 mm",MM,SS316L,ASTM A213,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0075,"Heat Exchanger Tube 6 in SS316L ASTM A213",Tubing,Heat Exchanger Tube,"6 inch",INCH,SS316L,ASTM A213,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0076,"Heat Exchanger Tube 8 inch SS316L ASTM A213",Tubing,Heat Exchanger Tube,"8 inch",INCH,SS316L,ASTM A213,Bharat Heavy Industries
+IOCL,IOCL-P-0077,"HEAT EXCHANGER TUBE 200 MM SS316L ASTM A213",Tubing,Heat Exchanger Tube,"200 mm",MM,SS316L,ASTM A213,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0078,"Heat Exchanger Tube 8 in SS316L ASTM A213",Tubing,Heat Exchanger Tube,"8 inch",INCH,SS316L,ASTM A213,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0079,"Heat Exchanger Tube 10 inch SS316L ASTM A213",Tubing,Heat Exchanger Tube,"10 inch",INCH,SS316L,ASTM A213,Bharat Heavy Industries
+IOCL,IOCL-P-0080,"HEAT EXCHANGER TUBE 250 MM SS316L ASTM A213",Tubing,Heat Exchanger Tube,"250 mm",MM,SS316L,ASTM A213,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0081,"Heat Exchanger Tube 10 in SS316L ASTM A213",Tubing,Heat Exchanger Tube,"10 inch",INCH,SS316L,ASTM A213,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0082,"Heat Exchanger Tube 12 inch SS316L ASTM A213",Tubing,Heat Exchanger Tube,"12 inch",INCH,SS316L,ASTM A213,Bharat Heavy Industries
+IOCL,IOCL-P-0083,"HEAT EXCHANGER TUBE 300 MM SS316L ASTM A213",Tubing,Heat Exchanger Tube,"300 mm",MM,SS316L,ASTM A213,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0084,"Heat Exchanger Tube 12 in SS316L ASTM A213",Tubing,Heat Exchanger Tube,"12 inch",INCH,SS316L,ASTM A213,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0085,"Spiral Wound Gasket 2 inch 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"2 inch",INCH,SS316,ASME B16.20,Bharat Heavy Industries
+IOCL,IOCL-P-0086,"SPIRAL WOUND GASKET 50 MM 150# SS316 GRAPHITE",Sealing,Spiral Wound Gasket,"50 mm",MM,SS316,ASME B16.20,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0087,"Spiral Wound Gasket 2 in 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"2 inch",INCH,SS316,ASME B16.20,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0088,"Spiral Wound Gasket 3 inch 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"3 inch",INCH,SS316,ASME B16.20,Bharat Heavy Industries
+IOCL,IOCL-P-0089,"SPIRAL WOUND GASKET 80 MM 150# SS316 GRAPHITE",Sealing,Spiral Wound Gasket,"80 mm",MM,SS316,ASME B16.20,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0090,"Spiral Wound Gasket 3 in 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"3 inch",INCH,SS316,ASME B16.20,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0091,"Spiral Wound Gasket 4 inch 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"4 inch",INCH,SS316,ASME B16.20,Bharat Heavy Industries
+IOCL,IOCL-P-0092,"SPIRAL WOUND GASKET 100 MM 150# SS316 GRAPHITE",Sealing,Spiral Wound Gasket,"100 mm",MM,SS316,ASME B16.20,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0093,"Spiral Wound Gasket 4 in 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"4 inch",INCH,SS316,ASME B16.20,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0094,"Spiral Wound Gasket 6 inch 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"6 inch",INCH,SS316,ASME B16.20,Bharat Heavy Industries
+IOCL,IOCL-P-0095,"SPIRAL WOUND GASKET 150 MM 150# SS316 GRAPHITE",Sealing,Spiral Wound Gasket,"150 mm",MM,SS316,ASME B16.20,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0096,"Spiral Wound Gasket 6 in 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"6 inch",INCH,SS316,ASME B16.20,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0097,"Spiral Wound Gasket 8 inch 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"8 inch",INCH,SS316,ASME B16.20,Bharat Heavy Industries
+IOCL,IOCL-P-0098,"SPIRAL WOUND GASKET 200 MM 150# SS316 GRAPHITE",Sealing,Spiral Wound Gasket,"200 mm",MM,SS316,ASME B16.20,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0099,"Spiral Wound Gasket 8 in 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"8 inch",INCH,SS316,ASME B16.20,Jindal & L&T Consortium
+CPCL,CPCL-MAT-0100,"Spiral Wound Gasket 10 inch 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"10 inch",INCH,SS316,ASME B16.20,Bharat Heavy Industries
+IOCL,IOCL-P-0101,"SPIRAL WOUND GASKET 250 MM 150# SS316 GRAPHITE",Sealing,Spiral Wound Gasket,"250 mm",MM,SS316,ASME B16.20,Maharashtra Industrial Corp
+ONGC,ONGC-MAT-0102,"Spiral Wound Gasket 10 in 150# SS316 Graphite",Sealing,Spiral Wound Gasket,"10 inch",INCH,SS316,ASME B16.20,Jindal & L&T Consortium
