@@ -1,0 +1,11 @@
+cpse,code,description,uom
+CPCL,MAT-10234,"Pipe, seamless, 6 inch, ASTM A106 Gr.B",EA
+NTPC,PX-889,SEAMLESS PIPE 150mm CS A106-B,EA
+SAIL,4410022,"Pipe smls 6"" ASTM A106 grade B",EA
+CPCL,MAT-20001,"Gate valve, 2 inch, carbon steel, class 300",EA
+NTPC,GV-0042,GATE VALVE CS 2" CL 300,EA
+SAIL,5500123,"Flange, slip-on, 4 inch, A105, class 150",EA
+COALIND,CI-7781,SLIP-ON FLANGE 4 INCH A105 CLASS 150,EA
+CPCL,MAT-30077,"Gasket, spiral wound, 3 inch",EA
+CPCL,MAT-30077,"Duplicate code on purpose (will be skipped with a warning)",EA
+NTPC,BAD-001,,EA

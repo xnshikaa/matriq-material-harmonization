@@ -1,0 +1,1001 @@
+cpse,code,description,uom
+COALIND,CO-000001,"TEE, SEAMLESS, MILD STEEL, 10 INCH, A182 GRADE F304, SCH 160, CL 600, DWG 3182",M
+COALIND,CO-000002,"valve; smls; ss; 152.4mm; astm a106 gr.b; sch 80; class 600; dwg 8790",M
+SAIL,SA-000003,"FLANGE WELDED CARBON STEEL 1.5"" A53-A SCHEDULE 40 CL 1500 DWG 7058",EA
+NTPC,NT-000004,"dwg 2841 sch 40 welded astm a106 gr.c galvanized iron class 150 76.2mm flange",M
+NTPC,NT-000005,"pipe - welded - stainless steel - 5.08 cm - a106-c - schedule 80 - cl 150 - dwg 4103",EA
+NTPC,NT-000006,"bolt seamless stainless steel 6 inch astm a105 schedule 40 class 600 dwg 9394",M
+COALIND,CO-000007,"elbow; a182-f304; welded; sch 80; dwg 9017; 1""; class 600; carbon steel",EA
+COALIND,CO-000008,"PIPE, SCH 80, WELDED, DWG 2633, CARBON STEEL, CL 1500, 3"", A333-6",KG
+SAIL,SA-000009,"PIPE; WELDED; SS; 38.1MM; A106 GRADE C; SCH 80; CL 300; DWG 4967",M
+SAIL,SA-000010,"BOLT - SEAMLESS - CARBON STEEL - 2"" - A333 GRADE 6 - SCH 40 - CLASS 600 - DWG 1292",M
+NTPC,NT-000011,"elbow - welded - ss - 10"" - astm a53 gr.a - schedule 80 - class 900 - dwg 5446",KG
+SAIL,SA-000012,"reducer; smls; mild steel; 38.1mm; astm a106 gr b; schedule 40; class 300; dwg 1032",M
+NTPC,NT-000013,"DWG 4251 - 15.24 CM - CARBON STEEL - ASTM A106 GR B - SMLS - FLANGE - SCH 40 - CL 900",EA
+SAIL,SA-000014,"cs, sch 40, a333-6, dwg 9485, welded, class 1500, valve, 0.5 inch",KG
+CPCL,CP-000015,"dwg 9878, a105, stainless steel, class 300, schedule 80, smls, 1.5"", bolt",KG
+NTPC,NT-000016,"a106-c; dwg 3480; 20.32 cm; cl 900; gi; schedule 40; bolt; welded",EA
+NTPC,NT-000017,"bolt, welded, mild steel, 25.4mm, a333-6, sch 80, cl 150, dwg 3024",M
+SAIL,SA-000018,"REDUCER; WELDED; GI; 7.62 CM; ASTM A106 GR.B; SCH 160; CL 600; DWG 4502",KG
+NTPC,NT-000019,"10""; schedule 160; carbon steel; dwg 4567; welded; astm a333 gr.6; flange; class 600",EA
+COALIND,CO-000020,"ELBOW; WELDED; MS; 25.4MM; A333 GRADE 6; SCHEDULE 160; CL 300; DWG 3540",M
+NTPC,NT-000021,"reducer; seamless; ms; 15.24 cm; a105; sch 160; class 900; dwg 9843",KG
+COALIND,CO-000022,"12"" - cl 1500 - flange - smls - sch 40 - astm a105 - ss - dwg 1775",M
+NTPC,NT-000023,"elbow, seamless, ss, 203.2mm, a106 grade c, schedule 40, class 150, dwg 6632",KG
+CPCL,CP-000024,"bolt; smls; stainless steel; 1.5 inch; astm a105; schedule 80; class 300; dwg 9878",KG
+COALIND,CO-000025,"dwg 5232 - smls - class 600 - elbow - 304.8mm - ms - a182 grade f304 - sch 80",EA
+CPCL,CP-000026,"PIPE, SMLS, MS, 1 INCH, A53-A, SCH 40, CLASS 900, DWG 8161",EA
+COALIND,CO-000027,"PIPE A182 GRADE F304 CARBON STEEL DWG 8327 SCHEDULE 40 SEAMLESS CL 300 101.6MM",EA
+CPCL,CP-000028,"elbow - welded - cs - 0.5"" - astm a106 gr b - schedule 40 - cl 1500 - dwg 7920",KG
+NTPC,NT-000029,"a105 - class 150 - schedule 80 - gi - dwg 3671 - welded - pipe - 10""",M
+CPCL,CP-000030,"sch 40; flange; 1.27 cm; dwg 4175; class 900; astm a105; ms; welded",KG
+SAIL,SA-000031,"valve, smls, gi, 8"", a105, schedule 80, cl 600, dwg 6775",KG
+COALIND,CO-000032,"TEE SMLS CARBON STEEL 3 INCH ASTM A106 GR C SCHEDULE 40 CLASS 600 DWG 5476",KG
+COALIND,CO-000033,"pipe; smls; stainless steel; 3""; a53 grade a; schedule 160; cl 900; dwg 5056",KG
+NTPC,NT-000034,"SCHEDULE 80; GALVANIZED IRON; CL 300; 15.24 CM; TEE; A53 GRADE A; WELDED; DWG 8052",EA
+NTPC,NT-000035,"schedule 40 dwg 1191 8 inch pipe mild steel cl 150 astm a333 gr.6 smls",EA
+NTPC,NT-000036,"ASTM A106 GR B; DWG 7426; CL 600; SCH 160; VALVE; GALVANIZED IRON; WELDED; 1.5 INCH",KG
+COALIND,CO-000037,"valve smls mild steel 4 inch astm a105 schedule 40 class 300 dwg 8661",EA
+NTPC,NT-000038,"reducer, welded, mild steel, 1 inch, astm a106 gr c, sch 40, class 1500, dwg 1145",M
+COALIND,CO-000039,"bolt; welded; mild steel; 20.32 cm; a333 grade 6; schedule 40; cl 900; dwg 7434",EA
+COALIND,CO-000040,"stainless steel; 2.54 cm; welded; flange; dwg 9584; cl 300; schedule 40; astm a106 gr.b",M
+COALIND,CO-000041,"bolt; smls; ss; 7.62 cm; astm a106 gr.b; schedule 160; class 150; dwg 9762",EA
+CPCL,CP-000042,"schedule 160; dwg 6207; pipe; stainless steel; cl 900; a106 grade c; welded; 12.7mm",EA
+NTPC,NT-000043,"6 inch; tee; astm a106 gr c; welded; class 300; dwg 2256; sch 80; galvanized iron",EA
+SAIL,SA-000044,"flange; seamless; sch 40; class 1500; astm a105; dwg 1775; stainless steel; 12""",M
+COALIND,CO-000045,"dwg 9027 - elbow - welded - mild steel - astm a105 - sch 80 - class 300 - 0.5""",M
+CPCL,CP-000046,"elbow; seamless; galvanized iron; 12.7mm; astm a182 gr.f304; sch 40; cl 900; dwg 3654",M
+SAIL,SA-000047,"TEE SEAMLESS MS 30.48 CM A182-F304 SCHEDULE 80 CLASS 600 DWG 1940",EA
+SAIL,SA-000048,"gi, schedule 40, cl 600, welded, astm a333 gr 6, dwg 6950, tee, 101.6mm",M
+NTPC,NT-000049,"SMLS; CLASS 900; ASTM A105; SCHEDULE 80; GALVANIZED IRON; DWG 4724; BOLT; 7.62 CM",KG
+SAIL,SA-000050,"ELBOW, WELDED, MILD STEEL, 0.5 INCH, A106 GRADE C, SCHEDULE 40, CLASS 150, DWG 6125",EA
+COALIND,CO-000051,"schedule 40 cl 150 dwg 1064 smls 6"" a182 grade f304 gi tee",KG
+NTPC,NT-000052,"cl 150, seamless, 1"", ss, gasket, dwg 8637, a333 grade 6, schedule 160",M
+NTPC,NT-000053,"valve; welded; mild steel; 2.54 cm; a106-b; sch 40; class 150; dwg 1535",M
+CPCL,CP-000054,"0.5 inch sch 160 a106-c welded bolt dwg 1884 class 600 gi",M
+NTPC,NT-000055,"sch 40; cl 900; stainless steel; dwg 6616; astm a333 gr.6; seamless; gasket; 7.62 cm",EA
+COALIND,CO-000056,"1""; elbow; a105; smls; dwg 6637; schedule 160; ms; cl 1500",M
+COALIND,CO-000057,"PIPE SMLS GI 101.6MM ASTM A106 GR.B SCH 40 CLASS 900 DWG 5293",M
+NTPC,NT-000058,"schedule 40, 3"", class 900, valve, astm a53 gr.a, gi, welded, dwg 6042",EA
+CPCL,CP-000059,"TEE - SMLS - GALVANIZED IRON - 152.4MM - ASTM A53 GR A - SCH 160 - CLASS 900 - DWG 2018",M
+NTPC,NT-000060,"flange, welded, ms, 38.1mm, a106-b, sch 160, class 300, dwg 7938",EA
+NTPC,NT-000061,"WELDED - SS - 254.0MM - TEE - DWG 7992 - ASTM A105 - SCH 80 - CL 900",KG
+NTPC,NT-000062,"bolt seamless mild steel 10 inch a53-a sch 160 cl 300 dwg 4611",EA
+COALIND,CO-000063,"cl 600 - gi - astm a182 gr f304 - 203.2mm - welded - dwg 2861 - sch 40 - tee",M
+COALIND,CO-000064,"gasket welded galvanized iron 8"" astm a106 gr.c schedule 80 cl 150 dwg 1372",M
+CPCL,CP-000065,"class 150; galvanized iron; 10 inch; welded; a105; pipe; sch 80; dwg 3671",M
+COALIND,CO-000066,"astm a182 gr f304, cl 300, mild steel, 2"", seamless, tee, schedule 80, dwg 1322",M
+COALIND,CO-000067,"pipe, welded, stainless steel, 0.5"", a106 grade c, sch 160, class 900, dwg 6207",M
+CPCL,CP-000068,"seamless; tee; 3 inch; cs; cl 900; schedule 80; astm a182 gr.f304; dwg 3405",EA
+SAIL,SA-000069,"tee; smls; mild steel; 30.48 cm; astm a182 gr f304; sch 80; class 600; dwg 1940",M
+CPCL,CP-000070,"bolt, smls, gi, 12.7mm, astm a53 gr a, schedule 40, cl 150, dwg 9529",M
+NTPC,NT-000071,"astm a333 gr 6, ss, sch 80, dwg 1375, 76.2mm, class 600, flange, smls",KG
+NTPC,NT-000072,"8 inch; galvanized iron; bolt; dwg 7216; sch 80; cl 600; seamless; astm a333 gr 6",KG
+SAIL,SA-000073,"WELDED - 25.4MM - DWG 6673 - STAINLESS STEEL - PIPE - CLASS 300 - SCHEDULE 160 - ASTM A106 GR.B",EA
+CPCL,CP-000074,"reducer smls galvanized iron 203.2mm a106 grade b schedule 40 cl 900 dwg 8285",EA
+NTPC,NT-000075,"dwg 8239 - welded - tee - sch 160 - class 1500 - 8"" - galvanized iron - a106 grade b",M
+CPCL,CP-000076,"WELDED - BOLT - DWG 9377 - A182 GRADE F304 - MS - SCH 80 - 1 INCH - CL 1500",EA
+CPCL,CP-000077,"BOLT SEAMLESS GI 8"" ASTM A106 GR B SCH 40 CLASS 600 DWG 8490",M
+SAIL,SA-000078,"bolt - dwg 9681 - a333 grade 6 - carbon steel - schedule 80 - 1.5"" - class 600 - smls",KG
+CPCL,CP-000079,"SMLS, CL 300, A105, GALVANIZED IRON, SCHEDULE 80, DWG 8045, BOLT, 203.2MM",KG
+NTPC,NT-000080,"DWG 7992; TEE; SCHEDULE 80; STAINLESS STEEL; CLASS 900; A105; WELDED; 25.40 CM",EA
+COALIND,CO-000081,"tee - smls - ms - 10.16 cm - astm a106 gr b - schedule 160 - class 1500 - dwg 8876",KG
+COALIND,CO-000082,"gasket, welded, carbon steel, 4"", astm a333 gr.6, sch 40, class 600, dwg 3067",M
+COALIND,CO-000083,"12"" ASTM A106 GR.C WELDED VALVE DWG 8194 CLASS 300 STAINLESS STEEL SCH 40",M
+COALIND,CO-000084,"FLANGE; WELDED; SS; 12.7MM; ASTM A105; SCH 40; CLASS 600; DWG 3430",EA
+SAIL,SA-000085,"elbow welded galvanized iron 1.5 inch a105 schedule 80 class 300 dwg 1856",KG
+NTPC,NT-000086,"BOLT SMLS MS 3"" A333-6 SCHEDULE 160 CLASS 300 DWG 4953",KG
+NTPC,NT-000087,"tee - welded - mild steel - 1.27 cm - a106 grade c - sch 160 - cl 600 - dwg 3815",EA
+CPCL,CP-000088,"dwg 7949 - schedule 160 - astm a106 gr b - carbon steel - seamless - cl 1500 - reducer - 38.1mm",EA
+CPCL,CP-000089,"tee welded gi 12"" astm a105 schedule 80 cl 1500 dwg 5063",KG
+COALIND,CO-000090,"pipe - welded - cs - 8 inch - a106-b - sch 40 - class 900 - dwg 5866",EA
+NTPC,NT-000091,"a106 grade b cl 150 dwg 3918 3"" smls reducer galvanized iron sch 80",M
+COALIND,CO-000092,"gasket; welded; ms; 12.7mm; astm a333 gr 6; schedule 80; class 150; dwg 1124",M
+NTPC,NT-000093,"A333 GRADE 6; CLASS 1500; DWG 7911; MILD STEEL; 304.8MM; SCH 80; WELDED; REDUCER",KG
+COALIND,CO-000094,"bolt; seamless; ss; 76.2mm; a182-f304; schedule 80; cl 600; dwg 5976",KG
+NTPC,NT-000095,"astm a106 gr c - gasket - seamless - class 300 - dwg 2580 - 0.5 inch - schedule 160 - stainless steel",KG
+CPCL,CP-000096,"PIPE WELDED GALVANIZED IRON 203.2MM A333-6 SCH 160 CL 150 DWG 6865",EA
+COALIND,CO-000097,"PIPE, A333 GRADE 6, SMLS, MS, SCHEDULE 160, CL 900, 25.4MM, DWG 8554",M
+NTPC,NT-000098,"valve, welded, gi, 6 inch, a333-6, sch 40, class 150, dwg 2910",M
+COALIND,CO-000099,"PIPE - SMLS - STAINLESS STEEL - 50.8MM - A53 GRADE A - SCH 160 - CLASS 150 - DWG 4035",EA
+COALIND,CO-000100,"ELBOW, SMLS, MILD STEEL, 30.48 CM, ASTM A105, SCH 80, CL 1500, DWG 8243",EA
+COALIND,CO-000101,"gasket; seamless; galvanized iron; 2.54 cm; a53-a; schedule 80; cl 150; dwg 3330",EA
+NTPC,NT-000102,"gasket, seamless, ss, a182 grade f304, sch 160, 10"", dwg 3324, cl 150",EA
+COALIND,CO-000103,"2.54 cm; smls; stainless steel; dwg 7657; schedule 40; reducer; a106 grade b; cl 150",EA
+CPCL,CP-000104,"cl 900 - a105 - 38.1mm - elbow - stainless steel - schedule 80 - seamless - dwg 9731",EA
+CPCL,CP-000105,"reducer schedule 160 10"" class 600 ms dwg 8542 smls astm a106 gr.c",M
+NTPC,NT-000106,"astm a106 gr.c sch 40 smls class 600 mild steel dwg 6879 flange 12 inch",EA
+SAIL,SA-000107,"SCH 40; SMLS; A182-F304; SS; CLASS 150; BOLT; 12 INCH; DWG 1360",M
+COALIND,CO-000108,"reducer smls carbon steel 3.81 cm a106-b schedule 80 class 900 dwg 6495",EA
+SAIL,SA-000109,"DWG 7426; SCH 160; CL 600; GI; WELDED; VALVE; ASTM A106 GR B; 1.5 INCH",M
+COALIND,CO-000110,"TEE; WELDED; GI; 4 INCH; ASTM A106 GR C; SCH 160; CL 300; DWG 3905",KG
+COALIND,CO-000111,"dwg 7043; 25.4mm; cl 150; ms; seamless; flange; sch 80; a106 grade c",KG
+COALIND,CO-000112,"bolt; welded; gi; 25.40 cm; a182-f304; schedule 160; class 900; dwg 3629",EA
+NTPC,NT-000113,"tee; welded; cs; 0.5 inch; astm a182 gr f304; sch 40; class 300; dwg 3172",EA
+COALIND,CO-000114,"REDUCER - SEAMLESS - GI - 1.5 INCH - ASTM A106 GR.C - SCHEDULE 160 - CLASS 300 - DWG 4237",EA
+NTPC,NT-000115,"flange - smls - mild steel - 1.27 cm - astm a333 gr 6 - schedule 80 - cl 900 - dwg 7824",KG
+COALIND,CO-000116,"gasket; welded; galvanized iron; 20.32 cm; a333 grade 6; schedule 40; cl 600; dwg 4935",KG
+SAIL,SA-000117,"A105; SCH 40; GI; 2""; DWG 4033; SMLS; FLANGE; CLASS 600",EA
+NTPC,NT-000118,"elbow welded carbon steel 2"" a333-6 schedule 40 class 1500 dwg 5618",KG
+COALIND,CO-000119,"cl 300 - 254.0mm - sch 80 - seamless - mild steel - astm a333 gr.6 - dwg 2585 - reducer",KG
+NTPC,NT-000120,"CL 150, CARBON STEEL, 2.54 CM, DWG 7251, SEAMLESS, ELBOW, SCH 160, A53-A",EA
+CPCL,CP-000121,"REDUCER; WELDED; GALVANIZED IRON; 5.08 CM; ASTM A105; SCHEDULE 80; CL 600; DWG 4031",KG
+COALIND,CO-000122,"SEAMLESS - SCHEDULE 160 - CL 1500 - DWG 1475 - 152.4MM - ASTM A182 GR F304 - GASKET - CS",M
+COALIND,CO-000123,"12.7MM - ELBOW - CL 600 - SCHEDULE 80 - SMLS - SS - A333 GRADE 6 - DWG 3408",M
+NTPC,NT-000124,"welded, schedule 40, cl 900, reducer, a182 grade f304, dwg 3768, 1"", mild steel",EA
+COALIND,CO-000125,"mild steel; class 1500; 2""; bolt; dwg 7681; welded; a105; schedule 80",M
+SAIL,SA-000126,"tee - welded - galvanized iron - 30.48 cm - a53-a - schedule 80 - class 150 - dwg 4461",EA
+COALIND,CO-000127,"CLASS 150; SMLS; ASTM A106 GR.C; SCHEDULE 80; DWG 3338; TEE; 254.0MM; STAINLESS STEEL",KG
+SAIL,SA-000128,"dwg 8433 - 2.54 cm - class 300 - pipe - seamless - mild steel - schedule 160 - a106 grade c",KG
+COALIND,CO-000129,"bolt - smls - galvanized iron - 8 inch - a105 - schedule 80 - class 300 - dwg 8045",KG
+COALIND,CO-000130,"valve; welded; galvanized iron; 2 inch; astm a53 gr.a; sch 160; cl 600; dwg 8007",M
+COALIND,CO-000131,"dwg 2888, astm a333 gr 6, gi, cl 900, seamless, tee, 101.6mm, schedule 80",M
+COALIND,CO-000132,"ASTM A106 GR.B SCHEDULE 160 CL 150 MS TEE DWG 7551 3 INCH WELDED",KG
+COALIND,CO-000133,"astm a106 gr.c, sch 80, welded, 3 inch, dwg 9128, mild steel, pipe, class 900",KG
+CPCL,CP-000134,"A53 GRADE A - DWG 3330 - GASKET - 1 INCH - CL 150 - SCH 80 - SEAMLESS - GI",EA
+SAIL,SA-000135,"GASKET WELDED CS 6"" ASTM A106 GR.C SCH 40 CL 900 DWG 6886",KG
+NTPC,NT-000136,"dwg 1517; seamless; sch 40; 3 inch; galvanized iron; a105; class 1500; flange",EA
+CPCL,CP-000137,"reducer; welded; stainless steel; 101.6mm; a53-a; schedule 80; class 150; dwg 9729",KG
+NTPC,NT-000138,"tee - welded - stainless steel - 2.54 cm - a105 - sch 40 - cl 300 - dwg 4560",EA
+CPCL,CP-000139,"VALVE; WELDED; CS; 25.40 CM; ASTM A53 GR.A; SCHEDULE 40; CLASS 1500; DWG 6307",KG
+SAIL,SA-000140,"reducer, welded, carbon steel, 1.5"", a182-f304, sch 160, class 900, dwg 3071",EA
+CPCL,CP-000141,"BOLT; SMLS; GI; 6 INCH; A333-6; SCH 80; CLASS 300; DWG 2814",EA
+COALIND,CO-000142,"SEAMLESS; A53-A; 10.16 CM; FLANGE; CLASS 600; DWG 3463; SCH 160; CS",EA
+NTPC,NT-000143,"ASTM A105 SCH 160 DWG 1249 CLASS 1500 SMLS FLANGE CS 30.48 CM",EA
+CPCL,CP-000144,"ASTM A106 GR.B SCHEDULE 40 ELBOW 10"" STAINLESS STEEL WELDED DWG 2969 CL 1500",KG
+NTPC,NT-000145,"SMLS; SCH 160; GASKET; GALVANIZED IRON; CL 150; 6 INCH; DWG 1454; ASTM A106 GR B",KG
+NTPC,NT-000146,"reducer seamless stainless steel 12"" a333 grade 6 sch 160 cl 1500 dwg 2100",KG
+NTPC,NT-000147,"flange; seamless; stainless steel; 6""; astm a53 gr a; schedule 40; class 150; dwg 6221",EA
+COALIND,CO-000148,"pipe, welded, carbon steel, 7.62 cm, a333 grade 6, schedule 80, cl 1500, dwg 2633",M
+SAIL,SA-000149,"SEAMLESS CLASS 300 DWG 4382 ASTM A182 GR F304 STAINLESS STEEL BOLT SCHEDULE 40 20.32 CM",M
+COALIND,CO-000150,"pipe - welded - mild steel - 101.6mm - astm a182 gr f304 - schedule 80 - class 900 - dwg 9651",EA
+COALIND,CO-000151,"pipe; a105; sch 80; seamless; cl 300; stainless steel; 1 inch; dwg 6938",M
+NTPC,NT-000152,"tee, welded, galvanized iron, 152.4mm, a105, sch 40, cl 600, dwg 8056",KG
+NTPC,NT-000153,"VALVE; SEAMLESS; SS; 3.81 CM; ASTM A182 GR.F304; SCH 160; CLASS 150; DWG 3316",EA
+SAIL,SA-000154,"stainless steel - dwg 6130 - 6 inch - pipe - astm a106 gr c - welded - class 300 - schedule 160",KG
+CPCL,CP-000155,"class 150 reducer carbon steel a53 grade a dwg 8023 schedule 40 welded 3""",M
+CPCL,CP-000156,"ASTM A106 GR C DWG 2794 SCH 80 BOLT SMLS 6"" CS CLASS 300",M
+SAIL,SA-000157,"WELDED, 1 INCH, ASTM A106 GR B, SCHEDULE 80, VALVE, CS, CLASS 150, DWG 9278",M
+NTPC,NT-000158,"flange; welded; stainless steel; 12""; astm a53 gr.a; schedule 160; class 1500; dwg 8872",EA
+SAIL,SA-000159,"SEAMLESS, SCHEDULE 80, 10.16 CM, DWG 8441, VALVE, A106 GRADE B, MS, CLASS 1500",M
+SAIL,SA-000160,"gasket, welded, stainless steel, 2"", a182 grade f304, schedule 80, cl 600, dwg 2531",KG
+CPCL,CP-000161,"SCH 160, DWG 3747, FLANGE, 203.2MM, CL 150, WELDED, ASTM A53 GR A, MS",KG
+NTPC,NT-000162,"elbow; smls; cs; 76.2mm; a106-b; sch 40; class 600; dwg 6412",M
+COALIND,CO-000163,"tee, seamless, mild steel, 38.1mm, astm a106 gr.c, schedule 40, class 300, dwg 1364",M
+CPCL,CP-000164,"reducer seamless mild steel 10 inch a333 grade 6 schedule 80 cl 300 dwg 2585",KG
+NTPC,NT-000165,"bolt dwg 1105 welded ms a182 grade f304 10.16 cm cl 1500 sch 160",M
+NTPC,NT-000166,"tee; welded; galvanized iron; 10""; a106 grade b; schedule 160; class 300; dwg 4943",EA
+NTPC,NT-000167,"a106 grade c; 76.2mm; sch 160; reducer; dwg 1865; ms; cl 300; smls",M
+NTPC,NT-000168,"BOLT, WELDED, CS, 2.54 CM, ASTM A182 GR.F304, SCHEDULE 80, CLASS 600, DWG 7148",EA
+CPCL,CP-000169,"CL 150 - DWG 6074 - SCHEDULE 80 - STAINLESS STEEL - BOLT - SMLS - ASTM A106 GR.C - 4 INCH",M
+NTPC,NT-000170,"dwg 6340 gi 203.2mm cl 1500 schedule 40 reducer welded a105",KG
+COALIND,CO-000171,"cs - seamless - sch 40 - dwg 3232 - astm a106 gr.b - flange - 203.2mm - class 150",KG
+SAIL,SA-000172,"schedule 40 dwg 6094 reducer cl 900 a53 grade a welded 2.54 cm stainless steel",KG
+COALIND,CO-000173,"seamless, 30.48 cm, a106 grade b, schedule 80, dwg 3842, class 900, gasket, gi",M
+SAIL,SA-000174,"elbow, seamless, ss, 2"", a105, schedule 160, class 300, dwg 5402",M
+NTPC,NT-000175,"cs, sch 80, a106 grade c, gasket, dwg 8060, class 150, welded, 2.54 cm",M
+SAIL,SA-000176,"SMLS - CL 300 - SCHEDULE 160 - 10"" - DWG 5083 - BOLT - ASTM A106 GR.C - CARBON STEEL",M
+COALIND,CO-000177,"seamless, a106-c, 3"", cl 600, schedule 80, bolt, dwg 2909, galvanized iron",M
+NTPC,NT-000178,"bolt welded cs 1.5"" a53-a sch 40 class 1500 dwg 2194",KG
+SAIL,SA-000179,"CLASS 600; 0.5 INCH; DWG 2643; A333-6; CS; ELBOW; SCHEDULE 160; WELDED",M
+NTPC,NT-000180,"GASKET, WELDED, GI, 4 INCH, ASTM A182 GR.F304, SCH 80, CLASS 150, DWG 3834",EA
+CPCL,CP-000181,"elbow - seamless - stainless steel - 8 inch - a106 grade c - schedule 40 - class 150 - dwg 6632",EA
+NTPC,NT-000182,"welded, sch 40, class 600, flange, ss, 1.5 inch, a106-b, dwg 6648",M
+NTPC,NT-000183,"DWG 3408 - ELBOW - SCHEDULE 80 - A333 GRADE 6 - SEAMLESS - 12.7MM - SS - CL 600",EA
+CPCL,CP-000184,"reducer, seamless, ms, 254.0mm, a333-6, sch 80, class 300, dwg 2585",EA
+COALIND,CO-000185,"ELBOW, DWG 9189, CLASS 300, SCHEDULE 80, A182 GRADE F304, 6"", SMLS, GALVANIZED IRON",EA
+NTPC,NT-000186,"elbow seamless carbon steel 6 inch astm a333 gr.6 schedule 40 class 150 dwg 2490",EA
+CPCL,CP-000187,"GASKET - WELDED - MILD STEEL - 3"" - A182-F304 - SCHEDULE 160 - CLASS 900 - DWG 9580",M
+COALIND,CO-000188,"seamless - stainless steel - gasket - sch 40 - class 900 - a182 grade f304 - dwg 2306 - 7.62 cm",KG
+COALIND,CO-000189,"FLANGE, SMLS, GI, 0.5 INCH, ASTM A105, SCHEDULE 80, CL 150, DWG 6243",M
+NTPC,NT-000190,"DWG 7373; REDUCER; GI; 25.40 CM; WELDED; A106 GRADE B; SCH 160; CL 300",KG
+COALIND,CO-000191,"gasket, welded, carbon steel, 76.2mm, astm a333 gr.6, schedule 80, class 150, dwg 6946",EA
+SAIL,SA-000192,"PIPE; WELDED; GI; 0.5""; ASTM A53 GR A; SCHEDULE 40; CL 600; DWG 4589",KG
+SAIL,SA-000193,"reducer - welded - cs - 0.5"" - a53 grade a - schedule 80 - cl 900 - dwg 5352",KG
+COALIND,CO-000194,"gasket seamless ss 50.8mm astm a182 gr.f304 schedule 80 cl 1500 dwg 9286",KG
+SAIL,SA-000195,"flange, welded, cs, 254.0mm, astm a333 gr.6, sch 160, class 600, dwg 4567",EA
+SAIL,SA-000196,"bolt; seamless; mild steel; 1 inch; astm a182 gr.f304; sch 80; class 900; dwg 5609",KG
+SAIL,SA-000197,"cs, welded, dwg 7640, sch 160, 8 inch, astm a105, cl 150, elbow",EA
+SAIL,SA-000198,"BOLT WELDED MS 12"" ASTM A182 GR.F304 SCH 160 CLASS 150 DWG 7632",EA
+COALIND,CO-000199,"PIPE, WELDED, SS, 5.08 CM, ASTM A105, SCHEDULE 40, CLASS 1500, DWG 5217",KG
+COALIND,CO-000200,"elbow - seamless - gi - 152.4mm - astm a182 gr.f304 - schedule 80 - class 900 - dwg 7714",EA
+NTPC,NT-000201,"ms gasket smls a333 grade 6 schedule 160 dwg 9105 1 inch class 600",KG
+COALIND,CO-000202,"pipe; seamless; cs; 101.6mm; a182 grade f304; sch 40; class 300; dwg 8327",M
+CPCL,CP-000203,"GI; DWG 6394; REDUCER; WELDED; 5.08 CM; CL 1500; SCH 80; ASTM A53 GR.A",EA
+NTPC,NT-000204,"10.16 cm, smls, galvanized iron, astm a182 gr.f304, cl 900, schedule 40, valve, dwg 8889",EA
+NTPC,NT-000205,"flange; dwg 7218; sch 80; cl 1500; cs; a106-b; seamless; 0.5 inch",EA
+SAIL,SA-000206,"152.4mm; dwg 1085; sch 80; reducer; cl 150; astm a106 gr.c; welded; stainless steel",M
+NTPC,NT-000207,"reducer - ms - 1"" - sch 40 - a106 grade c - class 1500 - dwg 1145 - welded",EA
+NTPC,NT-000208,"dwg 4028 - 0.5 inch - flange - class 300 - astm a106 gr.c - sch 80 - welded - ms",KG
+CPCL,CP-000209,"welded - cl 1500 - 50.8mm - elbow - dwg 5082 - astm a106 gr c - cs - schedule 40",EA
+SAIL,SA-000210,"bolt, smls, galvanized iron, 25.4mm, astm a333 gr.6, schedule 80, cl 600, dwg 9323",KG
+SAIL,SA-000211,"valve welded stainless steel 1.27 cm astm a182 gr f304 sch 80 cl 150 dwg 1881",KG
+NTPC,NT-000212,"bolt, welded, ss, 25.40 cm, astm a182 gr.f304, schedule 80, class 150, dwg 7305",EA
+SAIL,SA-000213,"PIPE SEAMLESS GALVANIZED IRON 6 INCH A53-A SCHEDULE 160 CLASS 1500 DWG 9672",EA
+COALIND,CO-000214,"galvanized iron, seamless, 7.62 cm, class 600, dwg 8089, reducer, sch 40, astm a106 gr c",EA
+CPCL,CP-000215,"elbow; welded; ms; 1.5 inch; astm a106 gr c; schedule 80; cl 900; dwg 9083",KG
+COALIND,CO-000216,"GASKET - SMLS - STAINLESS STEEL - 2 INCH - A106 GRADE B - SCH 160 - CLASS 150 - DWG 6601",KG
+CPCL,CP-000217,"dwg 7714 cl 900 smls sch 80 gi elbow 152.4mm astm a182 gr f304",M
+SAIL,SA-000218,"valve; welded; stainless steel; 8""; a333-6; sch 80; class 1500; dwg 1075",EA
+NTPC,NT-000219,"ASTM A333 GR.6, SCH 160, DWG 9060, 25.40 CM, CL 300, WELDED, VALVE, GALVANIZED IRON",KG
+NTPC,NT-000220,"flange; welded; cs; 4 inch; a105; sch 40; class 1500; dwg 4536",M
+NTPC,NT-000221,"CLASS 1500, WELDED, DWG 2162, STAINLESS STEEL, SCH 80, 76.2MM, A333 GRADE 6, GASKET",M
+NTPC,NT-000222,"bolt; welded; mild steel; 304.8mm; a53-a; sch 40; cl 900; dwg 2290",M
+SAIL,SA-000223,"FLANGE, SEAMLESS, GI, 30.48 CM, A182 GRADE F304, SCHEDULE 80, CL 900, DWG 7783",M
+NTPC,NT-000224,"smls schedule 80 dwg 2363 5.08 cm reducer a182 grade f304 ms cl 1500",M
+SAIL,SA-000225,"REDUCER; SEAMLESS; CS; 1.5""; A333-6; SCHEDULE 80; CLASS 150; DWG 8077",M
+CPCL,CP-000226,"cl 1500, dwg 3364, tee, seamless, sch 160, astm a333 gr 6, 1"", gi",M
+CPCL,CP-000227,"schedule 40; mild steel; welded; 30.48 cm; dwg 7265; bolt; astm a105; class 300",M
+COALIND,CO-000228,"astm a105 mild steel schedule 80 dwg 6957 elbow welded class 300 12.7mm",KG
+SAIL,SA-000229,"reducer - smls - mild steel - 25.40 cm - a182 grade f304 - sch 80 - class 1500 - dwg 3873",M
+COALIND,CO-000230,"pipe, smls, ms, 203.2mm, astm a333 gr.6, sch 40, class 600, dwg 4684",EA
+CPCL,CP-000231,"dwg 1721; cl 900; sch 80; welded; astm a182 gr f304; bolt; galvanized iron; 8 inch",KG
+COALIND,CO-000232,"ELBOW SMLS MS 304.8MM A106-B SCH 80 CLASS 900 DWG 4640",KG
+CPCL,CP-000233,"203.2MM, ASTM A106 GR.C, CLASS 150, DWG 7523, SCHEDULE 160, MS, FLANGE, WELDED",M
+SAIL,SA-000234,"welded astm a53 gr a cl 150 galvanized iron schedule 40 dwg 6346 flange 2 inch",M
+COALIND,CO-000235,"gasket, welded, stainless steel, 12.7mm, a333-6, sch 40, class 300, dwg 8154",M
+CPCL,CP-000236,"0.5"" - sch 80 - a106 grade c - class 150 - stainless steel - pipe - dwg 3410 - seamless",M
+COALIND,CO-000237,"ms; elbow; cl 600; welded; schedule 80; dwg 4027; 10 inch; a182-f304",EA
+COALIND,CO-000238,"schedule 40; bolt; a182-f304; welded; dwg 8659; ms; cl 1500; 38.1mm",EA
+NTPC,NT-000239,"gasket welded gi 8 inch astm a106 gr.c schedule 80 class 150 dwg 1372",EA
+CPCL,CP-000240,"flange, welded, ms, 0.5 inch, a106-c, schedule 80, cl 300, dwg 4028",EA
+CPCL,CP-000241,"dwg 7549 - a106 grade b - 12.7mm - schedule 40 - welded - cl 300 - bolt - mild steel",KG
+COALIND,CO-000242,"class 300 - schedule 160 - dwg 8433 - 1 inch - seamless - a106 grade c - mild steel - pipe",M
+COALIND,CO-000243,"TEE - WELDED - SS - 3.81 CM - ASTM A53 GR A - SCH 40 - CLASS 600 - DWG 9357",EA
+SAIL,SA-000244,"tee - seamless - mild steel - 10.16 cm - a333 grade 6 - sch 40 - class 150 - dwg 8063",M
+CPCL,CP-000245,"BOLT, MILD STEEL, 3.81 CM, CLASS 1500, WELDED, DWG 8659, SCHEDULE 40, A182-F304",EA
+CPCL,CP-000246,"astm a53 gr a - cl 900 - schedule 80 - seamless - dwg 8624 - 30.48 cm - bolt - galvanized iron",M
+COALIND,CO-000247,"BOLT, SEAMLESS, STAINLESS STEEL, 30.48 CM, A182-F304, SCHEDULE 80, CLASS 150, DWG 5145",EA
+CPCL,CP-000248,"welded - class 1500 - gi - reducer - dwg 8971 - a53-a - schedule 160 - 1 inch",EA
+NTPC,NT-000249,"smls a106-c schedule 80 1.27 cm ss pipe class 150 dwg 3410",KG
+COALIND,CO-000250,"schedule 160 - welded - dwg 8872 - cl 1500 - 12"" - astm a53 gr.a - stainless steel - flange",EA
+CPCL,CP-000251,"FLANGE WELDED CS 76.2MM A106-C SCHEDULE 160 CL 600 DWG 4618",EA
+COALIND,CO-000252,"a333 grade 6; schedule 80; welded; gasket; class 300; 10""; carbon steel; dwg 2175",KG
+NTPC,NT-000253,"CS, CLASS 300, REDUCER, ASTM A105, SCHEDULE 160, DWG 6655, 2.54 CM, WELDED",EA
+SAIL,SA-000254,"gasket - smls - ms - 2"" - a106 grade c - sch 40 - class 600 - dwg 6224",EA
+NTPC,NT-000255,"valve; welded; gi; 203.2mm; astm a106 gr b; schedule 40; class 300; dwg 8154",KG
+SAIL,SA-000256,"FLANGE, WELDED, CARBON STEEL, 152.4MM, ASTM A106 GR.C, SCH 80, CLASS 900, DWG 7704",EA
+COALIND,CO-000257,"sch 80; elbow; seamless; 1.5 inch; cl 600; ms; a182 grade f304; dwg 9214",KG
+COALIND,CO-000258,"FLANGE - SMLS - STAINLESS STEEL - 25.40 CM - ASTM A182 GR F304 - SCHEDULE 40 - CLASS 600 - DWG 4477",EA
+NTPC,NT-000259,"class 300; 12.7mm; dwg 9523; flange; stainless steel; astm a333 gr 6; seamless; sch 160",EA
+COALIND,CO-000260,"gasket; welded; carbon steel; 15.24 cm; astm a106 gr.c; schedule 40; class 900; dwg 6886",M
+COALIND,CO-000261,"CL 150 GALVANIZED IRON WELDED SCHEDULE 40 DWG 7526 FLANGE 3 INCH ASTM A106 GR.B",KG
+COALIND,CO-000262,"bolt - seamless - ss - 12"" - a333-6 - schedule 160 - class 1500 - dwg 8461",EA
+COALIND,CO-000263,"MS, CL 600, 10 INCH, SCHEDULE 160, DWG 2945, WELDED, REDUCER, A106-B",M
+COALIND,CO-000264,"gasket, welded, mild steel, 304.8mm, a53-a, sch 80, class 1500, dwg 9869",M
+NTPC,NT-000265,"flange, seamless, carbon steel, 30.48 cm, a105, schedule 160, class 1500, dwg 1249",EA
+SAIL,SA-000266,"CL 1500 1.5"" SCHEDULE 160 A333-6 PIPE STAINLESS STEEL DWG 4649 SMLS",M
+SAIL,SA-000267,"cl 900 2"" flange ms a106 grade b schedule 40 welded dwg 2261",EA
+CPCL,CP-000268,"elbow smls stainless steel 152.4mm astm a106 gr b sch 40 cl 300 dwg 8699",M
+COALIND,CO-000269,"class 900 304.8mm welded dwg 3517 sch 160 astm a53 gr.a ms tee",KG
+COALIND,CO-000270,"TEE SEAMLESS STAINLESS STEEL 6"" A53 GRADE A SCH 80 CLASS 600 DWG 4205",M
+COALIND,CO-000271,"ELBOW - WELDED - MS - 10 INCH - ASTM A106 GR B - SCHEDULE 40 - CL 300 - DWG 4838",KG
+SAIL,SA-000272,"class 1500, dwg 7681, astm a105, bolt, welded, 2"", schedule 80, ms",M
+COALIND,CO-000273,"cs - bolt - astm a105 - schedule 40 - dwg 8612 - welded - cl 900 - 6""",KG
+SAIL,SA-000274,"astm a53 gr.a 254.0mm tee dwg 6697 sch 80 smls cl 900 ss",KG
+CPCL,CP-000275,"tee, welded, gi, 0.5 inch, a333-6, sch 80, class 1500, dwg 7021",EA
+NTPC,NT-000276,"CS TEE SEAMLESS SCH 80 ASTM A182 GR F304 2.54 CM DWG 6750 CL 300",M
+SAIL,SA-000277,"a182-f304, sch 80, ms, 76.2mm, dwg 5565, class 300, gasket, welded",KG
+CPCL,CP-000278,"mild steel seamless class 900 schedule 40 dwg 2435 flange 4"" a105",M
+CPCL,CP-000279,"BOLT, SMLS, STAINLESS STEEL, 10"", ASTM A105, SCHEDULE 80, CLASS 600, DWG 4414",KG
+COALIND,CO-000280,"DWG 2816; MS; SCH 40; REDUCER; CLASS 150; 2.54 CM; WELDED; A106-C",KG
+CPCL,CP-000281,"astm a106 gr.b, galvanized iron, sch 160, 76.2mm, valve, cl 900, dwg 2292, welded",M
+COALIND,CO-000282,"38.1MM - WELDED - FLANGE - ASTM A105 - SCH 40 - GALVANIZED IRON - DWG 4910 - CLASS 1500",KG
+COALIND,CO-000283,"pipe - seamless - gi - 10.16 cm - astm a105 - sch 80 - class 150 - dwg 5739",M
+NTPC,NT-000284,"ELBOW; WELDED; SS; 1.5""; A333 GRADE 6; SCH 80; CL 300; DWG 8733",EA
+COALIND,CO-000285,"bolt; welded; stainless steel; 152.4mm; a53-a; schedule 80; cl 900; dwg 2387",M
+CPCL,CP-000286,"elbow - smls - carbon steel - 8"" - a182 grade f304 - sch 160 - cl 900 - dwg 7305",EA
+NTPC,NT-000287,"BOLT - SMLS - SS - 76.2MM - A106 GRADE B - SCHEDULE 160 - CL 150 - DWG 9762",KG
+CPCL,CP-000288,"flange, seamless, mild steel, 2.54 cm, astm a105, schedule 80, cl 900, dwg 2798",M
+CPCL,CP-000289,"valve, mild steel, astm a106 gr b, schedule 40, class 150, welded, 4"", dwg 2757",KG
+NTPC,NT-000290,"bolt welded cs 254.0mm astm a53 gr.a sch 160 class 600 dwg 8037",M
+NTPC,NT-000291,"valve, welded, cs, 304.8mm, a333 grade 6, sch 160, class 900, dwg 8374",M
+COALIND,CO-000292,"gasket seamless ss 25.40 cm a182-f304 sch 160 class 150 dwg 3324",KG
+NTPC,NT-000293,"bolt welded cs 0.5 inch astm a182 gr.f304 sch 80 class 150 dwg 5210",EA
+CPCL,CP-000294,"schedule 40 class 900 cs welded astm a106 gr b 20.32 cm dwg 5866 pipe",M
+NTPC,NT-000295,"reducer; smls; stainless steel; 25.4mm; a333-6; sch 40; class 1500; dwg 7757",M
+CPCL,CP-000296,"bolt welded stainless steel 101.6mm a53 grade a sch 160 class 900 dwg 1692",EA
+COALIND,CO-000297,"7.62 cm; valve; smls; astm a182 gr.f304; dwg 2907; sch 40; ss; cl 300",KG
+NTPC,NT-000298,"class 600; ms; smls; tee; sch 40; astm a182 gr f304; dwg 8366; 1""",EA
+COALIND,CO-000299,"pipe - welded - ss - 25.40 cm - a106-c - schedule 80 - cl 150 - dwg 4252",M
+SAIL,SA-000300,"GASKET, WELDED, CS, 25.40 CM, ASTM A106 GR.C, SCH 40, CLASS 150, DWG 6786",EA
+CPCL,CP-000301,"dwg 6616 - stainless steel - gasket - seamless - class 900 - sch 40 - 76.2mm - a333 grade 6",KG
+COALIND,CO-000302,"sch 40, class 1500, 12.7mm, flange, dwg 6286, a53-a, welded, carbon steel",KG
+NTPC,NT-000303,"PIPE - SMLS - SS - 1"" - ASTM A333 GR.6 - SCH 160 - CLASS 900 - DWG 8803",M
+SAIL,SA-000304,"elbow - welded - stainless steel - 20.32 cm - astm a106 gr c - sch 160 - class 150 - dwg 7603",M
+NTPC,NT-000305,"DWG 4031 STAINLESS STEEL FLANGE ASTM A105 1"" CL 300 SCHEDULE 160 SMLS",EA
+COALIND,CO-000306,"10"" dwg 4378 sch 40 smls astm a106 gr b elbow class 1500 ss",KG
+COALIND,CO-000307,"FLANGE - SEAMLESS - CS - 6 INCH - ASTM A105 - SCH 40 - CL 150 - DWG 5580",M
+NTPC,NT-000308,"tee welded cs 8 inch astm a106 gr.b schedule 40 class 300 dwg 7670",EA
+SAIL,SA-000309,"REDUCER; ASTM A333 GR.6; CLASS 300; 50.8MM; WELDED; CARBON STEEL; DWG 4923; SCHEDULE 160",M
+NTPC,NT-000310,"ELBOW, WELDED, MILD STEEL, 25.4MM, A333 GRADE 6, SCHEDULE 80, CL 150, DWG 8651",KG
+COALIND,CO-000311,"reducer; welded; gi; 0.5 inch; a53 grade a; sch 40; class 600; dwg 2930",EA
+NTPC,NT-000312,"welded - dwg 5144 - sch 160 - ss - pipe - 4 inch - astm a106 gr.c - cl 1500",M
+NTPC,NT-000313,"TEE - SMLS - CS - 3 INCH - ASTM A182 GR.F304 - SCHEDULE 40 - CLASS 900 - DWG 2318",M
+SAIL,SA-000314,"bolt, seamless, ss, 12"", astm a182 gr f304, sch 80, class 150, dwg 5145",EA
+SAIL,SA-000315,"valve; 10.16 cm; dwg 1262; astm a53 gr.a; gi; welded; cl 600; schedule 80",KG
+COALIND,CO-000316,"ELBOW WELDED CARBON STEEL 10 INCH ASTM A105 SCH 80 CL 300 DWG 8853",KG
+SAIL,SA-000317,"bolt, welded, ms, 50.8mm, astm a105, sch 80, class 1500, dwg 7681",M
+CPCL,CP-000318,"REDUCER WELDED CS 30.48 CM A106 GRADE C SCH 80 CL 150 DWG 1979",EA
+CPCL,CP-000319,"welded - sch 80 - cl 1500 - astm a106 gr b - dwg 7812 - 3"" - bolt - ms",EA
+NTPC,NT-000320,"astm a333 gr.6; galvanized iron; class 600; welded; 4""; tee; dwg 6950; schedule 40",M
+NTPC,NT-000321,"GASKET; SEAMLESS; SS; 5.08 CM; A106 GRADE B; SCHEDULE 160; CLASS 150; DWG 6601",EA
+CPCL,CP-000322,"a106-c seamless ms schedule 80 class 1500 dwg 9305 50.8mm pipe",EA
+SAIL,SA-000323,"dwg 2164 astm a105 ms cl 900 welded 6 inch flange schedule 160",M
+COALIND,CO-000324,"BOLT SMLS CARBON STEEL 2"" A106 GRADE C SCH 160 CLASS 300 DWG 1462",EA
+CPCL,CP-000325,"tee seamless ms 3 inch a105 sch 160 cl 600 dwg 8519",M
+NTPC,NT-000326,"gasket, welded, carbon steel, 10 inch, astm a105, schedule 40, class 150, dwg 5198",M
+CPCL,CP-000327,"dwg 4233 cl 600 schedule 160 8 inch a106-c mild steel elbow seamless",EA
+COALIND,CO-000328,"bolt - smls - ms - 50.8mm - astm a182 gr f304 - schedule 40 - class 900 - dwg 7974",M
+COALIND,CO-000329,"valve - welded - gi - 3"" - astm a106 gr.b - schedule 40 - class 150 - dwg 9429",KG
+NTPC,NT-000330,"carbon steel 7.62 cm a182 grade f304 cl 900 sch 80 seamless dwg 3405 tee",KG
+COALIND,CO-000331,"mild steel welded dwg 3913 schedule 80 astm a106 gr c 304.8mm elbow class 300",M
+CPCL,CP-000332,"flange smls stainless steel 1.5"" a105 sch 80 cl 1500 dwg 4326",M
+NTPC,NT-000333,"elbow welded mild steel 2 inch astm a53 gr a sch 160 cl 150 dwg 7678",KG
+NTPC,NT-000334,"FLANGE - A105 - DWG 3430 - WELDED - SCHEDULE 40 - SS - CLASS 600 - 0.5""",EA
+SAIL,SA-000335,"elbow - seamless - carbon steel - 76.2mm - astm a333 gr.6 - schedule 160 - cl 900 - dwg 1648",EA
+COALIND,CO-000336,"pipe, smls, cs, 12.7mm, astm a182 gr f304, schedule 40, cl 300, dwg 8795",KG
+CPCL,CP-000337,"REDUCER - SEAMLESS - CARBON STEEL - 38.1MM - A106-B - SCH 160 - CLASS 1500 - DWG 7949",EA
+CPCL,CP-000338,"MILD STEEL - CLASS 1500 - DWG 5732 - ASTM A106 GR.B - SCHEDULE 40 - 12.7MM - REDUCER - WELDED",KG
+SAIL,SA-000339,"reducer; welded; ss; 12""; astm a182 gr f304; schedule 80; class 150; dwg 7858",KG
+COALIND,CO-000340,"dwg 8132, sch 40, 12 inch, flange, class 900, cs, astm a53 gr a, smls",EA
+NTPC,NT-000341,"CLASS 150; STAINLESS STEEL; WELDED; ASTM A106 GR C; DWG 4148; SCH 160; 50.8MM; TEE",KG
+CPCL,CP-000342,"SCHEDULE 160 ASTM A105 DWG 2164 6"" MS WELDED CLASS 900 FLANGE",EA
+SAIL,SA-000343,"DWG 3438, CLASS 1500, FLANGE, MS, ASTM A333 GR.6, 30.48 CM, SCHEDULE 80, WELDED",M
+SAIL,SA-000344,"bolt, welded, mild steel, 12 inch, astm a182 gr.f304, sch 160, cl 150, dwg 7632",KG
+NTPC,NT-000345,"flange - welded - carbon steel - 12 inch - astm a182 gr f304 - schedule 160 - class 300 - dwg 2357",M
+SAIL,SA-000346,"reducer sch 40 4 inch dwg 8221 cl 300 welded gi a53-a",M
+COALIND,CO-000347,"class 1500; dwg 8781; gasket; smls; 30.48 cm; schedule 40; a106 grade c; ss",KG
+SAIL,SA-000348,"0.5 INCH SCH 160 CLASS 600 SEAMLESS DWG 1507 ASTM A53 GR A VALVE GALVANIZED IRON",M
+NTPC,NT-000349,"welded - flange - cs - dwg 7704 - sch 80 - astm a106 gr c - 152.4mm - class 900",KG
+NTPC,NT-000350,"12.7mm, reducer, smls, cl 1500, dwg 7435, sch 40, astm a105, gi",EA
+NTPC,NT-000351,"pipe, welded, cs, 30.48 cm, a182-f304, schedule 40, class 900, dwg 9408",EA
+NTPC,NT-000352,"carbon steel schedule 80 4"" dwg 5963 class 600 seamless bolt a182-f304",KG
+CPCL,CP-000353,"FLANGE - WELDED - MILD STEEL - 0.5"" - ASTM A106 GR.C - SCH 80 - CL 300 - DWG 4028",M
+COALIND,CO-000354,"bolt, seamless, cs, 254.0mm, astm a182 gr f304, sch 160, class 1500, dwg 3700",M
+CPCL,CP-000355,"class 150, mild steel, flange, astm a53 gr.a, welded, 8"", schedule 160, dwg 3747",M
+NTPC,NT-000356,"BOLT; SMLS; GI; 8""; ASTM A105; SCH 80; CL 300; DWG 8045",KG
+CPCL,CP-000357,"galvanized iron - astm a53 gr a - cl 900 - welded - sch 80 - gasket - 101.6mm - dwg 1798",KG
+SAIL,SA-000358,"reducer; welded; cs; 12 inch; astm a53 gr.a; schedule 40; class 900; dwg 7196",M
+NTPC,NT-000359,"tee; seamless; ss; 2""; astm a106 gr c; sch 160; cl 1500; dwg 4628",M
+CPCL,CP-000360,"reducer, welded, ss, 2"", astm a182 gr f304, schedule 160, cl 150, dwg 1938",KG
+CPCL,CP-000361,"flange, welded, galvanized iron, 12 inch, astm a53 gr.a, schedule 40, class 900, dwg 9175",EA
+NTPC,NT-000362,"reducer welded cs 304.8mm a333-6 sch 160 class 150 dwg 4836",M
+COALIND,CO-000363,"TEE, SMLS, MILD STEEL, 50.8MM, ASTM A182 GR.F304, SCH 80, CL 300, DWG 1322",M
+COALIND,CO-000364,"gasket - smls - ms - 203.2mm - astm a182 gr.f304 - sch 160 - class 1500 - dwg 5132",KG
+NTPC,NT-000365,"A333 GRADE 6 - DWG 4343 - CLASS 300 - 254.0MM - SS - BOLT - SCH 160 - SMLS",KG
+COALIND,CO-000366,"gasket - welded - carbon steel - 4"" - astm a106 gr.b - schedule 160 - cl 300 - dwg 4421",EA
+CPCL,CP-000367,"valve; seamless; galvanized iron; 5.08 cm; a333-6; sch 160; cl 900; dwg 1739",M
+CPCL,CP-000368,"BOLT - SMLS - GALVANIZED IRON - 152.4MM - ASTM A105 - SCH 80 - CLASS 1500 - DWG 7565",M
+SAIL,SA-000369,"GASKET - SMLS - GALVANIZED IRON - 0.5 INCH - ASTM A333 GR 6 - SCHEDULE 80 - CL 300 - DWG 9331",EA
+SAIL,SA-000370,"gasket smls ss 12.7mm a106 grade c sch 160 class 300 dwg 2580",EA
+NTPC,NT-000371,"dwg 9397; schedule 160; tee; welded; galvanized iron; class 300; astm a106 gr b; 15.24 cm",KG
+CPCL,CP-000372,"304.8MM; SCH 40; STAINLESS STEEL; DWG 1360; CL 150; ASTM A182 GR F304; SMLS; BOLT",EA
+COALIND,CO-000373,"bolt, smls, ms, 304.8mm, a53 grade a, schedule 80, class 600, dwg 2825",M
+CPCL,CP-000374,"DWG 1074, 10.16 CM, ASTM A53 GR A, WELDED, SCHEDULE 40, GALVANIZED IRON, PIPE, CLASS 1500",M
+COALIND,CO-000375,"sch 80, dwg 4461, class 150, a53-a, welded, 304.8mm, galvanized iron, tee",KG
+CPCL,CP-000376,"flange; welded; galvanized iron; 1""; a106 grade c; schedule 40; class 600; dwg 8079",KG
+CPCL,CP-000377,"bolt; smls; galvanized iron; 1.27 cm; astm a53 gr.a; sch 40; class 150; dwg 9529",EA
+SAIL,SA-000378,"tee; welded; ms; 304.8mm; astm a53 gr.a; schedule 160; class 900; dwg 3517",KG
+CPCL,CP-000379,"reducer, seamless, mild steel, 203.2mm, a182 grade f304, sch 40, cl 1500, dwg 7788",EA
+COALIND,CO-000380,"SS A105 TEE CL 900 1.5 INCH SCH 40 WELDED DWG 4304",KG
+CPCL,CP-000381,"gasket, smls, stainless steel, 76.2mm, astm a182 gr.f304, schedule 40, cl 900, dwg 2306",EA
+CPCL,CP-000382,"flange - smls - cs - 12"" - astm a106 gr c - sch 40 - cl 900 - dwg 2884",KG
+CPCL,CP-000383,"TEE SEAMLESS STAINLESS STEEL 12 INCH ASTM A106 GR B SCHEDULE 40 CLASS 150 DWG 6015",M
+NTPC,NT-000384,"tee seamless mild steel 30.48 cm a182 grade f304 schedule 80 class 600 dwg 1940",EA
+NTPC,NT-000385,"REDUCER - WELDED - STAINLESS STEEL - 25.4MM - A333 GRADE 6 - SCH 160 - CLASS 1500 - DWG 7680",EA
+CPCL,CP-000386,"astm a333 gr 6 - seamless - cl 1500 - 3"" - reducer - dwg 9330 - sch 160 - ss",M
+SAIL,SA-000387,"2 inch - schedule 40 - welded - mild steel - astm a182 gr.f304 - dwg 1165 - elbow - cl 150",KG
+COALIND,CO-000388,"bolt, sch 160, galvanized iron, a333-6, welded, cl 900, 30.48 cm, dwg 5821",M
+COALIND,CO-000389,"CL 600, A53-A, WELDED, DWG 8037, 25.40 CM, CS, SCH 160, BOLT",M
+COALIND,CO-000390,"dwg 4901 - cl 1500 - pipe - 4 inch - a105 - sch 160 - gi - seamless",KG
+SAIL,SA-000391,"REDUCER WELDED STAINLESS STEEL 101.6MM A106 GRADE C SCHEDULE 160 CLASS 600 DWG 5344",M
+COALIND,CO-000392,"BOLT, WELDED, MS, 6"", A182 GRADE F304, SCHEDULE 40, CLASS 900, DWG 1025",EA
+NTPC,NT-000393,"stainless steel, astm a105, cl 600, smls, sch 80, 254.0mm, dwg 4414, bolt",KG
+SAIL,SA-000394,"15.24 cm - carbon steel - dwg 8331 - a333 grade 6 - reducer - class 900 - seamless - sch 40",KG
+COALIND,CO-000395,"ELBOW - WELDED - CS - 50.8MM - ASTM A106 GR C - SCHEDULE 80 - CL 1500 - DWG 4305",M
+SAIL,SA-000396,"sch 40, 3"", smls, astm a106 gr c, valve, cl 600, dwg 9521, galvanized iron",M
+COALIND,CO-000397,"a53-a; sch 40; class 150; dwg 6346; 2 inch; welded; gi; flange",KG
+COALIND,CO-000398,"10"", elbow, a106 grade b, cl 1500, sch 40, welded, dwg 2969, stainless steel",EA
+CPCL,CP-000399,"reducer; seamless; galvanized iron; 254.0mm; astm a53 gr.a; sch 160; cl 150; dwg 5138",M
+NTPC,NT-000400,"BOLT - SMLS - GI - 12 INCH - ASTM A53 GR A - SCHEDULE 80 - CLASS 900 - DWG 8624",KG
+COALIND,CO-000401,"welded class 300 a106-c cs dwg 3985 sch 160 tee 1.27 cm",KG
+COALIND,CO-000402,"CLASS 600; SMLS; 3.81 CM; MILD STEEL; ASTM A106 GR B; FLANGE; DWG 5542; SCH 80",KG
+NTPC,NT-000403,"SCHEDULE 40; ASTM A106 GR B; CL 600; 3.81 CM; GI; FLANGE; DWG 3394; WELDED",M
+COALIND,CO-000404,"flange welded stainless steel 6"" astm a53 gr a sch 160 cl 600 dwg 4799",EA
+SAIL,SA-000405,"0.5 inch flange sch 40 a53 grade a dwg 5199 welded cs cl 150",EA
+SAIL,SA-000406,"CARBON STEEL, BOLT, CLASS 900, DWG 6491, 12 INCH, A106-C, WELDED, SCHEDULE 160",KG
+COALIND,CO-000407,"DWG 8702 ASTM A53 GR.A SMLS 38.1MM SCHEDULE 80 CS FLANGE CLASS 1500",EA
+NTPC,NT-000408,"valve, welded, galvanized iron, 10.16 cm, a53-a, sch 80, cl 600, dwg 1262",M
+SAIL,SA-000409,"REDUCER; WELDED; SS; 1.5""; A182 GRADE F304; SCHEDULE 80; CL 600; DWG 9168",M
+SAIL,SA-000410,"50.8MM CLASS 150 ASTM A182 GR F304 TEE SEAMLESS MS SCHEDULE 80 DWG 2417",EA
+SAIL,SA-000411,"flange - seamless - ss - 254.0mm - a182-f304 - schedule 40 - cl 600 - dwg 4477",M
+COALIND,CO-000412,"smls sch 160 dwg 9557 cl 1500 astm a105 ss 5.08 cm gasket",M
+CPCL,CP-000413,"CLASS 1500 12 INCH WELDED A333-6 SCH 80 DWG 3438 FLANGE MS",EA
+CPCL,CP-000414,"flange, cl 1500, dwg 4536, welded, sch 40, 101.6mm, carbon steel, a105",M
+COALIND,CO-000415,"a106 grade b; dwg 2945; 254.0mm; sch 160; reducer; mild steel; welded; class 600",KG
+COALIND,CO-000416,"flange - smls - sch 40 - dwg 8835 - 5.08 cm - astm a182 gr.f304 - cl 150 - galvanized iron",KG
+SAIL,SA-000417,"0.5"" - CL 900 - SCH 40 - ASTM A106 GR.C - REDUCER - SMLS - DWG 5879 - GI",EA
+COALIND,CO-000418,"elbow, welded, galvanized iron, 0.5"", a106 grade b, schedule 40, cl 300, dwg 6891",KG
+COALIND,CO-000419,"elbow, welded, galvanized iron, 10"", astm a106 gr c, schedule 80, class 600, dwg 5419",M
+COALIND,CO-000420,"TEE SMLS MILD STEEL 5.08 CM ASTM A333 GR.6 SCHEDULE 160 CLASS 300 DWG 6362",M
+SAIL,SA-000421,"pipe - smls - stainless steel - 76.2mm - a182-f304 - sch 160 - class 1500 - dwg 6247",KG
+NTPC,NT-000422,"ASTM A106 GR.C SMLS CL 150 GALVANIZED IRON 0.5 INCH BOLT SCHEDULE 40 DWG 5921",KG
+SAIL,SA-000423,"elbow - smls - cs - 1.5"" - astm a333 gr 6 - schedule 80 - cl 900 - dwg 2185",KG
+NTPC,NT-000424,"cl 900, mild steel, 4"", welded, a182-f304, dwg 9651, schedule 80, pipe",KG
+SAIL,SA-000425,"welded sch 80 cs class 600 dwg 5725 astm a106 gr c bolt 25.4mm",EA
+CPCL,CP-000426,"smls; schedule 160; ms; dwg 8542; class 600; 25.40 cm; reducer; a106-c",KG
+NTPC,NT-000427,"welded - reducer - dwg 5732 - a106 grade b - sch 40 - mild steel - cl 1500 - 1.27 cm",KG
+NTPC,NT-000428,"astm a53 gr.a; stainless steel; 6 inch; class 600; tee; dwg 4205; seamless; schedule 80",EA
+COALIND,CO-000429,"valve - welded - mild steel - 152.4mm - astm a106 gr c - schedule 80 - class 150 - dwg 5238",M
+COALIND,CO-000430,"SCH 160; DWG 7812; WELDED; 8 INCH; ELBOW; CL 900; MS; A106 GRADE B",KG
+COALIND,CO-000431,"flange; welded; gi; 25.4mm; a105; sch 40; class 600; dwg 7051",KG
+CPCL,CP-000432,"pipe; 3 inch; a182-f304; sch 160; dwg 5737; cs; cl 900; smls",EA
+CPCL,CP-000433,"class 600 schedule 40 pipe smls dwg 4684 a333 grade 6 ms 203.2mm",KG
+SAIL,SA-000434,"BOLT; 3.81 CM; ASTM A333 GR 6; WELDED; SCHEDULE 80; CL 900; GI; DWG 7107",EA
+CPCL,CP-000435,"TEE, WELDED, MILD STEEL, 10"", A106 GRADE B, SCH 40, CLASS 300, DWG 5254",EA
+SAIL,SA-000436,"TEE, WELDED, GALVANIZED IRON, 3 INCH, ASTM A53 GR.A, SCH 80, CL 600, DWG 8258",EA
+CPCL,CP-000437,"BOLT, WELDED, MILD STEEL, 1"", ASTM A333 GR.6, SCH 80, CLASS 150, DWG 3024",M
+CPCL,CP-000438,"BOLT WELDED MILD STEEL 1.5"" A105 SCH 160 CL 1500 DWG 3030",EA
+SAIL,SA-000439,"pipe - welded - carbon steel - 30.48 cm - a182 grade f304 - schedule 40 - class 900 - dwg 9408",EA
+NTPC,NT-000440,"schedule 160, a105, seamless, dwg 9097, ms, 8 inch, class 150, tee",M
+SAIL,SA-000441,"TEE SMLS GALVANIZED IRON 4 INCH A333-6 SCHEDULE 80 CL 900 DWG 2888",M
+COALIND,CO-000442,"tee - seamless - stainless steel - 254.0mm - astm a53 gr a - sch 80 - cl 900 - dwg 6697",M
+CPCL,CP-000443,"carbon steel, schedule 40, 12"", welded, dwg 6366, class 300, valve, a106 grade c",M
+SAIL,SA-000444,"ELBOW - WELDED - MS - 2"" - A53-A - SCH 160 - CLASS 150 - DWG 7678",EA
+SAIL,SA-000445,"flange smls mild steel 10"" a333-6 sch 80 cl 600 dwg 7991",M
+SAIL,SA-000446,"reducer - seamless - mild steel - 20.32 cm - a182-f304 - sch 40 - cl 1500 - dwg 7788",KG
+COALIND,CO-000447,"flange welded galvanized iron 50.8mm astm a53 gr a sch 40 class 150 dwg 6346",KG
+COALIND,CO-000448,"elbow, welded, mild steel, 0.5 inch, astm a106 gr c, schedule 40, class 150, dwg 6125",M
+SAIL,SA-000449,"schedule 40; welded; 304.8mm; cl 150; a105; bolt; ms; dwg 9501",EA
+CPCL,CP-000450,"REDUCER, WELDED, SS, 1"", A106 GRADE B, SCH 80, CLASS 150, DWG 2244",M
+COALIND,CO-000451,"sch 160; dwg 8320; cl 300; cs; a53-a; gasket; 12""; welded",M
+NTPC,NT-000452,"pipe; seamless; cs; 15.24 cm; astm a182 gr.f304; schedule 80; cl 300; dwg 7907",M
+COALIND,CO-000453,"gasket; welded; mild steel; 304.8mm; a106 grade c; sch 80; cl 150; dwg 2227",EA
+NTPC,NT-000454,"ms, class 900, schedule 80, 6 inch, seamless, bolt, a106-b, dwg 2324",KG
+CPCL,CP-000455,"gasket smls stainless steel 0.5 inch a182 grade f304 sch 80 class 900 dwg 6781",KG
+NTPC,NT-000456,"reducer; welded; gi; 3 inch; astm a182 gr.f304; sch 160; class 150; dwg 9247",KG
+CPCL,CP-000457,"bolt welded gi 12"" a333-6 schedule 160 cl 900 dwg 5821",M
+NTPC,NT-000458,"gasket, smls, gi, 38.1mm, a106 grade c, sch 80, cl 600, dwg 8087",M
+CPCL,CP-000459,"SEAMLESS; 101.6MM; REDUCER; A106-B; SCHEDULE 40; SS; DWG 9426; CL 900",EA
+CPCL,CP-000460,"ELBOW SEAMLESS STAINLESS STEEL 38.1MM ASTM A182 GR.F304 SCHEDULE 80 CL 900 DWG 8469",M
+NTPC,NT-000461,"reducer - welded - gi - 4 inch - astm a106 gr.c - schedule 80 - class 1500 - dwg 3233",M
+CPCL,CP-000462,"A105 - 2"" - CLASS 1500 - PIPE - SS - SCH 40 - DWG 5217 - WELDED",KG
+NTPC,NT-000463,"BOLT, SEAMLESS, GALVANIZED IRON, 3"", A105, SCH 80, CLASS 900, DWG 4724",KG
+NTPC,NT-000464,"galvanized iron, welded, a106 grade c, 1.5"", sch 80, dwg 5766, class 300, gasket",M
+COALIND,CO-000465,"CLASS 600 - WELDED - A333 GRADE 6 - 2.54 CM - DWG 8910 - CARBON STEEL - REDUCER - SCHEDULE 80",M
+COALIND,CO-000466,"A333-6 - SCHEDULE 40 - 12.7MM - CLASS 150 - DWG 4257 - SMLS - GASKET - GI",M
+COALIND,CO-000467,"reducer seamless carbon steel 1.27 cm a106-c sch 40 class 900 dwg 8317",KG
+CPCL,CP-000468,"elbow - smls - gi - 6"" - astm a105 - sch 160 - class 600 - dwg 9836",M
+NTPC,NT-000469,"valve; welded; ms; 30.48 cm; astm a105; sch 160; cl 150; dwg 9289",KG
+SAIL,SA-000470,"elbow smls cs 50.8mm a182 grade f304 sch 80 cl 1500 dwg 9568",M
+SAIL,SA-000471,"CLASS 600, DWG 8645, GI, SEAMLESS, BOLT, 5.08 CM, SCH 80, ASTM A182 GR F304",KG
+SAIL,SA-000472,"8 inch; schedule 160; gasket; a182-f304; dwg 5132; smls; cl 1500; ms",KG
+NTPC,NT-000473,"DWG 3752; BOLT; 15.24 CM; GALVANIZED IRON; SCH 160; SEAMLESS; CL 150; A105",M
+COALIND,CO-000474,"2 inch - welded - gasket - a105 - dwg 3527 - sch 40 - ss - class 900",M
+CPCL,CP-000475,"flange, seamless, mild steel, 12 inch, astm a106 gr.c, schedule 40, class 150, dwg 1194",M
+SAIL,SA-000476,"GASKET; SEAMLESS; STAINLESS STEEL; 3.81 CM; A105; SCH 160; CL 150; DWG 6808",EA
+NTPC,NT-000477,"a106-c, welded, 25.4mm, gasket, cl 150, sch 80, dwg 8060, carbon steel",KG
+CPCL,CP-000478,"elbow - seamless - galvanized iron - 3"" - a105 - schedule 40 - class 300 - dwg 2889",EA
+CPCL,CP-000479,"REDUCER; WELDED; GI; 0.5 INCH; A182 GRADE F304; SCH 80; CLASS 1500; DWG 6399",EA
+CPCL,CP-000480,"flange; seamless; ss; 6""; astm a333 gr.6; sch 40; cl 1500; dwg 8785",M
+SAIL,SA-000481,"dwg 3831; smls; cs; a182 grade f304; class 150; schedule 80; gasket; 25.4mm",M
+CPCL,CP-000482,"seamless cl 300 dwg 1936 a182-f304 ms pipe schedule 160 10.16 cm",M
+SAIL,SA-000483,"elbow; welded; ms; 8 inch; astm a105; sch 160; cl 900; dwg 9765",KG
+SAIL,SA-000484,"TEE, WELDED, MILD STEEL, 152.4MM, ASTM A105, SCHEDULE 160, CL 600, DWG 9860",EA
+SAIL,SA-000485,"reducer, welded, ss, 1 inch, a53 grade a, schedule 40, cl 900, dwg 6094",M
+NTPC,NT-000486,"25.4MM - STAINLESS STEEL - BOLT - CLASS 300 - WELDED - DWG 1565 - ASTM A182 GR F304 - SCHEDULE 80",KG
+NTPC,NT-000487,"welded, flange, sch 160, dwg 2603, galvanized iron, cl 300, a106-c, 6 inch",EA
+COALIND,CO-000488,"FLANGE - SEAMLESS - CS - 1.5"" - ASTM A106 GR.B - SCH 40 - CL 1500 - DWG 3951",EA
+NTPC,NT-000489,"flange seamless ss 6"" astm a53 gr.a sch 40 class 150 dwg 6221",EA
+CPCL,CP-000490,"ms - smls - astm a105 - dwg 9097 - tee - sch 160 - class 150 - 203.2mm",EA
+NTPC,NT-000491,"GASKET; WELDED; GI; 0.5 INCH; A106-C; SCH 160; CL 600; DWG 1933",M
+COALIND,CO-000492,"gasket - smls - stainless steel - 3 inch - a105 - schedule 40 - cl 300 - dwg 5881",KG
+SAIL,SA-000493,"dwg 4441 - bolt - seamless - stainless steel - schedule 160 - a106 grade c - cl 600 - 30.48 cm",M
+COALIND,CO-000494,"elbow smls gi 1"" astm a53 gr.a sch 80 cl 150 dwg 9217",EA
+NTPC,NT-000495,"GASKET WELDED MS 12"" A333-6 SCH 40 CLASS 900 DWG 5047",KG
+NTPC,NT-000496,"BOLT - WELDED - STAINLESS STEEL - 254.0MM - A182 GRADE F304 - SCH 80 - CL 150 - DWG 7305",M
+SAIL,SA-000497,"welded; class 300; dwg 4943; 25.40 cm; tee; schedule 160; astm a106 gr.b; gi",KG
+NTPC,NT-000498,"sch 40; cl 1500; welded; gasket; gi; 2""; dwg 4458; a333-6",M
+CPCL,CP-000499,"12"", welded, schedule 80, cl 900, galvanized iron, flange, dwg 3049, a106-c",M
+SAIL,SA-000500,"seamless; class 150; cs; elbow; astm a53 gr a; 6""; dwg 8688; sch 80",KG
+NTPC,NT-000501,"WELDED; SCHEDULE 160; 10""; FLANGE; CS; ASTM A106 GR B; CLASS 300; DWG 1962",M
+SAIL,SA-000502,"SCH 80, ASTM A106 GR.C, 3"", VALVE, SMLS, CLASS 600, DWG 7921, MS",KG
+NTPC,NT-000503,"pipe - welded - ms - 1.5"" - astm a333 gr.6 - schedule 80 - class 300 - dwg 5927",EA
+CPCL,CP-000504,"welded - astm a105 - dwg 9589 - cl 1500 - ms - sch 160 - 10"" - pipe",EA
+CPCL,CP-000505,"valve smls cs 203.2mm astm a106 gr c sch 160 class 150 dwg 7251",KG
+SAIL,SA-000506,"ms, a333 grade 6, sch 80, flange, welded, 0.5 inch, cl 600, dwg 5720",KG
+NTPC,NT-000507,"REDUCER, CL 1500, SCH 160, SEAMLESS, A53 GRADE A, 20.32 CM, GI, DWG 5817",EA
+SAIL,SA-000508,"bolt - welded - stainless steel - 2.54 cm - a53-a - sch 80 - class 600 - dwg 9868",M
+NTPC,NT-000509,"astm a105 schedule 40 bolt 12"" dwg 8118 seamless class 150 ms",KG
+CPCL,CP-000510,"class 300 - astm a106 gr.b - seamless - carbon steel - dwg 7122 - schedule 80 - bolt - 7.62 cm",M
+SAIL,SA-000511,"MILD STEEL, DWG 3182, SMLS, TEE, CL 600, SCH 160, 25.40 CM, A182-F304",KG
+COALIND,CO-000512,"a333-6; carbon steel; flange; 3 inch; welded; dwg 1217; class 150; schedule 40",KG
+COALIND,CO-000513,"flange; smls; ss; 2""; astm a106 gr c; schedule 80; class 150; dwg 4093",EA
+NTPC,NT-000514,"76.2MM - ASTM A106 GR C - GI - FLANGE - CL 900 - SCH 160 - WELDED - DWG 6660",EA
+COALIND,CO-000515,"flange - smls - ss - 152.4mm - a333-6 - sch 40 - class 1500 - dwg 8785",KG
+CPCL,CP-000516,"3 inch, sch 160, gasket, welded, class 300, dwg 2939, astm a53 gr a, mild steel",EA
+NTPC,NT-000517,"ELBOW - SMLS - MILD STEEL - 1.5"" - A182-F304 - SCH 80 - CL 600 - DWG 9214",M
+CPCL,CP-000518,"a53-a - reducer - dwg 4756 - cl 150 - ss - schedule 40 - 25.40 cm - welded",M
+SAIL,SA-000519,"reducer, welded, stainless steel, 38.1mm, a182 grade f304, sch 80, cl 600, dwg 9168",EA
+NTPC,NT-000520,"dwg 6750; 1""; tee; astm a182 gr f304; cl 300; cs; sch 80; seamless",KG
+NTPC,NT-000521,"TEE - SEAMLESS - STAINLESS STEEL - 10.16 CM - A182 GRADE F304 - SCHEDULE 40 - CL 150 - DWG 6526",KG
+NTPC,NT-000522,"flange - welded - mild steel - 3 inch - astm a53 gr.a - sch 40 - cl 900 - dwg 5227",EA
+CPCL,CP-000523,"gasket, seamless, ms, 25.4mm, astm a333 gr 6, schedule 160, cl 600, dwg 9105",M
+CPCL,CP-000524,"elbow welded ms 30.48 cm a53-a sch 80 cl 1500 dwg 1430",M
+SAIL,SA-000525,"bolt, welded, ss, 1"", a182-f304, sch 80, class 300, dwg 1565",KG
+SAIL,SA-000526,"ASTM A106 GR.C, SMLS, CLASS 900, CS, 6 INCH, SCH 80, DWG 3263, VALVE",KG
+CPCL,CP-000527,"pipe, welded, ss, 12.7mm, astm a105, schedule 40, cl 300, dwg 9450",M
+CPCL,CP-000528,"a105; schedule 80; mild steel; welded; 0.5""; class 300; elbow; dwg 6957",EA
+COALIND,CO-000529,"bolt welded mild steel 25.4mm astm a333 gr.6 sch 80 class 150 dwg 3024",EA
+CPCL,CP-000530,"SCHEDULE 160 - MS - DWG 7838 - 1.27 CM - CL 300 - ELBOW - A333 GRADE 6 - SMLS",EA
+NTPC,NT-000531,"flange, smls, cs, 4 inch, a333 grade 6, schedule 40, cl 900, dwg 9974",EA
+CPCL,CP-000532,"10 inch, schedule 160, dwg 8702, cl 150, valve, smls, ss, astm a53 gr.a",EA
+CPCL,CP-000533,"a53-a; tee; dwg 8095; smls; class 900; cs; schedule 40; 0.5 inch",KG
+SAIL,SA-000534,"PIPE ASTM A106 GR C CLASS 900 WELDED 1.27 CM SS DWG 6207 SCHEDULE 160",EA
+NTPC,NT-000535,"tee - smls - ms - 12.7mm - a53-a - schedule 40 - cl 300 - dwg 3244",M
+COALIND,CO-000536,"DWG 4000; CL 300; SCHEDULE 40; WELDED; A333-6; STAINLESS STEEL; 20.32 CM; VALVE",KG
+COALIND,CO-000537,"schedule 80 - bolt - 8 inch - cl 900 - galvanized iron - astm a182 gr f304 - dwg 1721 - welded",KG
+COALIND,CO-000538,"bolt - welded - cs - 1.27 cm - astm a182 gr.f304 - sch 80 - class 150 - dwg 5210",KG
+COALIND,CO-000539,"reducer; welded; cs; 38.1mm; a182 grade f304; schedule 160; class 900; dwg 3071",M
+COALIND,CO-000540,"elbow, welded, cs, 8 inch, a182-f304, schedule 80, cl 1500, dwg 2839",KG
+SAIL,SA-000541,"elbow; welded; ss; 4 inch; a182 grade f304; sch 160; cl 600; dwg 3769",EA
+CPCL,CP-000542,"3.81 cm, cl 150, a333 grade 6, sch 160, dwg 3811, welded, stainless steel, elbow",EA
+CPCL,CP-000543,"bolt, welded, cs, 3 inch, astm a182 gr.f304, schedule 160, class 150, dwg 4177",M
+SAIL,SA-000544,"PIPE - SMLS - SS - 8"" - ASTM A53 GR A - SCHEDULE 160 - CLASS 300 - DWG 7062",KG
+SAIL,SA-000545,"TEE SMLS CS 76.2MM A105 SCH 40 CL 600 DWG 5364",KG
+SAIL,SA-000546,"tee; welded; cs; 8 inch; a106-b; schedule 40; class 300; dwg 7670",KG
+COALIND,CO-000547,"VALVE, SMLS, GI, 0.5"", A106-C, SCH 40, CL 600, DWG 5789",M
+CPCL,CP-000548,"valve; welded; gi; 101.6mm; a106-b; sch 40; cl 600; dwg 4948",EA
+SAIL,SA-000549,"gi seamless elbow 15.24 cm dwg 7714 a182-f304 class 900 schedule 80",EA
+COALIND,CO-000550,"reducer seamless galvanized iron 6 inch a333 grade 6 sch 80 cl 900 dwg 8946",M
+SAIL,SA-000551,"SCHEDULE 160, SMLS, CLASS 600, PIPE, 30.48 CM, DWG 6008, SS, ASTM A333 GR.6",EA
+CPCL,CP-000552,"tee; welded; stainless steel; 2""; astm a105; sch 40; cl 300; dwg 4014",M
+COALIND,CO-000553,"REDUCER, SEAMLESS, A106 GRADE C, DWG 1296, 6"", SCH 40, CL 600, SS",M
+NTPC,NT-000554,"sch 40, cs, dwg 8612, a105, bolt, welded, 15.24 cm, class 900",EA
+CPCL,CP-000555,"38.1mm, sch 160, valve, smls, dwg 5162, a333-6, cl 150, carbon steel",KG
+CPCL,CP-000556,"dwg 2116; schedule 40; mild steel; reducer; a333-6; cl 600; 3.81 cm; welded",EA
+COALIND,CO-000557,"welded dwg 5082 elbow carbon steel astm a106 gr.c cl 1500 5.08 cm sch 40",EA
+NTPC,NT-000558,"SMLS; CL 600; DWG 3463; ASTM A53 GR A; FLANGE; SCHEDULE 160; 10.16 CM; CS",EA
+NTPC,NT-000559,"bolt - welded - carbon steel - 76.2mm - astm a106 gr c - sch 160 - cl 150 - dwg 3837",M
+COALIND,CO-000560,"TEE, SEAMLESS, DWG 4205, CL 600, SCHEDULE 80, 152.4MM, SS, A53-A",KG
+COALIND,CO-000561,"REDUCER, CS, ASTM A106 GR B, SCH 80, WELDED, CLASS 1500, DWG 4649, 76.2MM",M
+SAIL,SA-000562,"cl 150; pipe; seamless; cs; astm a106 gr.b; dwg 5702; 20.32 cm; sch 40",EA
+COALIND,CO-000563,"reducer; seamless; ss; 1.5""; a333 grade 6; schedule 160; class 600; dwg 2412",KG
+COALIND,CO-000564,"galvanized iron; dwg 1481; seamless; a105; 7.62 cm; schedule 160; class 1500; valve",KG
+SAIL,SA-000565,"reducer seamless cs 30.48 cm astm a106 gr b schedule 80 cl 1500 dwg 5743",KG
+CPCL,CP-000566,"WELDED - CLASS 600 - 25.40 CM - SCHEDULE 80 - A53-A - PIPE - DWG 1992 - GALVANIZED IRON",KG
+COALIND,CO-000567,"cs cl 150 7.62 cm a106 grade c sch 40 dwg 3183 seamless elbow",EA
+COALIND,CO-000568,"bolt; smls; galvanized iron; 1""; astm a333 gr.6; sch 80; class 600; dwg 9323",KG
+CPCL,CP-000569,"SCH 160; CL 300; 5.08 CM; ASTM A333 GR 6; DWG 9843; TEE; SEAMLESS; GALVANIZED IRON",KG
+COALIND,CO-000570,"pipe; welded; stainless steel; 1.27 cm; a333-6; schedule 80; cl 150; dwg 2640",EA
+SAIL,SA-000571,"astm a53 gr.a - class 300 - 6"" - ss - welded - reducer - schedule 160 - dwg 6104",M
+SAIL,SA-000572,"bolt; welded; cs; 2.54 cm; a333-6; schedule 40; cl 1500; dwg 1600",KG
+NTPC,NT-000573,"reducer, seamless, gi, 20.32 cm, a106 grade b, sch 40, cl 900, dwg 8285",M
+SAIL,SA-000574,"elbow welded ss 76.2mm a106-c sch 80 cl 1500 dwg 3408",M
+CPCL,CP-000575,"valve; welded; galvanized iron; 2 inch; astm a333 gr 6; schedule 80; cl 1500; dwg 4666",KG
+CPCL,CP-000576,"reducer welded galvanized iron 1 inch a53-a schedule 160 cl 1500 dwg 8971",EA
+COALIND,CO-000577,"a53 grade a; bolt; sch 40; class 1500; dwg 6210; 10.16 cm; cs; welded",KG
+SAIL,SA-000578,"valve; welded; ms; 6 inch; a106-c; sch 80; class 150; dwg 5238",M
+NTPC,NT-000579,"PIPE SMLS GALVANIZED IRON 1.5"" ASTM A53 GR.A SCHEDULE 160 CL 150 DWG 3847",EA
+CPCL,CP-000580,"sch 160; dwg 2266; cl 1500; a106 grade b; smls; reducer; 0.5""; gi",EA
+SAIL,SA-000581,"welded carbon steel dwg 2939 cl 150 a333-6 flange schedule 160 6""",EA
+CPCL,CP-000582,"pipe, smls, carbon steel, 1.5"", a105, schedule 80, class 600, dwg 5988",EA
+NTPC,NT-000583,"dwg 3792; galvanized iron; pipe; welded; a182-f304; class 300; sch 80; 1.5 inch",EA
+COALIND,CO-000584,"a106 grade b, reducer, schedule 160, 50.8mm, stainless steel, class 900, welded, dwg 5229",EA
+CPCL,CP-000585,"reducer; welded; ms; 6 inch; a182-f304; schedule 40; class 300; dwg 5175",KG
+COALIND,CO-000586,"elbow - seamless - carbon steel - 1.5 inch - a53-a - schedule 80 - cl 300 - dwg 6136",KG
+COALIND,CO-000587,"smls 152.4mm dwg 7907 astm a182 gr.f304 carbon steel sch 80 cl 300 pipe",KG
+COALIND,CO-000588,"bolt, smls, gi, 8"", a106 grade b, schedule 40, cl 600, dwg 8490",KG
+SAIL,SA-000589,"VALVE, WELDED, STAINLESS STEEL, 304.8MM, ASTM A106 GR.C, SCH 40, CLASS 300, DWG 8194",M
+CPCL,CP-000590,"valve - seamless - ss - 4 inch - astm a182 gr f304 - sch 160 - cl 150 - dwg 6535",M
+COALIND,CO-000591,"PIPE, CS, DWG 8936, A106 GRADE B, CLASS 600, 1.5"", SCH 160, SEAMLESS",M
+COALIND,CO-000592,"reducer; seamless; ms; 15.24 cm; astm a105; sch 160; class 900; dwg 9843",EA
+COALIND,CO-000593,"sch 80; smls; astm a106 gr c; bolt; 4""; dwg 6074; ss; cl 150",M
+COALIND,CO-000594,"valve - smls - cs - 1 inch - a106-c - schedule 80 - cl 900 - dwg 5242",M
+NTPC,NT-000595,"dwg 6243; smls; astm a105; cl 150; flange; sch 80; 1.27 cm; galvanized iron",KG
+SAIL,SA-000596,"10.16 cm - welded - astm a106 gr c - tee - dwg 5898 - mild steel - schedule 80 - cl 900",EA
+COALIND,CO-000597,"REDUCER SEAMLESS MILD STEEL 12"" A106-B SCH 160 CL 1500 DWG 4838",M
+COALIND,CO-000598,"flange; welded; carbon steel; 12""; a105; schedule 80; cl 1500; dwg 6666",EA
+SAIL,SA-000599,"REDUCER CL 150 WELDED ASTM A106 GR C SCHEDULE 80 CARBON STEEL DWG 9492 12.7MM",EA
+SAIL,SA-000600,"MILD STEEL PIPE 10"" CL 600 WELDED SCHEDULE 80 DWG 2213 ASTM A105",KG
+CPCL,CP-000601,"bolt; smls; galvanized iron; 6 inch; astm a106 gr.c; schedule 160; cl 600; dwg 9313",EA
+COALIND,CO-000602,"cl 900 dwg 7434 ms 8 inch astm a333 gr.6 bolt schedule 40 welded",KG
+SAIL,SA-000603,"schedule 80 - dwg 2164 - class 900 - 8 inch - valve - mild steel - astm a106 gr.b - smls",M
+SAIL,SA-000604,"elbow - welded - mild steel - 304.8mm - a333-6 - sch 160 - class 900 - dwg 3597",M
+NTPC,NT-000605,"elbow welded ms 20.32 cm a105 sch 160 class 900 dwg 9765",M
+SAIL,SA-000606,"BOLT; SEAMLESS; STAINLESS STEEL; 304.8MM; A333 GRADE 6; SCH 160; CL 1500; DWG 8461",KG
+COALIND,CO-000607,"welded, schedule 160, 6"", cs, cl 150, flange, a333-6, dwg 2939",M
+COALIND,CO-000608,"bolt; seamless; gi; 12""; a105; sch 40; class 600; dwg 8238",M
+CPCL,CP-000609,"mild steel, cl 900, reducer, dwg 7288, schedule 40, seamless, a106-c, 8 inch",M
+SAIL,SA-000610,"valve - seamless - cs - 8"" - astm a182 gr.f304 - schedule 160 - cl 150 - dwg 9892",M
+SAIL,SA-000611,"valve, seamless, ms, 3"", astm a106 gr c, sch 80, class 600, dwg 7921",EA
+COALIND,CO-000612,"DWG 7641 TEE MS CLASS 900 ASTM A182 GR F304 SMLS 152.4MM SCH 40",KG
+CPCL,CP-000613,"a105, dwg 2346, class 900, seamless, schedule 160, 2 inch, flange, carbon steel",M
+NTPC,NT-000614,"astm a333 gr.6, cl 1500, 8"", welded, mild steel, sch 40, bolt, dwg 6746",M
+COALIND,CO-000615,"MS, A53 GRADE A, SCHEDULE 40, WELDED, CLASS 1500, 1.5 INCH, ELBOW, DWG 7744",KG
+COALIND,CO-000616,"dwg 2962 - class 1500 - welded - stainless steel - gasket - 3 inch - astm a53 gr a - schedule 80",EA
+NTPC,NT-000617,"valve seamless carbon steel 152.4mm a106 grade c schedule 80 cl 900 dwg 3263",M
+CPCL,CP-000618,"valve; smls; ms; 101.6mm; a106 grade c; sch 40; cl 150; dwg 4183",M
+CPCL,CP-000619,"pipe, welded, galvanized iron, 12"", a106 grade c, sch 160, class 900, dwg 1066",KG
+SAIL,SA-000620,"BOLT - SEAMLESS - CARBON STEEL - 8"" - ASTM A182 GR F304 - SCHEDULE 160 - CLASS 900 - DWG 2461",KG
+SAIL,SA-000621,"tee, smls, cs, 3"", a105, sch 40, cl 600, dwg 5364",EA
+CPCL,CP-000622,"reducer - smls - ss - 2.54 cm - a333 grade 6 - sch 40 - class 1500 - dwg 7757",KG
+SAIL,SA-000623,"welded, dwg 7977, 10.16 cm, a182-f304, gi, pipe, schedule 40, cl 900",M
+COALIND,CO-000624,"cl 150 5.08 cm dwg 4093 schedule 80 ss astm a106 gr c smls flange",M
+COALIND,CO-000625,"pipe; cl 900; 4""; astm a105; smls; schedule 160; dwg 1679; carbon steel",EA
+COALIND,CO-000626,"gasket; welded; mild steel; 1""; astm a106 gr.c; sch 80; cl 900; dwg 4320",EA
+NTPC,NT-000627,"bolt - seamless - gi - 2.54 cm - a105 - schedule 160 - cl 600 - dwg 6908",EA
+COALIND,CO-000628,"valve; smls; cs; 12""; astm a333 gr 6; sch 40; cl 1500; dwg 7029",KG
+CPCL,CP-000629,"ELBOW, WELDED, MILD STEEL, 1.5 INCH, ASTM A106 GR C, SCHEDULE 80, CLASS 900, DWG 9083",M
+CPCL,CP-000630,"gasket - smls - stainless steel - 25.4mm - astm a182 gr f304 - schedule 80 - class 1500 - dwg 9894",EA
+CPCL,CP-000631,"flange welded ms 8"" a106-b schedule 160 cl 1500 dwg 7201",EA
+COALIND,CO-000632,"BOLT, SEAMLESS, CARBON STEEL, 152.4MM, ASTM A106 GR.C, SCH 80, CLASS 300, DWG 2794",M
+NTPC,NT-000633,"BOLT; WELDED; MS; 1""; A182-F304; SCH 80; CL 1500; DWG 9377",M
+COALIND,CO-000634,"sch 80, bolt, mild steel, class 600, welded, dwg 5873, 10 inch, a182-f304",KG
+SAIL,SA-000635,"BOLT - WELDED - CARBON STEEL - 12"" - A53 GRADE A - SCHEDULE 80 - CL 300 - DWG 7984",EA
+NTPC,NT-000636,"REDUCER WELDED STAINLESS STEEL 4 INCH ASTM A106 GR C SCHEDULE 160 CL 600 DWG 5344",M
+SAIL,SA-000637,"GASKET; SMLS; GALVANIZED IRON; 3""; A106-B; SCH 160; CLASS 600; DWG 1220",KG
+COALIND,CO-000638,"VALVE; WELDED; GALVANIZED IRON; 8""; ASTM A106 GR.C; SCHEDULE 80; CL 600; DWG 1564",KG
+NTPC,NT-000639,"REDUCER WELDED CARBON STEEL 254.0MM A333 GRADE 6 SCHEDULE 40 CLASS 300 DWG 4556",EA
+SAIL,SA-000640,"reducer; welded; cs; 5.08 cm; astm a333 gr 6; schedule 160; class 300; dwg 4923",KG
+COALIND,CO-000641,"GASKET; SEAMLESS; GALVANIZED IRON; 152.4MM; A53 GRADE A; SCHEDULE 160; CLASS 150; DWG 5415",M
+NTPC,NT-000642,"FLANGE; MILD STEEL; ASTM A106 GR B; CL 1500; SCH 160; DWG 7201; WELDED; 8""",M
+CPCL,CP-000643,"reducer; seamless; galvanized iron; 10.16 cm; astm a333 gr 6; sch 40; cl 900; dwg 8095",KG
+SAIL,SA-000644,"ELBOW SMLS CARBON STEEL 1.5"" ASTM A333 GR.6 SCHEDULE 80 CL 900 DWG 5068",M
+SAIL,SA-000645,"A333 GRADE 6; SMLS; DWG 4343; CLASS 300; SS; BOLT; 10""; SCHEDULE 160",KG
+NTPC,NT-000646,"BOLT, SEAMLESS, CS, 50.8MM, A53-A, SCHEDULE 80, CL 300, DWG 4144",KG
+COALIND,CO-000647,"gasket - welded - gi - 6 inch - astm a53 gr.a - sch 80 - cl 1500 - dwg 2268",KG
+NTPC,NT-000648,"ELBOW - WELDED - STAINLESS STEEL - 12 INCH - A106 GRADE C - SCH 160 - CLASS 600 - DWG 5547",KG
+COALIND,CO-000649,"flange smls ms 3"" a182-f304 sch 160 cl 1500 dwg 6636",M
+NTPC,NT-000650,"dwg 7974, cl 900, seamless, 2 inch, bolt, mild steel, sch 40, astm a182 gr f304",M
+CPCL,CP-000651,"gasket, welded, stainless steel, 6"", astm a333 gr 6, sch 160, class 300, dwg 2364",M
+NTPC,NT-000652,"1 inch - sch 80 - welded - cl 600 - galvanized iron - astm a106 gr c - elbow - dwg 4588",M
+COALIND,CO-000653,"tee; welded; a105; class 300; 2""; dwg 4014; schedule 40; ss",M
+COALIND,CO-000654,"DWG 7064, A53-A, CL 150, SCH 80, TEE, 15.24 CM, WELDED, SS",KG
+CPCL,CP-000655,"flange, smls, cs, 2.54 cm, astm a182 gr.f304, schedule 160, cl 150, dwg 5213",EA
+SAIL,SA-000656,"MS CL 1500 SMLS A106-B REDUCER DWG 4838 SCH 160 12""",KG
+SAIL,SA-000657,"ASTM A53 GR A; PIPE; 30.48 CM; DWG 2637; CL 1500; WELDED; SCHEDULE 160; MILD STEEL",EA
+CPCL,CP-000658,"254.0MM; ASTM A106 GR B; MS; SEAMLESS; CLASS 1500; DWG 8262; SCH 160; ELBOW",M
+SAIL,SA-000659,"A182 GRADE F304, BOLT, DWG 1687, CL 300, 30.48 CM, STAINLESS STEEL, SCH 80, WELDED",M
+SAIL,SA-000660,"elbow, welded, galvanized iron, 0.5"", a106 grade b, schedule 40, cl 300, dwg 6891",EA
+NTPC,NT-000661,"TEE - WELDED - GALVANIZED IRON - 152.4MM - ASTM A106 GR C - SCHEDULE 80 - CL 300 - DWG 2256",KG
+SAIL,SA-000662,"welded, dwg 9868, a53-a, schedule 80, 1 inch, bolt, cl 600, ss",EA
+SAIL,SA-000663,"SCHEDULE 160 DWG 6107 CL 600 WELDED REDUCER 254.0MM SS ASTM A182 GR.F304",KG
+COALIND,CO-000664,"tee, welded, gi, 12 inch, astm a53 gr.a, sch 80, class 150, dwg 4461",M
+COALIND,CO-000665,"pipe - welded - ms - 10 inch - a105 - sch 80 - cl 600 - dwg 2213",KG
+NTPC,NT-000666,"VALVE; 8""; WELDED; ASTM A106 GR C; CL 600; SCHEDULE 80; GI; DWG 1564",EA
+CPCL,CP-000667,"CL 1500 0.5"" VALVE DWG 7483 A106 GRADE B SS SMLS SCHEDULE 40",KG
+NTPC,NT-000668,"tee welded gi 15.24 cm astm a105 schedule 40 cl 600 dwg 8056",KG
+CPCL,CP-000669,"class 600 - 30.48 cm - schedule 40 - gi - dwg 8238 - astm a105 - bolt - seamless",EA
+SAIL,SA-000670,"2.54 cm; cl 900; smls; gi; astm a105; dwg 3016; sch 80; flange",M
+COALIND,CO-000671,"ASTM A105 - DWG 5438 - 6"" - CLASS 600 - WELDED - SS - GASKET - SCHEDULE 40",M
+COALIND,CO-000672,"FLANGE, SMLS, MS, 1 INCH, ASTM A106 GR.C, SCHEDULE 80, CL 150, DWG 7043",M
+SAIL,SA-000673,"ELBOW SMLS MS 254.0MM A106 GRADE B SCH 160 CLASS 1500 DWG 8262",KG
+COALIND,CO-000674,"reducer, smls, galvanized iron, 203.2mm, astm a53 gr.a, sch 160, cl 1500, dwg 5817",KG
+SAIL,SA-000675,"FLANGE WELDED CS 76.2MM ASTM A333 GR 6 SCH 40 CL 150 DWG 1217",KG
+SAIL,SA-000676,"cl 600 - sch 40 - tee - ms - dwg 8366 - smls - 1"" - a182 grade f304",KG
+SAIL,SA-000677,"seamless, elbow, dwg 9217, sch 80, class 150, 1"", gi, a53-a",M
+NTPC,NT-000678,"elbow; welded; mild steel; 254.0mm; astm a182 gr.f304; schedule 80; cl 600; dwg 4027",EA
+NTPC,NT-000679,"reducer welded ms 1.27 cm astm a106 gr b schedule 40 class 1500 dwg 5732",KG
+NTPC,NT-000680,"welded, dwg 2171, schedule 80, cl 1500, astm a333 gr 6, carbon steel, elbow, 38.1mm",M
+COALIND,CO-000681,"flange, seamless, ss, 30.48 cm, a53-a, sch 160, class 600, dwg 8147",EA
+SAIL,SA-000682,"astm a333 gr.6 - welded - ss - 12.7mm - dwg 8154 - class 300 - gasket - schedule 40",KG
+NTPC,NT-000683,"GASKET - SEAMLESS - MS - 0.5"" - A182-F304 - SCHEDULE 80 - CLASS 300 - DWG 3679",KG
+NTPC,NT-000684,"ELBOW, SMLS, STAINLESS STEEL, 4 INCH, ASTM A105, SCHEDULE 40, CLASS 1500, DWG 7759",EA
+COALIND,CO-000685,"elbow - welded - mild steel - 304.8mm - astm a53 gr.a - sch 80 - cl 1500 - dwg 1430",EA
+COALIND,CO-000686,"bolt, ss, a105, smls, dwg 9878, class 300, sch 80, 1.5 inch",KG
+NTPC,NT-000687,"reducer, smls, mild steel, 25.40 cm, astm a333 gr 6, schedule 80, class 300, dwg 2585",KG
+COALIND,CO-000688,"reducer; welded; cl 300; dwg 5175; mild steel; schedule 40; 6 inch; astm a182 gr f304",KG
+SAIL,SA-000689,"ELBOW - WELDED - MS - 203.2MM - ASTM A105 - SCH 80 - CLASS 300 - DWG 5745",KG
+CPCL,CP-000690,"flange welded cs 152.4mm a333-6 sch 80 class 150 dwg 4671",EA
+COALIND,CO-000691,"dwg 4212 cs cl 150 a106-c elbow sch 160 2.54 cm seamless",EA
+SAIL,SA-000692,"valve seamless mild steel 0.5 inch a333-6 sch 160 cl 150 dwg 5855",KG
+CPCL,CP-000693,"152.4mm; a105; schedule 40; carbon steel; flange; class 150; dwg 5580; smls",M
+COALIND,CO-000694,"schedule 160 - dwg 5132 - astm a182 gr f304 - gasket - mild steel - cl 1500 - smls - 20.32 cm",M
+NTPC,NT-000695,"38.1MM; GASKET; CLASS 600; SMLS; DWG 4721; STAINLESS STEEL; SCHEDULE 160; A182 GRADE F304",KG
+CPCL,CP-000696,"TEE - WELDED - GI - 101.6MM - ASTM A106 GR C - SCHEDULE 160 - CLASS 300 - DWG 3905",KG
+COALIND,CO-000697,"pipe - seamless - cs - 101.6mm - astm a182 gr f304 - sch 40 - cl 300 - dwg 8327",KG
+CPCL,CP-000698,"a105; welded; cl 150; ss; elbow; dwg 2643; sch 80; 3""",EA
+NTPC,NT-000699,"ELBOW, SMLS, CARBON STEEL, 1.5 INCH, A53-A, SCHEDULE 80, CLASS 300, DWG 6136",KG
+COALIND,CO-000700,"ms cl 600 welded 3 inch dwg 2046 schedule 40 elbow astm a333 gr 6",M
+CPCL,CP-000701,"SS, A106-C, CLASS 600, DWG 1176, WELDED, PIPE, 0.5 INCH, SCHEDULE 80",M
+CPCL,CP-000702,"schedule 40; gi; a182 grade f304; 3.81 cm; elbow; dwg 3226; seamless; class 150",M
+SAIL,SA-000703,"bolt - sch 80 - dwg 1565 - cl 300 - stainless steel - a182-f304 - 1"" - welded",EA
+CPCL,CP-000704,"SCHEDULE 160 - ASTM A53 GR A - CL 150 - GASKET - 304.8MM - WELDED - STAINLESS STEEL - DWG 4600",KG
+COALIND,CO-000705,"50.8mm elbow carbon steel smls dwg 3441 a182 grade f304 schedule 160 cl 900",M
+CPCL,CP-000706,"WELDED, 1.27 CM, CLASS 300, MS, ASTM A182 GR F304, SCH 160, DWG 6485, TEE",KG
+SAIL,SA-000707,"SCHEDULE 80; DWG 5606; ELBOW; CL 1500; CARBON STEEL; 2 INCH; ASTM A105; SEAMLESS",KG
+CPCL,CP-000708,"bolt - seamless - gi - 203.2mm - astm a106 gr.b - schedule 40 - cl 600 - dwg 8490",EA
+CPCL,CP-000709,"3 inch, valve, a53-a, smls, ss, dwg 3195, sch 40, cl 600",KG
+CPCL,CP-000710,"reducer - welded - ss - 10"" - astm a53 gr a - sch 40 - class 150 - dwg 4756",EA
+CPCL,CP-000711,"REDUCER - WELDED - CARBON STEEL - 1 INCH - A105 - SCH 160 - CLASS 300 - DWG 6655",KG
+NTPC,NT-000712,"ss - sch 80 - seamless - 3"" - bolt - dwg 5976 - class 600 - a182 grade f304",M
+CPCL,CP-000713,"bolt - smls - ss - 12 inch - a106-c - schedule 160 - class 600 - dwg 4441",KG
+CPCL,CP-000714,"pipe; seamless; mild steel; 10 inch; astm a333 gr.6; sch 80; class 900; dwg 5959",KG
+COALIND,CO-000715,"dwg 7165 - gi - 1 inch - sch 160 - a333 grade 6 - smls - class 600 - gasket",EA
+SAIL,SA-000716,"cl 900 - 30.48 cm - galvanized iron - gasket - a106-b - schedule 80 - seamless - dwg 3842",M
+COALIND,CO-000717,"astm a333 gr 6 - welded - ms - cl 900 - 12"" - dwg 3597 - elbow - sch 160",EA
+SAIL,SA-000718,"ELBOW; WELDED; CS; 101.6MM; A53 GRADE A; SCHEDULE 40; CLASS 150; DWG 7988",EA
+SAIL,SA-000719,"bolt; cl 1500; carbon steel; welded; dwg 6210; sch 40; 4 inch; a53 grade a",KG
+CPCL,CP-000720,"tee - a53-a - dwg 6697 - schedule 80 - 10 inch - class 900 - seamless - ss",EA
+SAIL,SA-000721,"dwg 3089 ss schedule 160 astm a105 4"" seamless cl 1500 reducer",M
+COALIND,CO-000722,"bolt smls carbon steel 254.0mm a53 grade a schedule 160 class 900 dwg 8557",KG
+CPCL,CP-000723,"flange - welded - stainless steel - 3 inch - astm a333 gr.6 - sch 80 - cl 600 - dwg 9156",KG
+CPCL,CP-000724,"dwg 5988 astm a105 carbon steel seamless pipe schedule 80 1.5 inch cl 600",KG
+CPCL,CP-000725,"GASKET - WELDED - STAINLESS STEEL - 2.54 CM - ASTM A106 GR B - SCH 80 - CLASS 900 - DWG 7732",KG
+NTPC,NT-000726,"GASKET A53 GRADE A CL 1500 WELDED 3 INCH DWG 2962 SCHEDULE 80 SS",EA
+SAIL,SA-000727,"flange - seamless - ms - 30.48 cm - astm a182 gr f304 - sch 160 - cl 600 - dwg 2732",M
+SAIL,SA-000728,"DWG 2292; WELDED; SCH 160; CL 900; A106-B; GI; 7.62 CM; VALVE",EA
+SAIL,SA-000729,"elbow, smls, galvanized iron, 6"", astm a105, sch 160, cl 600, dwg 9836",M
+CPCL,CP-000730,"welded; astm a106 gr.c; carbon steel; 12""; schedule 80; dwg 5376; valve; class 600",KG
+SAIL,SA-000731,"reducer - welded - ms - 25.40 cm - a182-f304 - sch 160 - class 600 - dwg 3538",M
+CPCL,CP-000732,"elbow seamless stainless steel 38.1mm astm a106 gr.c schedule 80 class 150 dwg 8999",EA
+CPCL,CP-000733,"sch 80, astm a182 gr.f304, gasket, class 300, seamless, mild steel, dwg 3679, 0.5""",KG
+COALIND,CO-000734,"gasket; welded; gi; 152.4mm; astm a182 gr.f304; schedule 160; cl 300; dwg 7216",KG
+NTPC,NT-000735,"reducer - seamless - cs - 12.7mm - a106-c - sch 80 - class 900 - dwg 6963",EA
+SAIL,SA-000736,"cl 150; gasket; sch 160; 1.5""; smls; dwg 7050; astm a106 gr.b; ss",M
+SAIL,SA-000737,"class 150; dwg 7800; 76.2mm; pipe; schedule 80; smls; carbon steel; astm a53 gr a",M
+COALIND,CO-000738,"flange; seamless; ms; 7.62 cm; astm a106 gr c; schedule 160; cl 1500; dwg 6011",M
+SAIL,SA-000739,"elbow welded galvanized iron 152.4mm a53 grade a schedule 40 cl 600 dwg 3729",EA
+CPCL,CP-000740,"cl 600 astm a106 gr b dwg 4502 sch 160 3"" reducer welded gi",KG
+SAIL,SA-000741,"bolt - smls - carbon steel - 38.1mm - a333 grade 6 - schedule 80 - cl 600 - dwg 9681",EA
+COALIND,CO-000742,"pipe; welded; mild steel; 101.6mm; a182-f304; sch 80; class 900; dwg 9651",KG
+SAIL,SA-000743,"valve; smls; ss; 1 inch; astm a53 gr a; sch 40; class 1500; dwg 7484",M
+SAIL,SA-000744,"tee welded mild steel 10.16 cm a106 grade c sch 80 cl 900 dwg 5898",KG
+CPCL,CP-000745,"gasket seamless galvanized iron 25.4mm astm a333 gr.6 sch 160 cl 600 dwg 7165",EA
+SAIL,SA-000746,"pipe, smls, stainless steel, 1.27 cm, astm a106 gr.c, sch 160, cl 600, dwg 8657",M
+COALIND,CO-000747,"pipe seamless mild steel 2"" astm a106 gr c schedule 80 class 1500 dwg 9305",M
+CPCL,CP-000748,"cl 300; a333 grade 6; pipe; dwg 6656; sch 160; gi; smls; 38.1mm",KG
+CPCL,CP-000749,"REDUCER, SMLS, SS, 38.1MM, ASTM A333 GR 6, SCH 80, CL 600, DWG 4082",M
+SAIL,SA-000750,"elbow - smls - 5.08 cm - class 300 - a105 - dwg 5402 - ss - schedule 160",M
+SAIL,SA-000751,"SS, SMLS, DWG 2051, CL 1500, ASTM A105, VALVE, SCH 160, 152.4MM",M
+SAIL,SA-000752,"class 600, dwg 8717, galvanized iron, welded, schedule 160, a182 grade f304, elbow, 2 inch",KG
+CPCL,CP-000753,"smls 1.5"" schedule 160 galvanized iron cl 150 dwg 3847 pipe a53 grade a",EA
+CPCL,CP-000754,"bolt - seamless - ss - 304.8mm - astm a182 gr.f304 - schedule 40 - cl 150 - dwg 1360",EA
+CPCL,CP-000755,"flange - seamless - carbon steel - 5.08 cm - astm a182 gr f304 - schedule 160 - cl 900 - dwg 9026",KG
+NTPC,NT-000756,"stainless steel, valve, 10 inch, a333 grade 6, welded, schedule 40, dwg 4884, cl 900",M
+CPCL,CP-000757,"welded - class 300 - dwg 4281 - galvanized iron - astm a105 - reducer - 3 inch - sch 80",M
+SAIL,SA-000758,"dwg 2243 - elbow - class 600 - schedule 80 - astm a333 gr.6 - ss - 7.62 cm - welded",KG
+COALIND,CO-000759,"SCHEDULE 160 REDUCER A333-6 CL 150 DWG 4836 30.48 CM CARBON STEEL WELDED",KG
+COALIND,CO-000760,"bolt - welded - galvanized iron - 5.08 cm - astm a53 gr.a - sch 160 - class 900 - dwg 6634",KG
+NTPC,NT-000761,"GI, DWG 5419, WELDED, 25.40 CM, ELBOW, CL 600, SCH 80, A106-C",KG
+SAIL,SA-000762,"TEE, 2"", DWG 3696, CS, ASTM A333 GR.6, SCHEDULE 80, CLASS 300, WELDED",KG
+CPCL,CP-000763,"10 INCH - CL 150 - GALVANIZED IRON - SCH 80 - A106 GRADE B - VALVE - DWG 5711 - WELDED",EA
+NTPC,NT-000764,"reducer welded gi 38.1mm astm a182 gr.f304 sch 40 cl 1500 dwg 8974",KG
+COALIND,CO-000765,"elbow, seamless, ss, 12"", astm a333 gr 6, sch 40, class 900, dwg 2245",M
+COALIND,CO-000766,"FLANGE SMLS CS 4 INCH A333 GRADE 6 SCHEDULE 40 CL 900 DWG 9974",EA
+CPCL,CP-000767,"TEE, WELDED, MS, 3 INCH, ASTM A106 GR.C, SCH 80, CLASS 150, DWG 1552",M
+COALIND,CO-000768,"valve - class 150 - schedule 40 - ms - dwg 1535 - a106-b - welded - 1""",EA
+COALIND,CO-000769,"pipe dwg 9634 galvanized iron cl 300 astm a106 gr.c welded sch 160 3 inch",KG
+SAIL,SA-000770,"3 inch, dwg 4013, schedule 80, galvanized iron, astm a105, elbow, class 150, seamless",KG
+SAIL,SA-000771,"TEE, WELDED, GALVANIZED IRON, 30.48 CM, A53-A, SCHEDULE 80, CLASS 150, DWG 4461",KG
+NTPC,NT-000772,"FLANGE, SEAMLESS, STAINLESS STEEL, 1 INCH, ASTM A105, SCH 160, CL 300, DWG 4031",KG
+NTPC,NT-000773,"flange welded ms 50.8mm a53-a sch 40 cl 900 dwg 5147",EA
+SAIL,SA-000774,"DWG 3831, SCH 80, CLASS 150, CARBON STEEL, GASKET, SMLS, 1 INCH, A182-F304",M
+SAIL,SA-000775,"schedule 40; 0.5""; cl 1500; astm a182 gr.f304; ms; seamless; dwg 5915; elbow",KG
+COALIND,CO-000776,"SEAMLESS, DWG 8940, ELBOW, CLASS 900, 101.6MM, SCHEDULE 160, ASTM A106 GR.B, CARBON STEEL",KG
+COALIND,CO-000777,"SEAMLESS - SCHEDULE 40 - DWG 8591 - CL 1500 - GI - VALVE - 1"" - A333 GRADE 6",EA
+COALIND,CO-000778,"schedule 80 smls class 1500 ss gasket astm a182 gr.f304 dwg 9286 2 inch",KG
+NTPC,NT-000779,"VALVE, SMLS, MS, 12 INCH, ASTM A53 GR A, SCH 80, CL 900, DWG 7548",M
+COALIND,CO-000780,"class 1500; carbon steel; sch 80; bolt; dwg 9375; 3""; welded; astm a333 gr 6",EA
+CPCL,CP-000781,"TEE; WELDED; CARBON STEEL; 254.0MM; ASTM A333 GR 6; SCH 80; CL 600; DWG 2720",EA
+COALIND,CO-000782,"valve welded ss 1.27 cm a182-f304 sch 80 class 150 dwg 1881",M
+SAIL,SA-000783,"reducer seamless cs 1.5 inch a106-b sch 160 cl 1500 dwg 7949",M
+NTPC,NT-000784,"BOLT, SMLS, GI, 3"", ASTM A105, SCHEDULE 80, CL 900, DWG 4724",EA
+SAIL,SA-000785,"gasket - smls - carbon steel - 30.48 cm - astm a53 gr a - schedule 40 - class 1500 - dwg 5210",M
+CPCL,CP-000786,"PIPE; SMLS; CARBON STEEL; 10.16 CM; A182 GRADE F304; SCH 40; CLASS 300; DWG 8327",KG
+SAIL,SA-000787,"sch 80 - dwg 7346 - astm a106 gr.b - ms - welded - cl 300 - 25.40 cm - bolt",M
+CPCL,CP-000788,"dwg 8063 - seamless - class 150 - mild steel - 4 inch - sch 40 - tee - a333-6",KG
+SAIL,SA-000789,"bolt - smls - ss - 10 inch - a105 - schedule 80 - cl 600 - dwg 4414",KG
+CPCL,CP-000790,"stainless steel - 1.5"" - dwg 7613 - a53-a - schedule 40 - class 900 - valve - welded",M
+SAIL,SA-000791,"reducer, smls, carbon steel, 50.8mm, astm a333 gr.6, schedule 80, cl 300, dwg 2823",KG
+COALIND,CO-000792,"sch 160, stainless steel, smls, elbow, cl 1500, dwg 8662, 4 inch, astm a105",M
+COALIND,CO-000793,"dwg 1877, a333 grade 6, 7.62 cm, schedule 40, seamless, cl 300, gi, valve",KG
+NTPC,NT-000794,"gi, sch 80, pipe, smls, a106 grade b, cl 900, dwg 9045, 0.5""",M
+NTPC,NT-000795,"cl 300; astm a53 gr a; schedule 40; reducer; dwg 3342; smls; 12""; gi",M
+COALIND,CO-000796,"astm a106 gr.c, schedule 80, ms, welded, dwg 4028, class 300, flange, 12.7mm",M
+CPCL,CP-000797,"reducer - welded - stainless steel - 76.2mm - a53-a - schedule 160 - cl 150 - dwg 9604",M
+CPCL,CP-000798,"FLANGE, SMLS, CARBON STEEL, 5.08 CM, A105, SCHEDULE 160, CL 600, DWG 3603",M
+COALIND,CO-000799,"38.1MM, ASTM A106 GR C, CL 300, DWG 4237, SMLS, SCH 160, REDUCER, GALVANIZED IRON",M
+COALIND,CO-000800,"reducer - seamless - stainless steel - 2.54 cm - astm a106 gr.b - sch 40 - class 150 - dwg 7657",EA
+COALIND,CO-000801,"SCHEDULE 160; 10""; A105; DWG 7003; SS; CLASS 900; FLANGE; SMLS",KG
+COALIND,CO-000802,"bolt; smls; carbon steel; 10""; astm a53 gr a; schedule 160; class 900; dwg 8557",EA
+NTPC,NT-000803,"welded - 2 inch - pipe - ss - cl 150 - a106 grade c - dwg 4103 - sch 80",EA
+SAIL,SA-000804,"reducer, welded, carbon steel, 12"", a333 grade 6, sch 160, class 150, dwg 4836",EA
+NTPC,NT-000805,"GASKET - SMLS - GALVANIZED IRON - 1.5"" - A106-C - SCHEDULE 80 - CL 600 - DWG 8087",KG
+COALIND,CO-000806,"SCHEDULE 160; CLASS 1500; ELBOW; SMLS; 2""; GI; DWG 5737; ASTM A333 GR 6",M
+CPCL,CP-000807,"SCH 80, BOLT, ASTM A182 GR F304, WELDED, CLASS 600, MS, 10"", DWG 5873",KG
+NTPC,NT-000808,"GASKET, WELDED, MS, 30.48 CM, A333-6, SCHEDULE 40, CL 900, DWG 5047",EA
+CPCL,CP-000809,"valve - seamless - ms - 1.5"" - astm a105 - sch 80 - cl 900 - dwg 8404",M
+COALIND,CO-000810,"flange; seamless; ms; 30.48 cm; astm a182 gr.f304; schedule 40; cl 300; dwg 2754",KG
+CPCL,CP-000811,"SCHEDULE 160; WELDED; DWG 6107; A182-F304; SS; REDUCER; 10""; CLASS 600",M
+SAIL,SA-000812,"152.4mm - carbon steel - cl 1500 - seamless - dwg 7423 - schedule 40 - pipe - astm a53 gr.a",M
+CPCL,CP-000813,"dwg 2814, seamless, a333 grade 6, schedule 80, cl 300, bolt, gi, 6 inch",EA
+NTPC,NT-000814,"a53-a; dwg 7548; valve; seamless; schedule 80; cl 900; 12""; ms",M
+CPCL,CP-000815,"welded - schedule 160 - dwg 7967 - cl 900 - valve - 3"" - astm a105 - ss",KG
+CPCL,CP-000816,"gasket - smls - gi - 3 inch - astm a106 gr b - sch 160 - cl 600 - dwg 1220",EA
+NTPC,NT-000817,"elbow; smls; cs; astm a182 gr.f304; cl 1500; 50.8mm; dwg 9568; sch 80",M
+COALIND,CO-000818,"WELDED - 1"" - CL 900 - SCH 80 - MILD STEEL - DWG 8612 - PIPE - A53-A",KG
+CPCL,CP-000819,"pipe - seamless - carbon steel - 76.2mm - a53 grade a - sch 80 - cl 150 - dwg 7800",KG
+NTPC,NT-000820,"PIPE SMLS MS 1 INCH ASTM A182 GR F304 SCHEDULE 80 CLASS 150 DWG 9920",EA
+CPCL,CP-000821,"2 INCH, DWG 2261, SCH 40, CL 900, MILD STEEL, A106-B, WELDED, FLANGE",EA
+SAIL,SA-000822,"SCH 40 SEAMLESS MS DWG 1418 FLANGE CL 1500 4"" ASTM A106 GR.C",M
+NTPC,NT-000823,"ASTM A53 GR.A; 6""; DWG 4799; SS; WELDED; FLANGE; SCHEDULE 160; CLASS 600",EA
+NTPC,NT-000824,"elbow; smls; gi; 38.1mm; astm a182 gr.f304; schedule 40; class 150; dwg 3226",KG
+COALIND,CO-000825,"smls pipe cl 600 sch 40 3.81 cm dwg 9246 stainless steel astm a106 gr c",KG
+NTPC,NT-000826,"8"", FLANGE, SCHEDULE 80, DWG 1105, ASTM A106 GR.B, MS, CL 150, WELDED",M
+COALIND,CO-000827,"VALVE - WELDED - CARBON STEEL - 1 INCH - ASTM A106 GR B - SCH 80 - CL 150 - DWG 9278",M
+CPCL,CP-000828,"TEE - SMLS - STAINLESS STEEL - 2 INCH - ASTM A182 GR F304 - SCHEDULE 160 - CL 150 - DWG 5219",M
+SAIL,SA-000829,"152.4mm - dwg 9860 - welded - a105 - sch 160 - ms - tee - class 600",M
+CPCL,CP-000830,"dwg 6310 a106 grade b ms tee schedule 80 cl 1500 3"" smls",M
+CPCL,CP-000831,"7.62 cm - dwg 4502 - welded - reducer - a106-b - sch 160 - galvanized iron - cl 600",EA
+NTPC,NT-000832,"elbow; smls; cs; 15.24 cm; a106-c; sch 80; cl 300; dwg 9294",M
+CPCL,CP-000833,"PIPE, SEAMLESS, CARBON STEEL, 25.40 CM, ASTM A182 GR.F304, SCHEDULE 160, CL 1500, DWG 4280",M
+NTPC,NT-000834,"flange - seamless - stainless steel - 2"" - a106-c - sch 80 - class 150 - dwg 4093",M
+NTPC,NT-000835,"PIPE WELDED STAINLESS STEEL 1.5 INCH A106-C SCHEDULE 80 CL 300 DWG 4967",M
+NTPC,NT-000836,"tee, seamless, galvanized iron, 101.6mm, a106-b, sch 40, class 600, dwg 8201",EA
+SAIL,SA-000837,"TEE, DWG 3394, SEAMLESS, 8"", ASTM A106 GR C, SCH 80, CLASS 300, STAINLESS STEEL",KG
+SAIL,SA-000838,"flange - seamless - cs - 1.5 inch - astm a106 gr.b - schedule 80 - class 1500 - dwg 1010",EA
+NTPC,NT-000839,"astm a106 gr.c - dwg 6786 - gasket - cs - welded - class 150 - 254.0mm - sch 40",EA
+COALIND,CO-000840,"bolt astm a182 gr.f304 schedule 160 dwg 4177 3"" cl 150 carbon steel welded",EA
+NTPC,NT-000841,"MS; DWG 4098; SCH 40; WELDED; VALVE; CL 900; 30.48 CM; A333 GRADE 6",M
+CPCL,CP-000842,"dwg 6309 - class 600 - a53 grade a - cs - welded - 0.5"" - sch 160 - bolt",EA
+NTPC,NT-000843,"welded; dwg 1025; 12""; carbon steel; schedule 80; astm a333 gr 6; class 150; bolt",M
+CPCL,CP-000844,"REDUCER, SMLS, CARBON STEEL, 25.40 CM, A333-6, SCH 40, CLASS 300, DWG 8097",M
+NTPC,NT-000845,"pipe welded ss 1"" a106-b schedule 160 cl 300 dwg 6673",EA
+NTPC,NT-000846,"elbow, welded, gi, 6 inch, a53-a, sch 40, cl 600, dwg 3729",KG
+COALIND,CO-000847,"schedule 40 cl 300 dwg 4093 flange gi astm a53 gr.a smls 25.40 cm",EA
+NTPC,NT-000848,"pipe welded ss 254.0mm a106 grade c schedule 80 class 150 dwg 4252",M
+CPCL,CP-000849,"SS A53 GRADE A 1"" SCHEDULE 80 SEAMLESS CL 150 DWG 6503 FLANGE",M
+NTPC,NT-000850,"FLANGE; SCH 80; 12 INCH; DWG 9894; A182 GRADE F304; WELDED; MS; CLASS 600",EA
+CPCL,CP-000851,"bolt - welded - ss - 10 inch - a182-f304 - sch 80 - cl 150 - dwg 7305",M
+COALIND,CO-000852,"TEE - WELDED - CARBON STEEL - 20.32 CM - ASTM A105 - SCH 80 - CLASS 1500 - DWG 8571",M
+CPCL,CP-000853,"elbow; smls; ss; 30.48 cm; a333 grade 6; schedule 40; cl 900; dwg 2245",KG
+NTPC,NT-000854,"ASTM A182 GR F304 - CLASS 600 - MS - DWG 5873 - SCH 80 - WELDED - 254.0MM - BOLT",KG
+CPCL,CP-000855,"smls - class 150 - dwg 1695 - schedule 160 - mild steel - astm a53 gr a - flange - 152.4mm",KG
+COALIND,CO-000856,"elbow - welded - mild steel - 8"" - a182-f304 - sch 160 - class 300 - dwg 4188",EA
+COALIND,CO-000857,"a106-c - flange - class 900 - carbon steel - seamless - 30.48 cm - dwg 2884 - schedule 40",M
+CPCL,CP-000858,"welded; dwg 2162; cl 1500; stainless steel; 7.62 cm; astm a333 gr 6; schedule 80; gasket",M
+SAIL,SA-000859,"3 inch; bolt; class 600; a106 grade b; smls; dwg 9440; schedule 160; stainless steel",M
+SAIL,SA-000860,"VALVE; WELDED; MILD STEEL; 10.16 CM; ASTM A106 GR.B; SCH 40; CLASS 150; DWG 2757",EA
+COALIND,CO-000861,"reducer; welded; carbon steel; 10""; astm a333 gr 6; schedule 40; cl 300; dwg 4556",EA
+SAIL,SA-000862,"a106 grade c, dwg 3108, class 300, smls, 1 inch, stainless steel, gasket, sch 40",KG
+NTPC,NT-000863,"a182 grade f304 - 12"" - sch 80 - flange - ms - dwg 9894 - welded - cl 600",M
+SAIL,SA-000864,"gasket welded stainless steel 10 inch astm a106 gr.c schedule 160 class 900 dwg 9284",KG
+COALIND,CO-000865,"valve, welded, stainless steel, 2 inch, astm a106 gr.c, sch 160, cl 600, dwg 6437",M
+NTPC,NT-000866,"pipe smls galvanized iron 101.6mm a106-b schedule 40 cl 900 dwg 5293",KG
+SAIL,SA-000867,"sch 160; welded; ss; dwg 4343; 0.5""; a106-c; class 900; gasket",KG
+COALIND,CO-000868,"tee - welded - carbon steel - 12.7mm - astm a106 gr b - sch 40 - cl 150 - dwg 9065",M
+NTPC,NT-000869,"REDUCER, WELDED, CARBON STEEL, 10 INCH, ASTM A53 GR A, SCH 40, CL 900, DWG 8960",M
+NTPC,NT-000870,"elbow; welded; mild steel; 7.62 cm; a333 grade 6; schedule 40; cl 600; dwg 2046",KG
+SAIL,SA-000871,"astm a105, dwg 2798, flange, sch 80, class 900, ms, 2.54 cm, seamless",KG
+CPCL,CP-000872,"astm a182 gr.f304 - dwg 9214 - elbow - mild steel - cl 600 - 1.5"" - sch 80 - smls",M
+CPCL,CP-000873,"VALVE; SMLS; GI; 1.27 CM; A105; SCH 160; CL 300; DWG 2944",EA
+SAIL,SA-000874,"pipe, welded, cs, 10.16 cm, a53 grade a, schedule 40, cl 150, dwg 6237",M
+CPCL,CP-000875,"reducer, seamless, cs, 0.5"", astm a106 gr.c, schedule 40, cl 900, dwg 8317",KG
+COALIND,CO-000876,"SCH 160 - ELBOW - 20.32 CM - CL 900 - SEAMLESS - CARBON STEEL - DWG 7305 - ASTM A182 GR F304",KG
+CPCL,CP-000877,"astm a182 gr f304 - schedule 160 - cl 600 - elbow - cs - dwg 5080 - 30.48 cm - welded",KG
+SAIL,SA-000878,"FLANGE; SEAMLESS; MS; 254.0MM; A333-6; SCHEDULE 80; CLASS 600; DWG 7991",KG
+NTPC,NT-000879,"reducer - smls - galvanized iron - 7.62 cm - astm a106 gr c - sch 40 - cl 600 - dwg 8089",KG
+NTPC,NT-000880,"cl 150 sch 40 1.27 cm astm a53 gr.a bolt smls gi dwg 9529",EA
+NTPC,NT-000881,"gasket; smls; cs; 30.48 cm; astm a53 gr a; sch 40; cl 1500; dwg 5210",M
+CPCL,CP-000882,"SCH 40 - SMLS - 2 INCH - MILD STEEL - REDUCER - DWG 5923 - A106-C - CL 600",EA
+NTPC,NT-000883,"pipe; welded; galvanized iron; 1 inch; a333 grade 6; schedule 80; class 300; dwg 5786",EA
+NTPC,NT-000884,"dwg 7984, carbon steel, sch 80, a53-a, welded, cl 300, bolt, 12 inch",KG
+SAIL,SA-000885,"valve - welded - ss - 25.40 cm - a333 grade 6 - schedule 40 - class 900 - dwg 4884",KG
+SAIL,SA-000886,"bolt welded ms 50.8mm a182 grade f304 sch 160 class 900 dwg 3778",M
+NTPC,NT-000887,"BOLT SEAMLESS CS 50.8MM ASTM A53 GR A SCHEDULE 80 CLASS 300 DWG 4144",EA
+SAIL,SA-000888,"reducer - welded - cs - 1 inch - astm a105 - schedule 160 - cl 300 - dwg 6655",KG
+CPCL,CP-000889,"cl 900 - schedule 40 - dwg 5147 - 50.8mm - ms - flange - welded - a53-a",M
+COALIND,CO-000890,"bolt welded mild steel 20.32 cm astm a333 gr 6 schedule 40 cl 1500 dwg 6746",KG
+CPCL,CP-000891,"valve - welded - galvanized iron - 12"" - astm a53 gr.a - schedule 160 - class 300 - dwg 1390",EA
+COALIND,CO-000892,"dwg 2318; tee; schedule 40; 7.62 cm; class 900; cs; seamless; astm a182 gr f304",KG
+CPCL,CP-000893,"20.32 cm; gasket; a182-f304; schedule 160; dwg 6440; seamless; mild steel; class 300",EA
+COALIND,CO-000894,"SCHEDULE 40, SEAMLESS, REDUCER, DWG 8095, GI, 10.16 CM, ASTM A333 GR 6, CLASS 900",M
+NTPC,NT-000895,"bolt; seamless; carbon steel; 6 inch; astm a106 gr.b; sch 80; class 900; dwg 8822",EA
+NTPC,NT-000896,"galvanized iron - astm a53 gr.a - sch 40 - elbow - class 600 - 6 inch - welded - dwg 3729",M
+COALIND,CO-000897,"GASKET - WELDED - STAINLESS STEEL - 3 INCH - ASTM A333 GR.6 - SCHEDULE 80 - CL 1500 - DWG 2162",M
+SAIL,SA-000898,"DWG 6307; VALVE; A53-A; SCHEDULE 40; WELDED; CL 1500; CS; 10""",KG
+COALIND,CO-000899,"REDUCER; SEAMLESS; MILD STEEL; 20.32 CM; ASTM A182 GR.F304; SCHEDULE 40; CL 1500; DWG 7788",EA
+COALIND,CO-000900,"a333 grade 6; mild steel; class 900; 25.40 cm; welded; dwg 3980; schedule 80; valve",EA
+COALIND,CO-000901,"bolt; seamless; carbon steel; 1.5""; a333-6; sch 80; cl 600; dwg 9681",KG
+NTPC,NT-000902,"reducer, smls, gi, 0.5"", a106-b, schedule 160, class 1500, dwg 2266",EA
+SAIL,SA-000903,"BOLT; WELDED; CARBON STEEL; 1 INCH; A182 GRADE F304; SCHEDULE 80; CLASS 600; DWG 7148",M
+CPCL,CP-000904,"a182 grade f304; cl 600; sch 160; elbow; dwg 3769; 4 inch; welded; stainless steel",EA
+NTPC,NT-000905,"DWG 6963, SEAMLESS, CS, CL 900, REDUCER, 0.5"", SCHEDULE 80, ASTM A106 GR C",KG
+COALIND,CO-000906,"stainless steel, 25.4mm, class 300, schedule 40, dwg 3108, seamless, gasket, a106 grade c",M
+SAIL,SA-000907,"GASKET - SMLS - STAINLESS STEEL - 25.40 CM - A106 GRADE B - SCHEDULE 80 - CL 600 - DWG 9029",KG
+CPCL,CP-000908,"cl 150, astm a106 gr.c, dwg 4183, smls, 4"", ms, valve, sch 40",EA
+SAIL,SA-000909,"reducer; welded; stainless steel; 1 inch; astm a333 gr 6; schedule 160; class 1500; dwg 6856",M
+SAIL,SA-000910,"reducer, welded, ss, 2.54 cm, astm a53 gr.a, sch 80, class 1500, dwg 5128",M
+CPCL,CP-000911,"pipe, seamless, dwg 1679, class 900, cs, a105, 101.6mm, sch 160",M
+COALIND,CO-000912,"cl 300 a106-c sch 40 dwg 3108 gasket smls ss 25.4mm",M
+SAIL,SA-000913,"elbow welded carbon steel 0.5 inch a333-6 schedule 40 class 300 dwg 1208",M
+CPCL,CP-000914,"cl 150 - dwg 1227 - welded - 25.4mm - astm a53 gr.a - schedule 160 - ms - pipe",EA
+COALIND,CO-000915,"a106 grade c, sch 160, cl 300, seamless, dwg 8433, 2.54 cm, ms, pipe",M
+NTPC,NT-000916,"SEAMLESS - SCHEDULE 160 - CS - ASTM A182 GR F304 - REDUCER - 1.5 INCH - DWG 8430 - CL 600",EA
+NTPC,NT-000917,"class 150 - a333-6 - gasket - sch 80 - welded - cs - 2"" - dwg 5462",KG
+COALIND,CO-000918,"dwg 8406 - carbon steel - cl 300 - welded - schedule 40 - pipe - 12 inch - astm a182 gr f304",M
+CPCL,CP-000919,"gasket welded galvanized iron 1 inch astm a53 gr.a sch 160 class 1500 dwg 1201",EA
+NTPC,NT-000920,"ASTM A333 GR.6, ELBOW, GI, DWG 4111, SEAMLESS, CLASS 1500, SCH 40, 2 INCH",M
+COALIND,CO-000921,"TEE; WELDED; GALVANIZED IRON; 152.4MM; ASTM A105; SCH 160; CL 900; DWG 4379",KG
+SAIL,SA-000922,"stainless steel; schedule 40; smls; 1 inch; cl 900; dwg 8669; a53 grade a; valve",KG
+CPCL,CP-000923,"reducer, smls, mild steel, 254.0mm, astm a106 gr b, schedule 40, cl 1500, dwg 9678",EA
+CPCL,CP-000924,"flange, seamless, gi, 12 inch, a105, sch 40, cl 900, dwg 6371",EA
+CPCL,CP-000925,"flange - welded - mild steel - 20.32 cm - astm a53 gr a - sch 80 - cl 900 - dwg 3875",KG
+NTPC,NT-000926,"elbow; welded; ms; 1.5 inch; a53 grade a; sch 40; cl 1500; dwg 7744",M
+COALIND,CO-000927,"gasket, welded, gi, 6"", a182-f304, schedule 160, cl 300, dwg 7216",KG
+SAIL,SA-000928,"FLANGE, SMLS, SS, 10.16 CM, A182-F304, SCH 160, CL 150, DWG 4332",EA
+SAIL,SA-000929,"flange - welded - carbon steel - 0.5"" - a53 grade a - schedule 40 - class 1500 - dwg 6286",M
+CPCL,CP-000930,"flange; welded; cs; 152.4mm; astm a333 gr.6; schedule 160; cl 150; dwg 2939",EA
+COALIND,CO-000931,"schedule 40; dwg 5784; elbow; gi; a106 grade b; cl 300; 10""; welded",M
+NTPC,NT-000932,"SCH 80; DWG 5959; 254.0MM; PIPE; MS; ASTM A333 GR 6; CLASS 900; SMLS",M
+SAIL,SA-000933,"0.5"" - bolt - cs - smls - sch 40 - dwg 8788 - astm a106 gr.b - cl 150",EA
+CPCL,CP-000934,"ELBOW WELDED SS 1"" ASTM A106 GR.C SCHEDULE 160 CL 600 DWG 6182",M
+CPCL,CP-000935,"gasket; smls; mild steel; 12""; a105; schedule 80; cl 1500; dwg 6340",KG
+SAIL,SA-000936,"FLANGE WELDED GI 25.40 CM ASTM A53 GR A SCH 160 CLASS 600 DWG 9966",EA
+CPCL,CP-000937,"cl 900; seamless; cs; a182 grade f304; sch 80; tee; dwg 3405; 3 inch",EA
+NTPC,NT-000938,"gasket; seamless; galvanized iron; 3.81 cm; astm a106 gr b; schedule 40; class 1500; dwg 9011",M
+SAIL,SA-000939,"A105, CLASS 300, MS, DWG 6123, SCHEDULE 80, WELDED, 4"", ELBOW",EA
+CPCL,CP-000940,"flange; seamless; stainless steel; 2.54 cm; a105; schedule 160; cl 300; dwg 4031",EA
+NTPC,NT-000941,"REDUCER, SMLS, MS, 38.1MM, A105, SCH 40, CL 900, DWG 7095",KG
+SAIL,SA-000942,"SCHEDULE 40, MS, DWG 1364, ASTM A106 GR.C, TEE, 3.81 CM, CL 300, SMLS",KG
+CPCL,CP-000943,"flange, welded, ms, 20.32 cm, a106 grade b, sch 80, class 150, dwg 1105",M
+COALIND,CO-000944,"reducer, smls, carbon steel, 3.81 cm, a333-6, sch 80, class 150, dwg 8077",KG
+CPCL,CP-000945,"valve - smls - carbon steel - 2 inch - a182 grade f304 - sch 160 - cl 300 - dwg 3257",KG
+CPCL,CP-000946,"dwg 8283 - ms - class 300 - a53 grade a - flange - schedule 160 - 8 inch - smls",EA
+SAIL,SA-000947,"REDUCER; SMLS; CS; 10.16 CM; A106-C; SCHEDULE 40; CL 600; DWG 8126",KG
+SAIL,SA-000948,"bolt, smls, gi, 8"", a106 grade b, schedule 40, class 600, dwg 8490",M
+SAIL,SA-000949,"galvanized iron 3 inch welded a106-b cl 600 dwg 4502 schedule 160 reducer",EA
+SAIL,SA-000950,"VALVE - SMLS - CARBON STEEL - 3 INCH - A53 GRADE A - SCH 80 - CLASS 300 - DWG 8484",M
+NTPC,NT-000951,"bolt seamless gi 8 inch a333 grade 6 schedule 80 class 600 dwg 7216",KG
+NTPC,NT-000952,"valve - welded - gi - 76.2mm - a106-b - sch 40 - cl 150 - dwg 9429",KG
+SAIL,SA-000953,"elbow, welded, stainless steel, 4"", astm a182 gr f304, sch 160, cl 600, dwg 3769",KG
+NTPC,NT-000954,"CS - WELDED - 25.40 CM - CLASS 900 - SCH 40 - DWG 9053 - TEE - A182 GRADE F304",M
+CPCL,CP-000955,"welded - schedule 40 - bolt - 12 inch - dwg 9501 - mild steel - astm a105 - cl 150",M
+COALIND,CO-000956,"3"" dwg 8333 sch 80 ss a182-f304 bolt welded cl 900",M
+SAIL,SA-000957,"carbon steel; a182-f304; elbow; seamless; dwg 7305; class 900; schedule 160; 8 inch",EA
+CPCL,CP-000958,"0.5 INCH ASTM A333 GR 6 SCHEDULE 80 SMLS MS DWG 1013 ELBOW CLASS 300",M
+COALIND,CO-000959,"DWG 5010; CL 300; MS; BOLT; WELDED; A333-6; 8""; SCHEDULE 80",KG
+CPCL,CP-000960,"CLASS 150, TEE, DWG 3606, SCHEDULE 160, GI, SEAMLESS, 1"", A53 GRADE A",KG
+COALIND,CO-000961,"FLANGE - WELDED - CS - 3"" - ASTM A106 GR C - SCH 160 - CLASS 600 - DWG 4618",M
+NTPC,NT-000962,"ELBOW, SMLS, GI, 2.54 CM, A53-A, SCH 80, CL 150, DWG 9217",M
+COALIND,CO-000963,"elbow - a333 grade 6 - smls - class 900 - sch 160 - dwg 1648 - 7.62 cm - cs",KG
+SAIL,SA-000964,"flange seamless cs 2"" astm a182 gr.f304 sch 160 cl 900 dwg 9026",M
+CPCL,CP-000965,"VALVE, SEAMLESS, CARBON STEEL, 3.81 CM, ASTM A106 GR.B, SCHEDULE 40, CLASS 600, DWG 1690",EA
+COALIND,CO-000966,"welded; reducer; 10""; schedule 40; cs; astm a53 gr a; cl 900; dwg 8960",KG
+NTPC,NT-000967,"gasket, dwg 2364, stainless steel, welded, astm a333 gr 6, 15.24 cm, cl 300, sch 160",M
+COALIND,CO-000968,"tee - seamless - carbon steel - 6 inch - astm a105 - schedule 160 - class 1500 - dwg 3658",M
+SAIL,SA-000969,"sch 80 tee seamless 15.24 cm ss dwg 4205 cl 600 astm a53 gr.a",M
+SAIL,SA-000970,"VALVE; WELDED; CS; 1.27 CM; A105; SCHEDULE 40; CL 1500; DWG 5490",M
+COALIND,CO-000971,"reducer; welded; stainless steel; 0.5""; a333 grade 6; sch 160; class 600; dwg 3320",KG
+CPCL,CP-000972,"SCHEDULE 160 - CLASS 600 - DWG 9966 - ASTM A53 GR A - GI - FLANGE - 254.0MM - WELDED",M
+SAIL,SA-000973,"WELDED STAINLESS STEEL 76.2MM SCH 80 PIPE A105 DWG 8082 CLASS 150",EA
+NTPC,NT-000974,"sch 160; reducer; a53 grade a; welded; 12.7mm; ms; dwg 4529; cl 150",KG
+COALIND,CO-000975,"valve; smls; carbon steel; 25.40 cm; astm a333 gr.6; schedule 160; class 900; dwg 4095",M
+NTPC,NT-000976,"VALVE; WELDED; DWG 2611; A333 GRADE 6; CL 150; GALVANIZED IRON; 7.62 CM; SCH 40",M
+NTPC,NT-000977,"VALVE SMLS GALVANIZED IRON 101.6MM A182 GRADE F304 SCHEDULE 40 CL 900 DWG 8889",EA
+NTPC,NT-000978,"cs, sch 40, smls, 10.16 cm, cl 900, flange, dwg 9974, a333-6",M
+SAIL,SA-000979,"SS, GASKET, WELDED, SCH 80, CL 1500, 304.8MM, ASTM A106 GR B, DWG 5122",KG
+NTPC,NT-000980,"tee; welded; gi; 20.32 cm; astm a333 gr 6; sch 80; cl 150; dwg 5159",KG
+CPCL,CP-000981,"smls; cl 1500; dwg 4280; pipe; a182-f304; 254.0mm; sch 160; carbon steel",M
+SAIL,SA-000982,"welded 8"" dwg 5458 cl 150 sch 160 gasket ss astm a333 gr 6",M
+CPCL,CP-000983,"DWG 5590; SEAMLESS; FLANGE; SCH 40; 4""; A182-F304; STAINLESS STEEL; CL 150",EA
+NTPC,NT-000984,"DWG 3898 ASTM A105 SCHEDULE 160 SEAMLESS TEE STAINLESS STEEL 25.4MM CLASS 600",EA
+CPCL,CP-000985,"flange; seamless; stainless steel; 10.16 cm; a182 grade f304; schedule 40; cl 150; dwg 5590",KG
+CPCL,CP-000986,"elbow; welded; carbon steel; 10 inch; a105; schedule 80; class 300; dwg 8853",KG
+CPCL,CP-000987,"REDUCER; STAINLESS STEEL; ASTM A182 GR F304; DWG 2188; SCHEDULE 80; CLASS 900; 30.48 CM; WELDED",M
+NTPC,NT-000988,"GALVANIZED IRON; CLASS 600; 3 INCH; SCHEDULE 40; A106-C; SMLS; DWG 9521; VALVE",M
+CPCL,CP-000989,"FLANGE - WELDED - SS - 25.4MM - A333-6 - SCH 40 - CLASS 150 - DWG 7391",KG
+COALIND,CO-000990,"bolt smls stainless steel 203.2mm a182-f304 sch 40 cl 300 dwg 4382",KG
+CPCL,CP-000991,"FLANGE SEAMLESS MILD STEEL 4"" A106-C SCHEDULE 40 CLASS 1500 DWG 1418",EA
+COALIND,CO-000992,"valve welded ss 0.5"" astm a105 schedule 160 cl 300 dwg 1979",M
+NTPC,NT-000993,"schedule 80; cl 900; dwg 1376; pipe; stainless steel; welded; a333 grade 6; 25.4mm",M
+SAIL,SA-000994,"dwg 4753 astm a182 gr.f304 cl 1500 smls schedule 40 1.5"" gasket galvanized iron",EA
+SAIL,SA-000995,"smls - bolt - sch 160 - gi - cl 600 - dwg 7601 - a53-a - 50.8mm",KG
+CPCL,CP-000996,"FLANGE, WELDED, SS, 30.48 CM, ASTM A53 GR.A, SCH 160, CLASS 1500, DWG 8872",KG
+CPCL,CP-000997,"class 900 - a105 - gi - sch 160 - tee - dwg 5856 - welded - 10""",M
+NTPC,NT-000998,"ELBOW, WELDED, STAINLESS STEEL, 6 INCH, ASTM A105, SCH 40, CLASS 1500, DWG 3823",KG
+SAIL,SA-000999,"astm a106 gr c welded sch 80 dwg 2585 class 300 valve 1.5 inch ss",M
+COALIND,CO-001000,"5.08 CM, SCH 160, ASTM A333 GR.6, DWG 1739, SEAMLESS, GALVANIZED IRON, VALVE, CL 900",KG
