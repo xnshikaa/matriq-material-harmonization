@@ -1,4 +1,6 @@
-# Maven
+.DS_Store
+
+# Maven / Java build output
 target/
 *.class
 backend/target/
@@ -19,7 +21,6 @@ yarn-error.log*
 *.iml
 *.iws
 *.ipr
-.DS_Store
 Thumbs.db
 
 # Temporary / Scratch files
