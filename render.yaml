@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: matriq-api
+    runtime: docker
+    plan: free
+    envVars:
+      - key: MATRIQ_REQUIRE_DATABASE
+        value: "true"
+      - key: MATRIQ_JDBC_URL
+        sync: false
+      - key: MATRIQ_DB_USER
+        sync: false
+      - key: MATRIQ_DB_PASSWORD
+        sync: false
