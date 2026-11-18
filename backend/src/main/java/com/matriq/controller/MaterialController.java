@@ -17,6 +17,7 @@ import java.util.*;
 /**
  * REST controller for material import and retrieval.
  */
+@org.springframework.context.annotation.Profile("legacy-tooling")
 @RestController
 @RequestMapping("/api/materials")
 public class MaterialController {

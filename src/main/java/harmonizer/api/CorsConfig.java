@@ -10,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * Configure the allowed origins in application.properties (app.cors.allowed-origin-patterns).
  */
 @Configuration
+@org.springframework.context.annotation.Profile("pipeline-api")
 public class CorsConfig implements WebMvcConfigurer {
 
     private final String[] allowedOriginPatterns;

@@ -25,6 +25,7 @@ import java.util.*;
  * IMPORTANT: All algorithm logic runs in Java here.
  * The frontend ONLY displays results — it does NOT re-implement the algorithms.
  */
+@org.springframework.context.annotation.Profile("legacy-tooling")
 @RestController
 @RequestMapping("/api/algorithms")
 public class AlgorithmController {

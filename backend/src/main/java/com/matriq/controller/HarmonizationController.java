@@ -13,6 +13,7 @@ import java.util.*;
 /**
  * REST controller for harmonization pipeline, matching review, and national codes.
  */
+@org.springframework.context.annotation.Profile("legacy-tooling")
 @RestController
 @RequestMapping("/api")
 public class HarmonizationController {

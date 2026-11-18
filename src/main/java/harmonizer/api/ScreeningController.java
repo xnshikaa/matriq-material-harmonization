@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api/screen")
+@org.springframework.context.annotation.Profile("pipeline-api")
 public class ScreeningController {
 
     private final DatasetStore store;

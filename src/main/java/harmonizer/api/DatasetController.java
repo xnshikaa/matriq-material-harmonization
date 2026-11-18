@@ -21,6 +21,7 @@ import java.util.TreeMap;
 /** Upload and inspect the material records every other stage works on. */
 @RestController
 @RequestMapping("/api/dataset")
+@org.springframework.context.annotation.Profile("pipeline-api")
 public class DatasetController {
 
     /** What the UI shows after a successful upload. */

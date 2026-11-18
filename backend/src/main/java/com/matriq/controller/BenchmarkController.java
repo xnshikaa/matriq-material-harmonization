@@ -15,6 +15,7 @@ import java.util.*;
  * REST controller for benchmark execution and history.
  * Exposes /api/benchmarks/run and /api/benchmarks/results directly as required by specification.
  */
+@org.springframework.context.annotation.Profile("legacy-tooling")
 @RestController
 @RequestMapping("/api/benchmarks")
 public class BenchmarkController {

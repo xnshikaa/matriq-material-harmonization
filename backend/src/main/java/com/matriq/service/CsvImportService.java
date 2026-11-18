@@ -47,12 +47,20 @@ public class CsvImportService {
         COLUMN_ALIASES.put("desc", "description");
         COLUMN_ALIASES.put("item_description", "description");
         COLUMN_ALIASES.put("item description", "description");
+        COLUMN_ALIASES.put("itemdescription", "description");
         COLUMN_ALIASES.put("materialdescription", "description");
         COLUMN_ALIASES.put("material description", "description");
         COLUMN_ALIASES.put("originaldescription", "description");
 
+        COLUMN_ALIASES.put("materialcategory", "category");
+        COLUMN_ALIASES.put("material category", "category");
+        COLUMN_ALIASES.put("materialgrade", "grade");
+        COLUMN_ALIASES.put("material grade", "grade");
+        COLUMN_ALIASES.put("standardspecification", "specification");
+        COLUMN_ALIASES.put("standard specification", "specification");
         COLUMN_ALIASES.put("spec", "specification");
         COLUMN_ALIASES.put("technical_spec", "specification");
+        COLUMN_ALIASES.put("uom", "unit");
         COLUMN_ALIASES.put("dim", "dimensions");
         COLUMN_ALIASES.put("mfr", "manufacturer");
         COLUMN_ALIASES.put("vendor", "manufacturer");

@@ -26,3 +26,6 @@ Thumbs.db
 # Temporary / Scratch files
 scratch/
 *.tmp
+
+# Local authenticated workspace state
+.matriq-state/

@@ -15,6 +15,7 @@ import java.util.Locale;
 /** Prefix search over material codes or descriptions, served by the Trie. */
 @RestController
 @RequestMapping("/api/autocomplete")
+@org.springframework.context.annotation.Profile("pipeline-api")
 public class AutocompleteController {
 
     private static final int MAX_LIMIT = 50;

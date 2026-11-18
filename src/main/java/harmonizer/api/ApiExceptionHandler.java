@@ -39,9 +39,14 @@ public class ApiExceptionHandler {
                 .body(new ApiError("File too large", List.of("The uploaded file exceeds the size limit.")));
     }
 
+    @ExceptionHandler(org.springframework.web.server.ResponseStatusException.class)
+    public ResponseEntity<ApiError> status(org.springframework.web.server.ResponseStatusException error) {
+        return ResponseEntity.status(error.getStatusCode()).body(new ApiError(error.getReason(), List.of()));
+    }
+
     @ExceptionHandler(IOException.class)
     public ResponseEntity<ApiError> unreadable(IOException e) {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                .body(new ApiError("Could not read the upload", List.of(String.valueOf(e.getMessage()))));
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(new ApiError("The server could not complete the request.", List.of()));
     }
 }

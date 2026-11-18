@@ -48,10 +48,10 @@ public final class CsvMaterialParser {
         }
 
         List<String> header = rows.get(0);
-        int cpseCol = indexOf(header, "cpse");
-        int codeCol = indexOf(header, "code");
-        int descCol = indexOf(header, "description");
-        int uomCol = indexOf(header, "uom");
+        int cpseCol = indexOf(header, "cpse", "organization", "organisation", "company", "source");
+        int codeCol = indexOf(header, "code", "itemcode", "material_code", "materialcode", "item_code");
+        int descCol = indexOf(header, "description", "itemdescription", "item_description", "material_description");
+        int uomCol = indexOf(header, "uom", "unit", "unit_of_measure", "unitofmeasure");
         List<String> missing = new ArrayList<>();
         if (cpseCol < 0) missing.add("cpse");
         if (codeCol < 0) missing.add("code");
@@ -107,10 +107,14 @@ public final class CsvMaterialParser {
 
     // ---------------------------------------------------------------- internals
 
-    private static int indexOf(List<String> header, String name) {
+    private static int indexOf(List<String> header, String... names) {
         for (int i = 0; i < header.size(); i++) {
-            if (header.get(i).trim().toLowerCase(Locale.ROOT).equals(name)) {
-                return i;
+            String col = header.get(i).trim().toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9]", "");
+            for (String name : names) {
+                String cleanName = name.trim().toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9]", "");
+                if (col.equals(cleanName)) {
+                    return i;
+                }
             }
         }
         return -1;
@@ -121,7 +125,8 @@ public final class CsvMaterialParser {
     }
 
     /** Small state machine: handles quoted fields, escaped quotes, CRLF, and blank lines. */
-    private static List<List<String>> readRows(String text) {
+    public static List<List<String>> readRows(String text) {
+        if (text.startsWith("\uFEFF")) text = text.substring(1);
         List<List<String>> rows = new ArrayList<>();
         List<String> row = new ArrayList<>();
         StringBuilder field = new StringBuilder();
