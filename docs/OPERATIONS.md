@@ -79,18 +79,18 @@ node --experimental-websocket scripts/browser_workspace_test.mjs
 
 ## Vercel frontend
 
-Set the Vercel project's root directory to `frontend`. Set `MATRIQ_API_ORIGIN` to the HTTPS origin of the hosted canonical Spring Boot backend. The configuration forwards the same-origin browser API routes to that host and routes frontend deep links to the app. A missing origin fails the deployment configuration so it cannot publish a frontend with broken sign-in.
+Set the Vercel project's root directory to `frontend`. The `frontend/vercel.json` configuration forwards same-origin API requests to the deployed Render backend and routes frontend deep links to the app.
 
 Run the Java backend as a long-running service with durable storage, secure cookies, and an access policy suitable for the workspace. Use a preview deployment to verify sign-in, session cookies, protected routes and catalogue uploads before promoting it. Keep the local state directory out of deployment artifacts.
 
-For a free-only deployment, use a host that can run the Java service and supply durable storage within its free allowance. An Oracle Cloud Always Free VM with an Always Free volume is an option, subject to capacity and idle-reclamation rules. Run the canonical JAR or the repository Dockerfile on that host. With Docker, mount the volume at `/app/storage`. Supply Vercel with the backend's HTTPS origin once it is reachable.
+For a free-only deployment, use a host that can run the Java service and supply durable storage within its free allowance. An Oracle Cloud Always Free VM with an Always Free volume is an option, subject to capacity and idle-reclamation rules. Run the canonical JAR or the repository Dockerfile on that host. With Docker, mount the volume at `/app/storage`. Update the API rewrite in `frontend/vercel.json` with the backend's HTTPS origin once it is reachable.
 
 The image contains the application and starts with a fresh workspace on a new volume. Before importing restricted data, configure access to the hosted workspace because the current account flow allows public registration.
 
 ### Render Free backend
 
-Use the root `render.yaml` Blueprint with the Free instance type. Its required environment variables are `MATRIQ_JDBC_URL`, `MATRIQ_DB_USER`, and `MATRIQ_DB_PASSWORD`. Use an external PostgreSQL database with TLS, for example a Neon Free project. Enter the password directly in Render's secret prompt. For Neon, construct the JDBC URL as `jdbc:postgresql://<host>/<database>?sslmode=verify-full` and put the database role and password in the separate variables. Use a dedicated database. The application creates its snapshot table on startup.
+Use the root `render.yaml` Blueprint with the Free instance type. Its required environment variables are `MATRIQ_JDBC_URL`, `MATRIQ_DB_USER`, and `MATRIQ_DB_PASSWORD`. Use an external PostgreSQL database with TLS, for example a Neon Free project. Enter the password directly in Render's secret prompt. For Neon, construct the JDBC URL as `jdbc:postgresql://<host>/<database>?sslmode=verify-full&sslfactory=org.postgresql.ssl.DefaultJavaSSLFactory` and put the database role and password in the separate variables. Use a dedicated database. The application creates its snapshot table on startup.
 
 The Blueprint requires PostgreSQL so a free Render restart cannot silently switch to temporary storage. This is a single-instance workspace. If two versions attempt to write a stale snapshot during a rollout, PostgreSQL rejects the stale write. In-memory login sessions expire on backend restarts. A new database starts empty and normal local development still uses file storage. Do not upload existing account state or restricted data into a public workspace without separate authorization and access controls.
 
-After the Render API is reachable, set the Vercel project's `MATRIQ_API_ORIGIN` to its HTTPS origin and redeploy. Verify the proxied session endpoint and that unauthenticated workspace requests return 401 before adding real accounts or data.
+After the Render API is reachable, confirm the API rewrite in `frontend/vercel.json` points to its HTTPS origin and redeploy. Verify the proxied session endpoint and that unauthenticated workspace requests return 401 before adding real accounts or data.
