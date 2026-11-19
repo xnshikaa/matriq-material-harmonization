@@ -22,7 +22,14 @@ async function request<T>(path: string, method = 'GET', body?: unknown): Promise
   if (!response.ok) {
     const failure = await response.json().catch(() => null);
     if (response.status === 401 && !path.startsWith('/auth/')) window.dispatchEvent(new Event('matriq:expired'));
-    throw new ApiError(response.status, failure?.details?.join(' ') || failure?.error || 'MATRIQ could not complete this request.');
+    const details = Array.isArray(failure?.details)
+      ? failure.details.filter((detail: unknown) => typeof detail === 'string').join(' ')
+      : '';
+    const error = typeof failure?.error === 'string' ? failure.error : '';
+    const fallback = path.startsWith('/auth/') && (response.status === 404 || response.status >= 500)
+      ? 'The MATRIQ sign-in service is unavailable. Please try again later.'
+      : 'MATRIQ could not complete this request.';
+    throw new ApiError(response.status, details || error || fallback);
   }
   return response.json() as Promise<T>;
 }
