@@ -19,15 +19,19 @@ npm.cmd run dev
 
 Open `http://localhost:5173`. The root `run-backend.bat` also starts the canonical backend with the local HTTP cookie setting. Public registration creates a standard account. The three supplied organisations are registered initially. The dashboard counts source records from the operational store.
 
-## Supplied catalogues
+### Local reviewer sign-in
 
-MATRIQ does not import files at normal startup. For an explicit import of the four supplied procurement catalogues, stop the backend using the target state directory and run the following from the repository root.
+On the configured demo machine, stop the regular backend and start `./run-reviewer-backend.sh` from the repository root instead. It allowlists the existing Hetanshi account UUID from the local account store for that backend process; the UUID is not hard-coded into source files. On the sign-in page choose **Reviewer sign in**. All public sign-ups and other accounts remain standard users. For other reviewers, use `MATRIQ_REVIEWER_IDS` with their verified account UUIDs. Do not expose a reviewer-enabled backend publicly without protecting account registration and access.
+
+## Local demo catalogues
+
+MATRIQ does not import files at normal startup. The active base inputs are `IOCL_2025.csv`, `NTPC_2024.csv`, and `OIL_2023.csv` in `data/catalogues/`. They are labeled synthetic and use company-style identifiers (IOCL-###, NTPC-###, OIL-###), not official company material codes. The original source-grounded tender catalogues are preserved under `data/archive/catalogues-original/` and are excluded from the local demo import. The base set contains 46 records, 15 identities, and three deliberate review cases. `LIVE_DEMO_UPLOAD_2025.csv` is a separate 10-row input for the live walkthrough. To import the three base CSVs and run harmonization, stop the backend using the target state directory and run the following from the repository root.
 
 ```powershell
 mvn.cmd spring-boot:run '-Dspring-boot.run.profiles=catalogue-import' '-Dspring-boot.run.arguments=--spring.main.web-application-type=none --import-supplied-catalogues --harmonize'
 ```
 
-The offline job uses the same importer, organisation checks and duplicate rules as the operational API. It skips previously imported identical files. It can be rerun after a partial failure. Leave off `--harmonize` to import without running matching. The held-out NTPC CSV is retained in `data/catalogues/` and can be selected in the normal import wizard. It is excluded from the offline job.
+The offline job uses the same importer, organisation checks and duplicate rules as the operational API. It skips previously imported identical files. It can be rerun after a partial failure. Leave off `--harmonize` to import without running matching. The held-out source CSV is retained in the archive for provenance and is not part of this demo set.
 
 Imported batches track submitted nonblank CSV records, accepted records, skipped rows and the file digest. Accepted records retain their mapped values, source columns, record position and batch. Source-provided identifiers remain distinguishable from official company codes through the original `CodeOrigin` value. An organisation counts as contributing when it has at least one accepted row. A review or identity is in scope when at least one of its source records belongs to the selected organisation. The most recent harmonization run is a network metric and is labeled accordingly. Technical comparisons are broader than review cases, which are surfaced from the evidence-bearing subset of compared pairs.
 
@@ -41,7 +45,7 @@ Password recovery is intentionally unavailable until reliable email delivery and
 
 ## Engineering decisions and storage
 
-A proposal carries a comparison case ID. A verified MATRIQ code is published only after a reviewer confirms a backend-eligible relationship. Conflicting declared standards, pressure classes, manufacturing methods and dimensions block confirmation. Matching dimensions and sufficient evidence are required. Pump evidence can be reviewed and separated, while pump approval awaits a pump-specific technical model. MATRIQ does not represent these identifiers as government-issued codes.
+A proposal carries a comparison case ID. A verified MATRIQ code is published automatically when a relationship passes the matching and engineering evidence checks. Conflicting declared standards, pressure classes, manufacturing methods and dimensions block automatic unification. An authorized reviewer may explicitly approve a conflict with a recorded rationale, keep the records separate, or request clarification with a note. Conflict approval is an auditable engineering override and can join the pair only; other links in a larger group still need pairwise support. Pump evidence can be reviewed and separated, while pump unification awaits a pump-specific technical model. Reviewers can separate an automatically unified relationship, which rebuilds the affected groups. MATRIQ does not represent these identifiers as government-issued codes.
 
 Decisions persist the reviewer UUID, affected source records, evidence, rationale, action and time. Separation constraints also apply when a later record would bridge the separated groups. Clarifications are recorded in the case and require operational follow-up. Imports are append-only and duplicate source keys are skipped. There is currently no in-place, versioned correction workflow for an already-imported source key.
 

@@ -14,7 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 
-/** An explicit, offline re-runnable import of the four supplied procurement catalogues. */
+/** An explicit, offline re-runnable import of the three controlled synthetic demo catalogues. */
 @Component
 @Profile("catalogue-import")
 class SuppliedCatalogueImport implements ApplicationRunner {
@@ -23,10 +23,9 @@ class SuppliedCatalogueImport implements ApplicationRunner {
             "MaterialCategory", "MaterialGrade", "Dimensions", "Unit", "StandardSpecification", "");
     private record Input(String organization, String fileName) {}
     private static final List<Input> INPUTS = List.of(
-            new Input("IOCL", "01_IOCL_Procurement_Catalogue.csv"),
-            new Input("NTPC", "02_NTPC_Engineering_Materials.csv"),
-            new Input("OIL", "03_OIL_Industrial_Materials_A.csv"),
-            new Input("OIL", "04_OIL_Industrial_Materials_B.csv"));
+            new Input("IOCL", "IOCL_2025.csv"),
+            new Input("NTPC", "NTPC_2024.csv"),
+            new Input("OIL", "OIL_2023.csv"));
 
     private final OperationalWorkspace workspace;
     private final ApplicationContext context;

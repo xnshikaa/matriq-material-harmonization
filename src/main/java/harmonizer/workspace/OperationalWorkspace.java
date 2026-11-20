@@ -1,5 +1,6 @@
 package harmonizer.workspace;
 
+import harmonizer.algo.dsu.DisjointSetUnion;
 import harmonizer.harmonization.*;
 import harmonizer.matching.EquivalenceMatcher;
 import harmonizer.matching.MatchEvidence;
@@ -16,13 +17,13 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 public class OperationalWorkspace {
     record Organisation(String code, String name, String type, String contactEmail, String location) {}
-    enum Status { POSSIBLE, INSUFFICIENT, CONFLICT, CONFIRMED, SEPARATED }
+    enum Status { POSSIBLE, INSUFFICIENT, CONFLICT, UNIFIED, CONFIRMED, SEPARATED }
     enum Action { APPROVE, SEPARATE, CLARIFY }
     record Proposal(String id, int recordA, int recordB, Status status, boolean clarified,
                     EngineeringEvidence.Evidence evidence) {}
     record Decision(String id, String proposalId, int recordA, int recordB, String reviewerId,
                     String reviewerName, Action action, String rationale, Instant timestamp,
-                    EngineeringEvidence.Evidence evidence) {}
+                    EngineeringEvidence.Evidence evidence, List<Integer> conflictScopeA, List<Integer> conflictScopeB) {}
     record Identity(MaterialGroup group, Instant issuedAt, Instant updatedAt) {}
     record Run(Instant timestamp, int records, int comparisons) {}
     record View(List<Organisation> organizations, List<CatalogueImport.Source> records,
@@ -108,16 +109,31 @@ public class OperationalWorkspace {
         View current = state.view();
         var proposal = current.proposals().stream().filter(p -> p.id().equals(id)).findFirst()
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Review case was not found."));
-        if (proposal.status() == Status.SEPARATED || (proposal.status() == Status.CONFIRMED && action != Action.SEPARATE)
+        if (proposal.status() == Status.SEPARATED
+                || ((proposal.status() == Status.CONFIRMED || proposal.status() == Status.UNIFIED) && action != Action.SEPARATE)
                 || (proposal.clarified() && action == Action.CLARIFY)) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "This decision has already been recorded.");
         }
-        if (action == Action.APPROVE && (!proposal.evidence().approvable() || proposal.status() != Status.POSSIBLE)) {
+        if (action == Action.APPROVE && !((proposal.status() == Status.POSSIBLE && proposal.evidence().approvable())
+                || proposal.status() == Status.CONFLICT)) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, proposal.evidence().summary());
         }
+        List<Integer> conflictScopeA = action == Action.APPROVE && proposal.status() == Status.CONFLICT
+                ? activeGroupRecordIds(current, proposal.recordA()) : List.of();
+        List<Integer> conflictScopeB = action == Action.APPROVE && proposal.status() == Status.CONFLICT
+                ? activeGroupRecordIds(current, proposal.recordB()) : List.of();
         var decision = new Decision(UUID.randomUUID().toString(), id, proposal.recordA(), proposal.recordB(),
-                reviewer.id(), reviewer.name(), action, note, Instant.now(), proposal.evidence());
+                reviewer.id(), reviewer.name(), action, note, Instant.now(), proposal.evidence(), conflictScopeA, conflictScopeB);
         List<ReviewConstraint> constraints = state.constraints();
+        if (action == Action.APPROVE && proposal.status() == Status.CONFLICT) {
+            Set<String> approvedPairs = new HashSet<>();
+            for (int a : conflictScopeA) for (int b : conflictScopeB) approvedPairs.add(pair(a, b));
+            constraints = constraints.stream().filter(constraint -> approvedPairs.stream().noneMatch(pair -> {
+                String[] ids = pair.split("-");
+                return constraint.conflicts(key(current.records().get(Integer.parseInt(ids[0]) - 1).material()),
+                        key(current.records().get(Integer.parseInt(ids[1]) - 1).material()));
+            })).toList();
+        }
         if (action == Action.SEPARATE) {
             Set<String> left = activeGroupKeys(current, proposal.recordA());
             Set<String> right = activeGroupKeys(current, proposal.recordB());
@@ -130,6 +146,48 @@ public class OperationalWorkspace {
         return reconcile(append(current.decisions(), decision), constraints, decision, false);
     }
 
+    synchronized View withdrawClarification(String proposalId, String decisionId, Accounts.User reviewer) throws IOException {
+        if (!reviewer.reviewer()) throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Reviewer access is required.");
+        View current = state.view();
+        Decision target = current.decisions().stream()
+                .filter(item -> item.id().equals(decisionId) && item.proposalId().equals(proposalId)
+                        && item.action() == Action.CLARIFY && item.reviewerId().equals(reviewer.id()))
+                .findFirst().orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "Your clarification request was not found."));
+        List<Decision> decisions = current.decisions().stream().filter(item -> !item.id().equals(target.id())).toList();
+        return reconcile(decisions, state.constraints(), null, false);
+    }
+
+    synchronized View withdrawApproval(String proposalId, String decisionId, Accounts.User reviewer) throws IOException {
+        if (!reviewer.reviewer()) throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Reviewer access is required.");
+        View current = state.view();
+        Decision target = current.decisions().stream()
+                .filter(item -> item.id().equals(decisionId) && item.proposalId().equals(proposalId)
+                        && item.action() == Action.APPROVE && item.reviewerId().equals(reviewer.id()))
+                .findFirst().orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "Your approval was not found."));
+        List<Decision> decisions = current.decisions().stream().filter(item -> !item.id().equals(target.id())).toList();
+        List<Integer> left = target.conflictScopeA() == null || target.conflictScopeA().isEmpty()
+                ? List.of(target.recordA()) : target.conflictScopeA();
+        List<Integer> right = target.conflictScopeB() == null || target.conflictScopeB().isEmpty()
+                ? List.of(target.recordB()) : target.conflictScopeB();
+        Set<String> scopePairs = new HashSet<>();
+        for (int a : left) for (int b : right) scopePairs.add(pair(a, b));
+        Decision supersededSeparation = current.decisions().stream()
+                .filter(item -> item.action() == Action.SEPARATE && scopePairs.contains(item.proposalId()))
+                .max(Comparator.comparing(Decision::timestamp)).orElse(null);
+        List<ReviewConstraint> constraints = new ArrayList<>(state.constraints());
+        if (supersededSeparation != null) {
+            Set<String> groupA = left.stream().map(id -> key(current.records().get(id - 1).material()))
+                    .collect(java.util.stream.Collectors.toCollection(TreeSet::new));
+            Set<String> groupB = right.stream().map(id -> key(current.records().get(id - 1).material()))
+                    .collect(java.util.stream.Collectors.toCollection(TreeSet::new));
+            ReviewConstraint restored = new ReviewConstraint(groupA, groupB, supersededSeparation.rationale());
+            if (constraints.stream().noneMatch(item -> item.id().equals(restored.id()))) constraints.add(restored);
+        }
+        return reconcile(decisions, constraints, null, false);
+    }
+
     private View reconcile(List<Decision> decisions, List<ReviewConstraint> constraints, Decision pending, boolean newRun)
             throws IOException {
         View current = state.view();
@@ -139,13 +197,31 @@ public class OperationalWorkspace {
         List<CatalogueImport.Source> sources = current.records().subList(0, recordCount);
         List<MaterialRecord> materials = sources.stream().map(CatalogueImport.Source::material).toList();
         Set<String> approvedIds = new HashSet<>();
+        Set<String> conflictOverridePairs = new HashSet<>();
+        Map<String, Set<String>> conflictOverridePairsByProposal = new HashMap<>();
         Set<String> separatedIds = new HashSet<>();
         Set<String> clarifiedIds = new HashSet<>();
         for (Decision decision : decisions) {
             switch (decision.action()) {
-                case APPROVE -> approvedIds.add(decision.proposalId());
+                case APPROVE -> {
+                    approvedIds.add(decision.proposalId());
+                    if (decision.evidence().conflict()) {
+                        List<Integer> left = decision.conflictScopeA() == null || decision.conflictScopeA().isEmpty()
+                                ? List.of(decision.recordA()) : decision.conflictScopeA();
+                        List<Integer> right = decision.conflictScopeB() == null || decision.conflictScopeB().isEmpty()
+                                ? List.of(decision.recordB()) : decision.conflictScopeB();
+                        Set<String> scopePairs = new HashSet<>();
+                        for (int a : left) for (int b : right) scopePairs.add(pair(a, b));
+                        conflictOverridePairs.addAll(scopePairs);
+                        separatedIds.removeAll(scopePairs);
+                        conflictOverridePairsByProposal.put(decision.proposalId(), scopePairs);
+                    }
+                }
                 case SEPARATE -> {
                     approvedIds.remove(decision.proposalId());
+                    Set<String> oldOverrides = conflictOverridePairsByProposal.remove(decision.proposalId());
+                    if (oldOverrides != null) conflictOverridePairs.removeAll(oldOverrides);
+                    conflictOverridePairs.remove(decision.proposalId());
                     separatedIds.add(decision.proposalId());
                 }
                 case CLARIFY -> clarifiedIds.add(decision.proposalId());
@@ -154,6 +230,7 @@ public class OperationalWorkspace {
 
         var outcome = matcher.match(materials);
         var evidenceByPair = new HashMap<String, EngineeringEvidence.Evidence>();
+        var baseEvidenceByPair = new HashMap<String, MatchEvidence>();
         var candidates = new ArrayList<MatchEvidence>();
         var approvedEdges = new ArrayList<VerifiedEdge>();
         for (VerifiedEdge edge : outcome.verified()) {
@@ -161,18 +238,31 @@ public class OperationalWorkspace {
             String id = pair(edge.recordA(), edge.recordB());
             evidenceByPair.put(id, evidence);
             candidates.add(edge.evidence());
-            if (evidence.approvable() && approvedIds.contains(id)) approvedEdges.add(edge);
+            if ((evidence.approvable() || (evidence.conflict() && conflictOverridePairs.contains(id)))
+                    && !separatedIds.contains(id)) approvedEdges.add(edge);
         }
         for (MatchEvidence base : outcome.rejected()) {
-            if (base.attributeStates().criticalMatches() > 0 || "pump".equals(base.attributesA().itemType())
-                    && evaluate(sources, base).conflict()) {
-                evidenceByPair.put(pair(base.recordA(), base.recordB()), evaluate(sources, base));
+            String id = pair(base.recordA(), base.recordB());
+            baseEvidenceByPair.put(id, base);
+            if (base.attributeStates().criticalMatches() > 0) {
+                evidenceByPair.put(id, evaluate(sources, base));
                 candidates.add(base);
+            } else if ("pump".equals(base.attributesA().itemType())) {
+                var evidence = evaluate(sources, base);
+                if (evidence.conflict()) {
+                    evidenceByPair.put(id, evidence);
+                    candidates.add(base);
+                }
+            }
+            if (conflictOverridePairs.contains(id) && !separatedIds.contains(id)) {
+                approvedEdges.add(new VerifiedEdge(base.recordA(), base.recordB(), base));
             }
         }
         var allowed = HarmonizationEngine.compatibleWithReviewConstraints(approvedEdges, materials, constraints);
+        var safeEdges = pairwiseCompatibleEdges(allowed, evidenceByPair, baseEvidenceByPair, sources, conflictOverridePairs);
         var codes = NationalCodeRegistry.restore(state.codeState());
-        var groups = new MaterialGroupingService(codes).groupDetailed(materials, allowed, outcome.attributesByRecord()).groups();
+        var groups = new MaterialGroupingService(codes).groupDetailed(materials, safeEdges,
+                outcome.attributesByRecord(), conflictOverridePairs).groups();
         var issued = new ArrayList<Identity>();
         var issuance = new HashMap<>(state.issuance());
         var publishedPairs = new HashSet<String>();
@@ -184,7 +274,7 @@ public class OperationalWorkspace {
                 for (int j = i + 1; j < members.size(); j++) {
                     String id = pair(members.get(i).id(), members.get(j).id());
                     var evidence = evidenceByPair.get(id);
-                    if (evidence == null || !evidence.approvable() || separatedIds.contains(id)) {
+                    if (evidence == null || (!evidence.approvable() && !conflictOverridePairs.contains(id)) || separatedIds.contains(id)) {
                         throw new ResponseStatusException(HttpStatus.CONFLICT,
                                 "The combined identity has unresolved pairwise engineering evidence.");
                     }
@@ -205,7 +295,7 @@ public class OperationalWorkspace {
             String id = pair(base.recordA(), base.recordB());
             var evidence = evidenceByPair.get(id);
             Status status = separatedIds.contains(id) ? Status.SEPARATED
-                    : approvedIds.contains(id) && publishedPairs.contains(id) ? Status.CONFIRMED
+                    : publishedPairs.contains(id) ? approvedIds.contains(id) ? Status.CONFIRMED : Status.UNIFIED
                     : evidence.conflict() ? Status.CONFLICT : evidence.approvable() ? Status.POSSIBLE : Status.INSUFFICIENT;
             proposals.add(new Proposal(id, base.recordA(), base.recordB(), status, clarifiedIds.contains(id), evidence));
         }
@@ -224,12 +314,78 @@ public class OperationalWorkspace {
         return EngineeringEvidence.compare(records.get(base.recordA() - 1), records.get(base.recordB() - 1), base);
     }
 
+    /** Keep each automatically unified group pairwise supported by complete engineering evidence. */
+    private static List<VerifiedEdge> pairwiseCompatibleEdges(
+            List<VerifiedEdge> edges, Map<String, EngineeringEvidence.Evidence> evidenceByPair,
+            Map<String, MatchEvidence> baseEvidenceByPair, List<CatalogueImport.Source> sources,
+            Set<String> conflictOverridePairs) {
+        if (edges.isEmpty()) return List.of();
+        int maxId = edges.stream().mapToInt(edge -> Math.max(edge.recordA(), edge.recordB())).max().orElse(0);
+        var dsu = new DisjointSetUnion(maxId);
+        var membersByRoot = new HashMap<Integer, Set<Integer>>();
+        for (VerifiedEdge edge : edges) {
+            dsu.makeSet(edge.recordA());
+            dsu.makeSet(edge.recordB());
+            membersByRoot.computeIfAbsent(edge.recordA(), ignored -> new LinkedHashSet<>()).add(edge.recordA());
+            membersByRoot.computeIfAbsent(edge.recordB(), ignored -> new LinkedHashSet<>()).add(edge.recordB());
+        }
+
+        var safe = new ArrayList<VerifiedEdge>();
+        for (VerifiedEdge edge : edges) {
+            int rootA = dsu.find(edge.recordA());
+            int rootB = dsu.find(edge.recordB());
+            if (rootA == rootB) {
+                safe.add(edge);
+                continue;
+            }
+            Set<Integer> left = membersByRoot.get(rootA);
+            Set<Integer> right = membersByRoot.get(rootB);
+            boolean compatible = true;
+            for (int a : left) {
+                for (int b : right) {
+                    String id = pair(a, b);
+                    var evidence = evidenceByPair.get(id);
+                    if (evidence == null) {
+                        MatchEvidence base = baseEvidenceByPair.get(id);
+                        if (base != null) {
+                            evidence = evaluate(sources, base);
+                            evidenceByPair.put(id, evidence);
+                        }
+                    }
+                    if (evidence == null || (!evidence.approvable() && !conflictOverridePairs.contains(id))) {
+                        compatible = false;
+                        break;
+                    }
+                }
+                if (!compatible) break;
+            }
+            if (!compatible) continue;
+
+            dsu.union(edge.recordA(), edge.recordB());
+            int mergedRoot = dsu.find(edge.recordA());
+            var merged = new LinkedHashSet<Integer>(left);
+            merged.addAll(right);
+            membersByRoot.remove(rootA);
+            membersByRoot.remove(rootB);
+            membersByRoot.put(mergedRoot, merged);
+            safe.add(edge);
+        }
+        return List.copyOf(safe);
+    }
+
     private static Set<String> activeGroupKeys(View view, int id) {
         return view.registry().stream().map(Identity::group)
                 .filter(group -> group.members().stream().anyMatch(member -> member.id() == id))
                 .findFirst().map(group -> group.members().stream().map(OperationalWorkspace::key)
                         .collect(java.util.stream.Collectors.toUnmodifiableSet()))
                 .orElseGet(() -> Set.of(key(view.records().get(id - 1).material())));
+    }
+
+    private static List<Integer> activeGroupRecordIds(View view, int id) {
+        return view.registry().stream().map(Identity::group)
+                .filter(group -> group.members().stream().anyMatch(member -> member.id() == id))
+                .findFirst().map(group -> group.members().stream().map(MaterialRecord::id).sorted().toList())
+                .orElseGet(() -> List.of(id));
     }
 
     private static String key(MaterialRecord record) {

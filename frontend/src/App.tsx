@@ -140,6 +140,14 @@ function Application({ user, route, navigate, onLogout }: {
     setWorkspace(await api.review(id, action, note));
   }
 
+  async function withdrawClarification(id: string, decisionId: string) {
+    setWorkspace(await api.withdrawClarification(id, decisionId));
+  }
+
+  async function withdrawApproval(id: string, decisionId: string) {
+    setWorkspace(await api.withdrawApproval(id, decisionId));
+  }
+
   return <div className="ops-shell flex min-h-screen bg-[var(--background)] text-[var(--text-primary)]">
     <Sidebar activeTab={route.page} onSelectTab={go} collapsed={collapsed} onToggleCollapse={() => setCollapsed(!collapsed)}
       pendingReviewCount={data?.proposals.filter(isPending).length ?? 0} />
@@ -171,7 +179,8 @@ function Application({ user, route, navigate, onLogout }: {
               onReview={id => go('review-queue', id)} />
           </>}
           {route.page === 'review-queue' && <ReviewQueue key={route.detail + ':' + scope} proposals={data.proposals} initialCase={route.detail}
-            sources={data.sources} batches={data.batches} history={workspace.decisions} canReview={user.reviewer} onDecision={review} />}
+            sources={data.sources} batches={data.batches} history={workspace.decisions} canReview={user.reviewer} reviewerId={user.id}
+            onDecision={review} onWithdrawClarification={withdrawClarification} onWithdrawApproval={withdrawApproval} />}
           {route.page === 'registry' && <UnifiedRegistry key={route.detail + ':' + scope} registry={data.registry} initialId={route.detail}
             sources={data.sources} batches={data.batches} history={workspace.decisions} />}
         </>}

@@ -46,6 +46,12 @@ public class AuthController {
         return authenticate(request, accounts.login(input.email(), input.password()));
     }
 
+    @PostMapping("/reviewer-login")
+    Session reviewerLogin(@RequestBody Credentials input, HttpServletRequest request) {
+        accounts.throttle("reviewer-login", request.getRemoteAddr(), input.email());
+        return authenticate(request, accounts.loginReviewer(input.email(), input.password()));
+    }
+
     @PostMapping("/logout")
     Session logout(HttpServletRequest request) {
         Accounts.User user = (Accounts.User) request.getAttribute(USER);

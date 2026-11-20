@@ -25,16 +25,16 @@ Three codes, one physical material. The result is fragmented procurement, duplic
 volume discounts.
 
 MATRIQ reads each company's catalogue, finds equivalent items and groups them, while keeping every
-original company code intact and adding one national identifier per approved group
+original company code intact and adding one national identifier per verified group
 (`NMC-YYYY-NNNNNNNN`).
 
 ### Design principles
 
 1. **A match is never decided by one algorithm.** A Bloom-filter hit or a KMP specification hit is
    *evidence*, not a verdict: category, form, metal, grade and dimensions must also agree.
-2. **Human approval decides.** Only approved relationships reach the grouping stage.
+2. **Safe matches unify immediately.** Verified, conflict-free relationships with sufficient evidence reach the grouping stage automatically; unresolved or conflicting candidates stay in review.
 3. **Rebuild instead of undo.** A standard DSU cannot remove a union, so a rejection rebuilds the groups
-   from the remaining approved relationships.
+   from the remaining accepted relationships.
 4. **Original codes are never overwritten.** The national code is additive.
 5. **All assessed algorithms are pure Java on the backend.** The React frontend only consumes REST APIs.
 
@@ -49,18 +49,18 @@ integrated one** (both team members' algorithms, 132 tests, 3 benchmark programs
 matriq-material-harmonization/
 ├── pom.xml                             ← canonical project (root)
 ├── src/main/java/harmonizer/
-│   ├── algo/bloom/BloomFilter.java      Bloom filter (FNV-1a + SplitMix64)          [Hetanshi]
-│   ├── algo/trie/Trie.java              prefix trie incl. autocomplete              [Hetanshi]
-│   ├── algo/kmp/KMPMatcher.java         KMP: buildLPS / search / searchAll          [Anshika]
-│   ├── algo/kmp/KMPResult.java          matches + comparison count + LPS            [Anshika]
-│   ├── algo/dsu/DisjointSetUnion.java   Union-Find: path compression + union by size[Anshika]
-│   ├── normalize/TextNormalizer.java    units → mm, abbreviations, signature        [Hetanshi]
-│   ├── screening/DuplicateScreener.java Bloom pre-screen + exact confirmation       [Hetanshi]
-│   ├── io/CsvMaterialParser.java        CSV parsing + validation                    [Hetanshi]
-│   ├── matching/                        KMP spec extraction + verification gate     [Anshika]
-│   ├── harmonization/                   DSU grouping + national codes + pipeline    [Anshika]
-│   ├── api/                             REST controllers                            [both]
-│   ├── service/DatasetStore.java        in-memory dataset + Trie indexes            [Hetanshi]
+│   ├── algo/bloom/BloomFilter.java      Bloom filter (FNV-1a + SplitMix64)
+│   ├── algo/trie/Trie.java              prefix trie incl. autocomplete
+│   ├── algo/kmp/KMPMatcher.java         KMP: buildLPS / search / searchAll
+│   ├── algo/kmp/KMPResult.java          matches + comparison count + LPS
+│   ├── algo/dsu/DisjointSetUnion.java   Union-Find: path compression + union by size
+│   ├── normalize/TextNormalizer.java    units → mm, abbreviations, signature
+│   ├── screening/DuplicateScreener.java Bloom pre-screen + exact confirmation
+│   ├── io/CsvMaterialParser.java        CSV parsing + validation
+│   ├── matching/                        KMP spec extraction + verification gate
+│   ├── harmonization/                   DSU grouping + national codes + pipeline
+│   ├── api/                             REST controllers
+│   ├── service/DatasetStore.java        in-memory dataset + Trie indexes
 │   └── bench/                           KmpBenchmark, DsuBenchmark, BloomTrieBenchmark,
 │                                        SyntheticMaterialGenerator
 ├── src/test/java/harmonizer/            132 JUnit 5 tests
@@ -72,9 +72,9 @@ matriq-material-harmonization/
 │   ├── TESTING.md                       test/benchmark report with actual output
 │   ├── algorithms.md, architecture.md, api-documentation.md      [existing]
 │   └── …
-├── backend/                             standalone demo app (Spring Boot, com.matriq)  [Anshika]
-├── frontend/                            React + TypeScript UI for that app            [Anshika]
-└── README_part1.md                      the teammate's original notes                 [Hetanshi]
+├── backend/                             standalone demo app (Spring Boot, com.matriq)
+├── frontend/                            React + TypeScript UI for that app
+└── README_part1.md                      the teammate's original notes
 ```
 
 `backend/` and `frontend/` are a **separate, kept-as-is demo application** with its own copy of the
@@ -100,13 +100,13 @@ POST /api/harmonize ────────────────────
    │      → VerifiedEdge; otherwise MatchEvidence with a human-readable reason
    │      (a missing attribute is UNKNOWN — never proof of equivalence)
    │
-   ├─ DSU grouping                makeSet(all records) → union(verified edges only)
+   ├─ DSU grouping                makeSet(all records) → union(engineering-compatible verified edges)
    │      components still containing contradictory attributes are split first
    │      national code per group of 2+ (kept when an equivalent record joins)
    │
-   └─ HarmonizationResult         approved edges, rejected candidates, groups, KMP comparison count
+   └─ HarmonizationResult         unified edges, review candidates, groups, KMP comparison count
 
-Reviewer rejects a relationship → DSU is rebuilt from the remaining approved edges
+Reviewer separates a relationship → DSU is rebuilt from the remaining eligible edges
 ```
 
 ---
@@ -397,6 +397,7 @@ Headlines from the recorded run (details in [docs/TESTING.md](docs/TESTING.md)):
 **Hetanshi Vora**
 * Bloom filter (double hashing, FNV-1a + SplitMix64), false-positive analysis and benchmarks.
 * Prefix trie with autocomplete.
+* Catalogue and registry search ranks similar descriptions with exact phrase, longest common substring, and longest common subsequence signals. It helps surface candidate records (for example, `PIPE` and `SEAMLESS PIPE`) and does not make harmonization decisions; engineering attributes still determine matching and review.
 * Text normaliser (unit conversion, abbreviation expansion, canonical signature).
 * Duplicate screener (Bloom pre-screen + exact confirmation), CSV parser, dataset store, REST API layer
   and CORS.

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { SourceDetails, SpecificationComparison } from '../components/SpecificationComparison';
 import { proposalLabels } from '../types/workspace';
 import type { Batch, CatalogueSource, Proposal, ProposalStatus } from '../types/workspace';
+import { bestMaterialSearchMatch, searchMethodLabel } from '../search/materialSearch';
 
 export function HarmonizationWorkspace({ proposals, records, sources, batches, onReview }: {
   proposals: Proposal[]; records: CatalogueSource[]; sources: Map<number, CatalogueSource>;
@@ -14,14 +15,21 @@ export function HarmonizationWorkspace({ proposals, records, sources, batches, o
   const [status, setStatus] = useState('ALL');
   const [page, setPage] = useState(0);
   const [selected, setSelected] = useState('');
-  const needle = query.trim().toLowerCase();
   const sourceText = (source?: CatalogueSource) => source
-    ? [source.material.code, source.material.cpse, source.material.description, source.specification, source.category].join(' ').toLowerCase()
+    ? [source.material.code, source.material.cpse, source.material.description, source.specification, source.category,
+      source.materialType, source.grade, source.dimensions, ...Object.values(source.columns)].join(' ')
     : '';
-  const rows = records.filter(source => sourceText(source).includes(needle));
-  const candidates = proposals.filter(proposal => (status === 'ALL' || proposal.status === status) &&
-    [proposal.id, proposalLabels[proposal.status], sourceText(sources.get(proposal.recordA)), sourceText(sources.get(proposal.recordB))]
-      .join(' ').toLowerCase().includes(needle));
+  const rankedRows = records.map(source => ({ source,
+    match: bestMaterialSearchMatch(query, [sourceText(source)]) }))
+    .filter(row => !query.trim() || row.match.score >= 0.38)
+    .sort((a, b) => b.match.score - a.match.score || a.source.material.id - b.source.material.id);
+  const rows = rankedRows.map(row => row.source);
+  const rankedCandidates = proposals.filter(proposal => status === 'ALL' || proposal.status === status)
+    .map(proposal => ({ proposal, match: bestMaterialSearchMatch(query,
+      [proposal.id, proposalLabels[proposal.status], sourceText(sources.get(proposal.recordA)), sourceText(sources.get(proposal.recordB))]) }))
+    .filter(row => !query.trim() || row.match.score >= 0.38)
+    .sort((a, b) => b.match.score - a.match.score || a.proposal.id.localeCompare(b.proposal.id));
+  const candidates = rankedCandidates.map(row => row.proposal);
   const size = mode === 'records' ? rows.length : candidates.length;
   const offset = Math.min(page, Math.max(0, Math.ceil(size / 20) - 1)) * 20;
   const visible = candidates.slice(offset, offset + 20);
@@ -32,12 +40,15 @@ export function HarmonizationWorkspace({ proposals, records, sources, batches, o
     <div className="panel flex flex-wrap gap-2 rounded p-3">
       <button className={`btn btn-sm ${mode === 'proposals' ? 'btn-cobalt' : 'btn-secondary'}`} onClick={() => { setMode('proposals'); setPage(0); }}>Proposals</button>
       <button className={`btn btn-sm ${mode === 'records' ? 'btn-cobalt' : 'btn-secondary'}`} onClick={() => { setMode('records'); setPage(0); }}>Source Records</button>
-      <input className="rounded border border-[var(--border)] px-3 py-1 text-sm" aria-label="Search materials and proposals" placeholder="Search materials or specifications" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} />
+      <input className="rounded border border-[var(--border)] px-3 py-1 text-sm" aria-label="Search materials and proposals" placeholder="Search descriptions, codes, or specifications" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} />
       {mode === 'proposals' && <select className="rounded border border-[var(--border)] px-3 text-sm" aria-label="Proposal status" value={status} onChange={e => { setStatus(e.target.value); setPage(0); }}>
         <option value="ALL">All statuses</option>{Object.entries(proposalLabels).map(([key, label]) => <option key={key} value={key as ProposalStatus}>{label}</option>)}
       </select>}
     </div>
-    {mode === 'records' ? <div className="panel grid gap-2 rounded p-3">{rows.slice(offset, offset + 20).map(source => <SourceDetails key={source.material.id} source={source} batch={batches.get(source.batchId)} />)}</div>
+    {mode === 'records' ? <div className="panel grid gap-2 rounded p-3">{rankedRows.slice(offset, offset + 20).map(({ source, match }) => <div key={source.material.id}>
+        {query.trim() && <p className="mb-1 text-[10px] text-[var(--text-muted)]">Search relevance {Math.round(match.score * 100)}% · {searchMethodLabel(match.method)}</p>}
+        <SourceDetails source={source} batch={batches.get(source.batchId)} />
+      </div>)}</div>
       : <div className="grid items-start gap-4 lg:grid-cols-[minmax(14rem,1fr)_minmax(0,2fr)]">
         {visible.length > 0 && <section className="panel ops-panel">
           <h3 className="ops-panel-heading"><Layers3 size={15} /> Candidate register <span className="ops-panel-count">{candidates.length}</span></h3>

@@ -4,7 +4,7 @@ import type { CatalogueSource, Proposal, ProposalStatus } from '../types/workspa
 import { proposalLabels } from '../types/workspace';
 
 const tones: Record<ProposalStatus, string> = {
-  CONFIRMED: 'verified', POSSIBLE: 'review', INSUFFICIENT: 'neutral', CONFLICT: 'review', SEPARATED: 'neutral',
+  CONFIRMED: 'verified', UNIFIED: 'verified', POSSIBLE: 'review', INSUFFICIENT: 'neutral', CONFLICT: 'review', SEPARATED: 'neutral',
 };
 
 export function PageHeading({ title, description, actions }: { title: string; description?: string; actions?: ReactNode }) {

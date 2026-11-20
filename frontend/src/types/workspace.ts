@@ -46,7 +46,7 @@ export interface Batch {
   warnings: string[];
 }
 
-export type ProposalStatus = 'POSSIBLE' | 'INSUFFICIENT' | 'CONFLICT' | 'CONFIRMED' | 'SEPARATED';
+export type ProposalStatus = 'POSSIBLE' | 'INSUFFICIENT' | 'CONFLICT' | 'UNIFIED' | 'CONFIRMED' | 'SEPARATED';
 export type ReviewAction = 'APPROVE' | 'SEPARATE' | 'CLARIFY';
 export interface Proposal {
   id: string;
@@ -75,6 +75,7 @@ export interface Workspace {
   decisions: Array<{
     id: string;
     proposalId: string;
+    reviewerId: string;
     recordA: number;
     recordB: number;
     reviewerName: string;
@@ -97,11 +98,13 @@ export const proposalLabels: Record<ProposalStatus, string> = {
   POSSIBLE: 'Possible Match',
   INSUFFICIENT: 'Insufficient Information',
   CONFLICT: 'Known Specification Conflict',
+  UNIFIED: 'Automatically Unified',
   CONFIRMED: 'Confirmed Match',
   SEPARATED: 'Rejected / Keep Separate',
 };
 
-export const isPending = (proposal: Proposal) => proposal.status !== 'SEPARATED' && proposal.status !== 'CONFIRMED';
+export const isPending = (proposal: Proposal) => proposal.status !== 'SEPARATED'
+  && proposal.status !== 'CONFIRMED' && proposal.status !== 'UNIFIED';
 
 export interface CatalogueValidation {
   totalRows: number;

@@ -49,7 +49,7 @@ function fileForm(file: File, options?: CatalogueOptions) {
 
 export const api = {
   session: () => sessionInFlight ??= sessionRequest('/auth/session').finally(() => { sessionInFlight = undefined; }),
-  authenticate: (mode: 'login' | 'signup', input: { name?: string; email: string; password: string }) =>
+  authenticate: (mode: 'login' | 'signup' | 'reviewer-login', input: { name?: string; email: string; password: string }) =>
     sessionRequest('/auth/' + mode, 'POST', input),
   logout: () => sessionRequest('/auth/logout', 'POST'),
   workspace: () => request<Workspace>('/workspace'),
@@ -63,4 +63,8 @@ export const api = {
   harmonize: () => request<Workspace>('/workspace/harmonize', 'POST'),
   review: (id: string, action: ReviewAction, rationale: string) =>
     request<Workspace>('/workspace/reviews/' + encodeURIComponent(id), 'POST', { action, rationale }),
+  withdrawClarification: (id: string, decisionId: string) =>
+    request<Workspace>('/workspace/reviews/' + encodeURIComponent(id) + '/clarifications/' + encodeURIComponent(decisionId), 'DELETE'),
+  withdrawApproval: (id: string, decisionId: string) =>
+    request<Workspace>('/workspace/reviews/' + encodeURIComponent(id) + '/approvals/' + encodeURIComponent(decisionId), 'DELETE'),
 };

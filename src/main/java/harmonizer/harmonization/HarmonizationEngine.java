@@ -183,7 +183,7 @@ public class HarmonizationEngine {
         return pipeline.regroup(full, records, approved, suppressed, flagged, reviewConstraints.size());
     }
 
-    /** Applies existing cannot-link rules to reviewer-approved operational edges. */
+    /** Applies existing cannot-link rules to eligible operational edges. */
     public static List<VerifiedEdge> compatibleWithReviewConstraints(
             List<VerifiedEdge> edges, List<MaterialRecord> records, List<ReviewConstraint> constraints) {
         return List.copyOf(filterReviewConstraints(edges, records, constraints).approved());

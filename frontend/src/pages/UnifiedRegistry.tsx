@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Search, Download, Share2, ShieldCheck, Table as TableIcon } from 'lucide-react';
 import { SourceDetails } from '../components/SpecificationComparison';
 import type { Batch, CatalogueSource, Workspace } from '../types/workspace';
+import { bestMaterialSearchMatch, searchMethodLabel } from '../search/materialSearch';
 
 function csvCell(value: string) {
   const safe = /^[\s]*[=+@-]|^[\t\r]/.test(value) ? "'" + value : value;
@@ -17,15 +18,24 @@ export function UnifiedRegistry({ registry, initialId, sources, batches, history
   const [category, setCategory] = useState('ALL');
   const [mode, setMode] = useState<'table' | 'network'>('table');
   const [selected, setSelected] = useState(initialId);
-  const needle = search.trim().toLowerCase();
   const categories = [...new Set(registry.flatMap(({ group }) => group.members.map(member => sources.get(member.id)?.category).filter(Boolean)))].sort();
   const specifications = (members: Workspace['registry'][number]['group']['members']) => [...new Set(members.flatMap(member => {
     const source = sources.get(member.id);
     return [source?.specification, source?.dimensions, source?.grade].filter(Boolean);
   }))].join(' · ');
-  const filtered = registry.filter(({ group }) => (category === 'ALL' || group.members.some(member => sources.get(member.id)?.category === category))
-    && [group.nationalCode, specifications(group.members), ...group.members.flatMap(member =>
-      [member.description, member.cpse, member.code])].some(value => value.toLowerCase().includes(needle)));
+  const ranked = registry.map(entry => {
+    const { group } = entry;
+    const values = [group.nationalCode, specifications(group.members), ...group.members.flatMap(member => {
+      const source = sources.get(member.id);
+      return [member.description, member.cpse, member.code, source?.category ?? '', source?.grade ?? '',
+        source?.dimensions ?? '', source?.specification ?? '', source?.materialType ?? ''];
+    })];
+    return { entry, match: bestMaterialSearchMatch(search, values) };
+  }).filter(({ entry, match }) => (category === 'ALL' || entry.group.members.some(member => sources.get(member.id)?.category === category))
+    && (!search.trim() || match.score >= 0.38))
+    .sort((a, b) => b.match.score - a.match.score || a.entry.group.nationalCode.localeCompare(b.entry.group.nationalCode));
+  const filtered = ranked.map(({ entry }) => entry);
+  const matchByGroup = new Map(ranked.map(({ entry, match }) => [entry.group.id, match]));
   const offset = Math.min(page, Math.max(0, Math.ceil(filtered.length / 20) - 1)) * 20;
   const active = filtered.find(({ group }) => group.id === selected) ?? (mode === 'network' ? filtered[offset] : undefined);
 
@@ -53,7 +63,7 @@ export function UnifiedRegistry({ registry, initialId, sources, batches, history
       <button className={`btn btn-sm ${mode === 'table' ? 'btn-cobalt' : 'btn-secondary'}`} onClick={() => setMode('table')}><TableIcon className="h-4 w-4" /> Table</button>
       <button className={`btn btn-sm ${mode === 'network' ? 'btn-cobalt' : 'btn-secondary'}`} onClick={() => setMode('network')}><Share2 className="h-4 w-4" /> Provenance Network</button>
       <label className="flex items-center gap-2 rounded border border-[var(--border)] px-2 py-1 text-sm"><Search className="h-4 w-4" />
-        <input aria-label="Search verified identities" placeholder="Search verified identities" value={search} onChange={e => { setSearch(e.target.value); setPage(0); }} />
+        <input aria-label="Search verified identities" placeholder="Search identities or similar descriptions" value={search} onChange={e => { setSearch(e.target.value); setPage(0); }} />
       </label>
       <select aria-label="Material category" className="rounded border border-[var(--border)] bg-white px-2 py-1 text-xs" value={category} onChange={event => { setCategory(event.target.value); setPage(0); }}>
         <option value="ALL">All material categories</option>
@@ -67,7 +77,8 @@ export function UnifiedRegistry({ registry, initialId, sources, batches, history
           <thead className="bg-[var(--muted-light)]"><tr>{['MATRIQ Material Code', 'Material description and specifications', 'Organisations / source codes', 'Verification', 'Issued'].map(label => <th className="p-3" key={label}>{label}</th>)}</tr></thead>
           <tbody>{filtered.slice(offset, offset + 20).map(({ group, issuedAt }) => <tr key={group.id} className="border-t border-[var(--border)]">
             <td className="p-3"><button className="font-mono font-bold text-[var(--cobalt)]" onClick={() => setSelected(group.id)}>{group.nationalCode}</button></td>
-            <td><strong>{group.members[0].description}</strong><p className="mt-1 text-[var(--text-secondary)]">{specifications(group.members) || 'No technical attributes supplied'}</p></td>
+            <td><strong>{group.members[0].description}</strong><p className="mt-1 text-[var(--text-secondary)]">{specifications(group.members) || 'No technical attributes supplied'}</p>
+              {search.trim() && <p className="mt-1 text-[10px] text-[var(--text-muted)]">Search relevance {Math.round((matchByGroup.get(group.id)?.score ?? 0) * 100)}% · {searchMethodLabel(matchByGroup.get(group.id)?.method ?? 'exact')}</p>}</td>
             <td><OrganisationBadges codes={group.members.map(member => member.cpse)} /><p className="mt-1 font-mono">{group.members.map(member => member.code).join(' · ')}</p></td>
             <td><StatusChip tone="verified">Verified</StatusChip></td>
             <td className="p-3">{new Date(issuedAt).toLocaleDateString()}</td>

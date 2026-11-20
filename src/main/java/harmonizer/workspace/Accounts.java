@@ -76,12 +76,20 @@ public class Accounts {
     }
 
     synchronized User login(String email, String password) {
+        return login(email, password, false);
+    }
+
+    synchronized User loginReviewer(String email, String password) {
+        return login(email, password, true);
+    }
+
+    private User login(String email, String password, boolean reviewerRequired) {
         Account account = accounts.get(normalize(email));
         if (password == null || password.length() > 128) password = "";
         String actual = hash(password, account == null ? dummySalt : account.salt());
         String expected = account == null ? dummyHash : account.hash();
         if (!MessageDigest.isEqual(Base64.getDecoder().decode(actual), Base64.getDecoder().decode(expected))
-                || account == null) {
+                || account == null || (reviewerRequired && !reviewerIds.contains(account.id()))) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Email or password is incorrect.");
         }
         audit("session-started", account.id());

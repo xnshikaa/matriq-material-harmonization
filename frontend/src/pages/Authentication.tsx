@@ -8,6 +8,7 @@ import './authentication.css';
 
 export function Authentication({ onAuthenticated }: { onAuthenticated: (account: Account) => void }) {
   const [signup, setSignup] = useState(false);
+  const [reviewerLogin, setReviewerLogin] = useState(false);
   const [shown, setShown] = useState(false);
   const [focus, setFocus] = useState('');
   const [email, setEmail] = useState('');
@@ -29,7 +30,7 @@ export function Authentication({ onAuthenticated }: { onAuthenticated: (account:
     setBusy(true);
     try {
       await api.session();
-      const session = await api.authenticate(signup ? 'signup' : 'login', {
+      const session = await api.authenticate(signup ? 'signup' : reviewerLogin ? 'reviewer-login' : 'login', {
         name: signup ? String(fields.get('name') ?? '').trim() : undefined,
         email: email.trim(),
         password,
@@ -52,10 +53,10 @@ export function Authentication({ onAuthenticated }: { onAuthenticated: (account:
         <div className="auth-hero-copy"><h1>One Material.<br /><span>One Identity.</span></h1></div>
       </section>
       <section className="auth-content" aria-label="Account access">
-        <div className="auth-card" key={String(signup)}>
+        <div className="auth-card" key={`${signup}-${reviewerLogin}`}>
           <header>
-            <h2>{signup ? 'Create your account' : 'Sign in to MATRIQ'}</h2>
-            <p>{signup ? 'Enter your details to create a workspace account.' : 'Use your MATRIQ account to access the workspace.'}</p>
+            <h2>{signup ? 'Create your account' : reviewerLogin ? 'Reviewer sign in' : 'Sign in to MATRIQ'}</h2>
+            <p>{signup ? 'Enter your details to create a standard workspace account.' : reviewerLogin ? 'Use your authorized reviewer account to record engineering decisions.' : 'Use your standard MATRIQ account to access the workspace.'}</p>
           </header>
           <form onSubmit={submit} aria-busy={busy}
             onFocus={event => setFocus(event.target instanceof HTMLInputElement ? event.target.name : '')}
@@ -79,15 +80,18 @@ export function Authentication({ onAuthenticated }: { onAuthenticated: (account:
               autoComplete="new-password" minLength={12} maxLength={128} required /></label>}
             {error && <p role="alert" className="auth-error">{error}</p>}
             <button className="auth-submit" type="submit" disabled={busy}>
-              {busy ? 'Please wait…' : signup ? 'Create Account' : 'Sign In'}
+              {busy ? 'Please wait…' : signup ? 'Create Account' : reviewerLogin ? 'Sign In as Reviewer' : 'Sign In'}
               {busy ? <LoaderCircle className="auth-spinner" size={18} /> : <ArrowRight size={18} />}
             </button>
           </form>
-          <p className="auth-switch">{signup ? 'Already have an account?' : 'New to MATRIQ?'}{' '}
+          {!reviewerLogin && <p className="auth-switch">{signup ? 'Already have an account?' : 'New to MATRIQ?'}{' '}
             <button type="button" disabled={busy} onClick={() => { setSignup(!signup); setError(''); setShown(false); setFocus(''); }}>
               {signup ? 'Sign In' : 'Create Account'}
             </button>
-          </p>
+          </p>}
+          {!signup && <p className="auth-switch"><button type="button" disabled={busy} onClick={() => { setReviewerLogin(!reviewerLogin); setError(''); setShown(false); }}>
+            {reviewerLogin ? 'Standard user sign in' : 'Reviewer sign in'}
+          </button></p>}
         </div>
       </section>
     </div>

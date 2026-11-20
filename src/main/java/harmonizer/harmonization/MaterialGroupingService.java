@@ -92,6 +92,12 @@ public final class MaterialGroupingService {
      */
     public GroupingOutcome groupDetailed(List<MaterialRecord> records, List<VerifiedEdge> edges,
                                          Map<Integer, MaterialAttributes> attributes) {
+        return groupDetailed(records, edges, attributes, Set.of());
+    }
+
+    /** Like {@link #groupDetailed(List, List, Map)}, with explicit reviewer-approved conflict pairs. */
+    public GroupingOutcome groupDetailed(List<MaterialRecord> records, List<VerifiedEdge> edges,
+                                         Map<Integer, MaterialAttributes> attributes, Set<String> conflictOverrides) {
         if (records == null || records.isEmpty()) {
             return new GroupingOutcome(List.of(), 0, 0);
         }
@@ -137,7 +143,8 @@ public final class MaterialGroupingService {
                 componentMembers.add(byId.get(id));
             }
 
-            List<List<MaterialRecord>> subgroups = conflictFreeSubgroups(componentMembers, facts);
+            List<List<MaterialRecord>> subgroups = conflictFreeSubgroups(componentMembers, facts,
+                    conflictOverrides == null ? Set.of() : conflictOverrides);
             if (subgroups.size() > 1) {
                 splitComponents++;
             }
@@ -171,7 +178,7 @@ public final class MaterialGroupingService {
      * that order, so the result is reproducible.
      */
     private static List<List<MaterialRecord>> conflictFreeSubgroups(
-            List<MaterialRecord> members, Map<Integer, MaterialAttributes> attributes) {
+            List<MaterialRecord> members, Map<Integer, MaterialAttributes> attributes, Set<String> conflictOverrides) {
         List<List<MaterialRecord>> subgroups = new ArrayList<>();
         for (MaterialRecord member : members) {
             MaterialAttributes candidate = attributes.get(member.id());
@@ -183,7 +190,8 @@ public final class MaterialGroupingService {
                     if (candidate == null || other == null) {
                         continue; // without facts we cannot prove a conflict here
                     }
-                    if (AttributeComparison.conflicts(candidate, other)) {
+                    if (AttributeComparison.conflicts(candidate, other)
+                            && !conflictOverrides.contains(pair(existing.id(), member.id()))) {
                         compatible = false;
                         break;
                     }
@@ -200,6 +208,10 @@ public final class MaterialGroupingService {
             target.add(member);
         }
         return subgroups;
+    }
+
+    private static String pair(int a, int b) {
+        return Math.min(a, b) + "-" + Math.max(a, b);
     }
 
     /** {@code CPSE|CODE} keys of the given members, used for code inheritance and history. */

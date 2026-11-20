@@ -56,6 +56,18 @@ public class WorkspaceController {
         return workspace.decide(id, review.action(), review.rationale(), user(request));
     }
 
+    @DeleteMapping("/reviews/{id}/clarifications/{decisionId}")
+    OperationalWorkspace.View withdrawClarification(@PathVariable String id, @PathVariable String decisionId,
+                                                      HttpServletRequest request) throws IOException {
+        return workspace.withdrawClarification(id, decisionId, user(request));
+    }
+
+    @DeleteMapping("/reviews/{id}/approvals/{decisionId}")
+    OperationalWorkspace.View withdrawApproval(@PathVariable String id, @PathVariable String decisionId,
+                                                HttpServletRequest request) throws IOException {
+        return workspace.withdrawApproval(id, decisionId, user(request));
+    }
+
     private static Accounts.User user(HttpServletRequest request) {
         return (Accounts.User) request.getAttribute(AuthController.USER);
     }

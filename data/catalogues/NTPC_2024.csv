@@ -1,0 +1,16 @@
+ItemCode,Description,Unit,Organization,MaterialCategory,MaterialGrade,StandardSpecification,Dimensions,Quantity,CatalogueYear,SourceKind,SourceBasis,CodeOrigin
+NTPC-001,"PIPE SEAMLESS, SS, A312 TP304L, Grade TP304L, 15MM",each,NTPC,Pipe,TP304L,ASTM A312,15 mm,1,2024,synthetic_demo,NTPC-SRC-M000914,Synthetic demonstration ID; NOT an official company material code
+NTPC-002,"Pipe, seamless, carbon steel, 25MM, ASTM A106 Grade B",each,NTPC,Pipe,B,ASTM A106,25 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-003,"Pipe seamless, alloy steel, 50MM, ASTM A335 Grade P11",each,NTPC,Pipe,P11,ASTM A335,50 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-004,"Gate valve, CS, 2 inch, Grade WCB",each,NTPC,Valve,WCB,,50 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-005,"Gate valve, SS, 100MM, ASTM A182 Grade F316",each,NTPC,Valve,F316,ASTM A182,100 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-006,"Slip-on flange, CS, 4 inch, Grade A105, ANSI B16.5",each,NTPC,Flange,A105,ANSI B16.5,100 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-007,"SS flange, 150MM, ASTM A182 Grade F316",each,NTPC,Flange,F316,ASTM A182,150 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-008,"Elbow seamless, CS, 25MM, Grade WPB, B16.9",each,NTPC,Elbow,WPB,ANSI B16.9,25 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-009,"Elbow seamless, alloy steel, 50MM, Grade P11",each,NTPC,Elbow,P11,,50 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-010,"Tee welded, CS, 40MM, Grade WPB",each,NTPC,Tee,WPB,,40 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-011,"Tee welded, SS, 80MM, A182 Grade F316",each,NTPC,Tee,F316,ASTM A182,80 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-012,"Reducer, CS, 50MM, Grade WPB",each,NTPC,Reducer,WPB,,50 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-013,"Gasket spiral wound, SS, 100MM, Grade SS304",each,NTPC,Gasket,SS304,SS304,100 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-014,"Stud bolt, alloy steel, 16MM, Grade B7",each,NTPC,Bolt,B7,,16 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+NTPC-015,"Bolt, SS, 20MM, Grade B8",each,NTPC,Bolt,B8,,20 mm,1,2024,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code

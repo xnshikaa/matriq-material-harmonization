@@ -3,10 +3,12 @@ package harmonizer.workspace;
 import harmonizer.matching.AttributeState;
 import harmonizer.matching.MatchEvidence;
 import harmonizer.matching.MaterialAttributes;
+import harmonizer.normalize.TextNormalizer;
 import java.util.*;
 import java.util.regex.Pattern;
 
 final class EngineeringEvidence {
+    private static final TextNormalizer DIMENSION_NORMALIZER = TextNormalizer.withDefaults();
     private static final Pattern PRESSURE = Pattern.compile(
             "(?i)\\b(?:CLASS|CL[.]?|#)\\s*(150|300|400|600|900|1500|2500|4500)\\b|\\b(150|300|400|600|900|1500|2500|4500)\\s*#");
     private static final Pattern STANDARD = Pattern.compile(
@@ -47,7 +49,7 @@ final class EngineeringEvidence {
         boolean approvable = base.verified() && conflicts.isEmpty() && enoughDimensions
                 && !PUMP.matcher(textA).find() && !PUMP.matcher(textB).find();
         String summary = conflicts.isEmpty()
-                ? approvable ? "The technical evidence supports reviewer confirmation." : "Technical evidence is insufficient for confirmation."
+                ? approvable ? "The technical evidence supports automatic unification." : "Technical evidence is insufficient for unification."
                 : "Conflicting attributes: " + String.join(", ", conflicts);
         return new Evidence(values, base.sharedSpecifications().stream().map(spec -> spec.specification()).toList(), approvable, summary);
     }
@@ -55,13 +57,41 @@ final class EngineeringEvidence {
     private static Value dimension(CatalogueImport.Source left, CatalogueImport.Source right,
                                    MaterialAttributes a, MaterialAttributes b, AttributeState state) {
         if (!left.dimensions().isBlank() && !right.dimensions().isBlank()) {
-            var declared = explicit("Dimensions", left.dimensions(), right.dimensions());
-            if (state == AttributeState.CONFLICT || declared.state() == AttributeState.CONFLICT) {
-                return new Value(declared.name(), shownDimension(left, a), shownDimension(right, b), AttributeState.CONFLICT);
+            double leftMillimetres = dimensionMillimetres(left.dimensions());
+            double rightMillimetres = dimensionMillimetres(right.dimensions());
+            if (state == AttributeState.CONFLICT) {
+                return new Value("Dimensions", shownDimension(left, a), shownDimension(right, b), AttributeState.CONFLICT);
             }
-            return declared;
+            if (Double.isFinite(leftMillimetres) && Double.isFinite(rightMillimetres)) {
+                double average = (leftMillimetres + rightMillimetres) / 2.0;
+                boolean match = average == 0.0 ? leftMillimetres == rightMillimetres
+                        : Math.abs(leftMillimetres - rightMillimetres) / average <= 0.02;
+                return new Value("Dimensions", shownDimension(left, a), shownDimension(right, b),
+                        match ? AttributeState.MATCH : AttributeState.CONFLICT);
+            }
+            var declared = explicit("Dimensions", left.dimensions(), right.dimensions());
+            if (declared.state() == AttributeState.MATCH) return declared;
+            if (state == AttributeState.MATCH) {
+                return new Value("Dimensions", shownDimension(left, a), shownDimension(right, b), AttributeState.MATCH);
+            }
+            return new Value("Dimensions", shownDimension(left, a), shownDimension(right, b), AttributeState.UNKNOWN);
         }
         return extracted("Dimensions", shownDimension(left, a), shownDimension(right, b), state);
+    }
+
+    /** Parse explicit length fields through the same inch/cm/mm normalization used by matching. */
+    private static double dimensionMillimetres(String value) {
+        String normalized = DIMENSION_NORMALIZER.clean(value);
+        for (String token : normalized.split(" ")) {
+            if (!token.endsWith("mm") || token.length() <= 2) continue;
+            try {
+                double millimetres = Double.parseDouble(token.substring(0, token.length() - 2));
+                if (millimetres > 0 && Double.isFinite(millimetres)) return millimetres;
+            } catch (NumberFormatException ignored) {
+                // This field may contain non-dimensional catalogue text; leave it unknown.
+            }
+        }
+        return Double.NaN;
     }
 
     private static String shownDimension(CatalogueImport.Source source, MaterialAttributes attributes) {

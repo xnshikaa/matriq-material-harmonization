@@ -1,0 +1,17 @@
+ItemCode,Description,Unit,Organization,MaterialCategory,MaterialGrade,StandardSpecification,Dimensions,Quantity,CatalogueYear,SourceKind,SourceBasis,CodeOrigin
+OIL-001,"SMLS SS pipe, 15 mm, A312 Grade TP304L",each,OIL,Pipe,TP304L,ASTM A312,15 mm,1,2023,synthetic_demo,NTPC-SRC-M000914,Synthetic demonstration ID; NOT an official company material code
+OIL-002,"CS seamless pipe, 25 mm, A106 Grade B",each,OIL,Pipe,B,ASTM A106,25 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-003,"Seamless alloy steel pipe, 5 cm, A335 Grade P11",each,OIL,Pipe,P11,ASTM A335,50 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-004,"Gate valve, carbon steel, 5 cm, Grade WCB",each,OIL,Valve,WCB,,50 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-005,"SS gate valve, 10 cm, A182 Grade F316",each,OIL,Valve,F316,ASTM A182,100 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-006,"Slip-on carbon steel flange, 10 cm, Grade A105, B16.5",each,OIL,Flange,A105,ANSI B16.5,100 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-007,"Stainless steel flange, 15 cm, A182 Grade F316",each,OIL,Flange,F316,ASTM A182,150 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-008,"Seamless carbon steel elbow, 2.5 cm, Grade WPB, ANSI B16.9",each,OIL,Elbow,WPB,ANSI B16.9,25 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-009,"Seamless alloy steel elbow, 5 cm, Grade P11",each,OIL,Elbow,P11,,50 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-010,"Welded carbon steel tee, 4 cm, Grade WPB",each,OIL,Tee,WPB,,40 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-011,"Welded stainless steel tee, 8 cm, Grade F316, ASTM A182",each,OIL,Tee,F316,ASTM A182,80 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-012,"Carbon steel reducer, 5 cm, Grade WPB",each,OIL,Reducer,WPB,,50 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-013,"Spiral wound SS gasket, 10 cm, Grade SS304",each,OIL,Gasket,SS304,SS304,100 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-014,"Alloy steel stud bolt, 1.6 cm, Grade B7",each,OIL,Bolt,B7,,16 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-015,"Stainless steel bolt, 2 cm, Grade B8",each,OIL,Bolt,B8,,20 mm,1,2023,synthetic_demo,synthetic template,Synthetic demonstration ID; NOT an official company material code
+OIL-016,"Seamless stainless steel pipe, 15 mm, ASTM A312 Grade TP316L",each,OIL,Pipe,TP316L,ASTM A312,15 mm,1,2023,synthetic_review_case,Deliberate demo-only conflicting grade,Synthetic demonstration ID; NOT an official company material code

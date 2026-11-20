@@ -17,7 +17,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 @Component
 public class ApiAccessFilter extends OncePerRequestFilter {
     private static final Set<String> PUBLIC = Set.of("GET /api/auth/session", "POST /api/auth/login",
-            "POST /api/auth/signup");
+            "POST /api/auth/signup", "POST /api/auth/reviewer-login");
     private final Accounts accounts;
     private final ObjectMapper mapper;
 
