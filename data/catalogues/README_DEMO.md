@@ -15,5 +15,5 @@ The held-out CSV as a whole is not a clean demo input: it creates 53 review case
 merged pipe group depends on the current extractor treating pipe wall thickness as the item size.
 This curated set uses only one pipe size from that file and avoids that ambiguous group.
 
-`LIVE_DEMO_UPLOAD_2025.csv` is a separate 10-row input for the live walkthrough. Upload it for IOCL
+`IOCL.csv` in the repository root is a separate 10-row input for the live walkthrough. Upload it for IOCL
 after importing the base files; all 10 rows should join existing identities without adding review cases.

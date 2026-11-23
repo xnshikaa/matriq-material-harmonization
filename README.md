@@ -6,7 +6,7 @@ For the authenticated application, see the [operational setup and deployment gui
 > Advanced Algorithms CIA 3 Project | Academic Year 2025–2026
 > **Problem Statement:** SIH26099 — Ministry of Petroleum & Natural Gas / CPCL
 > **Engineering team:** Anshika Gupta, Hetanshi Vora
-> **Individual module (Anshika Gupta):** Knuth–Morris–Pratt (KMP) and Disjoint Set Union (DSU)
+> **Contribution summary:** see [Team contributions](#13-team-contributions), based on commit authorship on `main`.
 
 ---
 
@@ -36,80 +36,60 @@ original company code intact and adding one national identifier per verified gro
 3. **Rebuild instead of undo.** A standard DSU cannot remove a union, so a rejection rebuilds the groups
    from the remaining accepted relationships.
 4. **Original codes are never overwritten.** The national code is additive.
-5. **All assessed algorithms are pure Java on the backend.** The React frontend only consumes REST APIs.
+5. **Material decisions stay on the backend.** The React frontend uses REST APIs and ranks text searches to help users find candidate descriptions.
 
 ---
 
 ## 2. Repository layout
 
-The repository contains two Maven projects. **The root `harmonizer` project is the canonical,
-integrated one** (both team members' algorithms, 132 tests, 3 benchmark programs).
+The root Maven project is the canonical backend for the operational MATRIQ application. The React
+frontend in `frontend/` talks to this backend. `backend/` is the earlier standalone algorithm explorer
+and is retained for compatibility; it is not used by the current operational workspace.
 
 ```
 matriq-material-harmonization/
-├── pom.xml                             ← canonical project (root)
+├── pom.xml                              canonical Spring Boot backend (Java 17)
 ├── src/main/java/harmonizer/
-│   ├── algo/bloom/BloomFilter.java      Bloom filter (FNV-1a + SplitMix64)
-│   ├── algo/trie/Trie.java              prefix trie incl. autocomplete
-│   ├── algo/kmp/KMPMatcher.java         KMP: buildLPS / search / searchAll
-│   ├── algo/kmp/KMPResult.java          matches + comparison count + LPS
-│   ├── algo/dsu/DisjointSetUnion.java   Union-Find: path compression + union by size
-│   ├── normalize/TextNormalizer.java    units → mm, abbreviations, signature
-│   ├── screening/DuplicateScreener.java Bloom pre-screen + exact confirmation
-│   ├── io/CsvMaterialParser.java        CSV parsing + validation
-│   ├── matching/                        KMP spec extraction + verification gate
-│   ├── harmonization/                   DSU grouping + national codes + pipeline
-│   ├── api/                             REST controllers
-│   ├── service/DatasetStore.java        in-memory dataset + Trie indexes
-│   └── bench/                           KmpBenchmark, DsuBenchmark, BloomTrieBenchmark,
-│                                        SyntheticMaterialGenerator
-├── src/test/java/harmonizer/            132 JUnit 5 tests
-├── data/                                demo + generated CSV datasets
-├── docs/
-│   ├── KMP.md                           algorithm explanation + measured benchmark
-│   ├── DSU.md                           algorithm explanation + measured benchmark
-│   ├── INTEGRATION.md                   how the two halves were combined
-│   ├── TESTING.md                       test/benchmark report with actual output
-│   ├── algorithms.md, architecture.md, api-documentation.md      [existing]
-│   └── …
-├── backend/                             standalone demo app (Spring Boot, com.matriq)
-├── frontend/                            React + TypeScript UI for that app
-└── README_part1.md                      the teammate's original notes
+│   ├── algo/                            Bloom filter, Trie, KMP and DSU
+│   ├── matching/                        extraction, attribute evidence and match decisions
+│   ├── harmonization/                   compatible grouping and MATRIQ code registry
+│   ├── workspace/                       accounts, catalogue imports, review and persistence
+│   └── api/                             REST APIs
+├── src/test/java/harmonizer/            backend tests
+├── frontend/                            React + TypeScript operational UI
+├── data/catalogues/                     3 base CSVs and import notes
+├── IOCL.csv                              separate 10-row live upload input
+├── data/archive/catalogues-original/     retained source catalogues, excluded from demo import
+├── docs/                                 operational, algorithm, architecture and test guides
+└── backend/                              legacy standalone explorer (Spring Boot, com.matriq)
 ```
 
-`backend/` and `frontend/` are a **separate, kept-as-is demo application** with its own copy of the
-algorithms and its own 32-test suite. It is not part of the root Maven build. See
-`docs/INTEGRATION.md` §3 and §9 for why both trees exist and what the options are.
+The active demo inputs are synthetic and use company-style identifiers; they are not official company
+material codes or procurement records. The base set contains 46 source rows across IOCL, NTPC and OIL,
+with 15 unified identities and a deliberate pipe-grade discrepancy for review. The separate
+`IOCL.csv` has 10 additional IOCL rows for a walkthrough.
 
----
+## 3. Matching and review flow
 
-## 3. Pipeline (canonical project)
-
-```
-CSV upload  →  parse & validate  →  normalise  →  Bloom screening
-                                                        │
-                                              confirmed duplicates
-                                                        │
-POST /api/harmonize ────────────────────────────────────┴──────────►
-   │
-   ├─ attribute extraction        item type, form, metal, size (mm), grade
-   │      specification  ← KMP over the catalogue (positions + comparison counts recorded)
-   │
-   ├─ verification gate           MATCH / CONFLICT / UNKNOWN per attribute
-   │      type matches, nothing conflicts, ≥2 of (metal, grade, size, spec) positively match
-   │      → VerifiedEdge; otherwise MatchEvidence with a human-readable reason
-   │      (a missing attribute is UNKNOWN — never proof of equivalence)
-   │
-   ├─ DSU grouping                makeSet(all records) → union(engineering-compatible verified edges)
-   │      components still containing contradictory attributes are split first
-   │      national code per group of 2+ (kept when an equivalent record joins)
-   │
-   └─ HarmonizationResult         unified edges, review candidates, groups, KMP comparison count
-
-Reviewer separates a relationship → DSU is rebuilt from the remaining eligible edges
+```text
+CSV upload → validation and provenance → attribute extraction and normalization
+                                           │
+                          candidate pairs compared using material attributes
+                          KMP specifications + description search signals
+                                           │
+                   ┌───────────────────────┴───────────────────────┐
+                   │                                               │
+       sufficient, compatible evidence                  conflict / insufficient evidence
+       automatically unifies safe matches               appears in Pending Reviews
+       and updates the Unified Registry                  reviewer can approve, keep separate,
+                                                         or request clarification with a note
 ```
 
----
+Dimensions with supported units are converted to millimetres for comparison (for example, 100 mm and
+4 inches). Search ranks descriptions using exact phrase, longest common substring and longest common
+subsequence signals; it helps find candidates and does not decide material equivalence. Missing
+attributes remain unknown rather than counting as a match. A reviewer can record an auditable override
+for a genuine technical conflict, with a rationale.
 
 ## 4. Algorithms and ownership
 
@@ -134,141 +114,58 @@ benchmark: **[docs/KMP.md](docs/KMP.md)**.
 `makeSet` puts every record in its own set; `union` merges the sets of a verified pair (smaller tree
 under larger); `find` returns the representative and compresses the path, giving `O(α(n))` amortised.
 `getGroups()` returns every component deterministically, singletons included. Because a DSU cannot undo a
-union, a rejected relationship triggers a rebuild from the remaining approved edges. Full explanation
+union, changing a relationship triggers a rebuild from the remaining eligible edges. Full explanation
 and benchmark: **[docs/DSU.md](docs/DSU.md)**.
 
 ---
 
 ## 5. Technology stack
 
-**Canonical project (root)**
-* Java 17, Spring Boot 3.5 (web), Maven 3.9
-* JUnit 5 (`spring-boot-starter-test`), 132 tests
-* No database: datasets and results are in memory
+* Java 17, Spring Boot 3.5 and Maven for the canonical backend.
+* React 19, TypeScript, Vite and Tailwind CSS for the operational UI.
+* Workspace state persists locally in `.matriq-state/`; hosted deployments use PostgreSQL snapshots.
+* JUnit 5 covers the root algorithm engine and operational workspace. The older `backend/` project
+  has separate compatibility tests and is not part of the active local startup.
 
-**Standalone demo app (`backend/` + `frontend/`)**
-* Java 17, Spring Boot 3.2.5, OpenCSV, Lombok
-* React 19 + TypeScript + Vite + Tailwind CSS v4, React Flow, Recharts
+## 6. Quickstart — operational application
+
+Prerequisites: JDK 17+, Maven, and Node.js with npm. Open two Terminal windows from the repository.
+For reviewer controls on the configured demo machine, use the reviewer launcher; to run as a standard
+user, start the backend with `mvn spring-boot:run` instead.
+
+```bash
+# Terminal 1, repository root
+./run-reviewer-backend.sh
+
+# Terminal 2
+cd frontend
+npm ci
+npm run dev
+```
+
+Open `http://localhost:5173`. On the configured machine, choose **Reviewer sign in** to use the
+allowlisted reviewer account. Public sign-ups remain standard users. Local HTTP uses
+`MATRIQ_SECURE_COOKIE=false`; hosted HTTPS keeps secure cookies enabled. See
+[docs/OPERATIONS.md](docs/OPERATIONS.md) for import, persistence and deployment instructions.
+
+To load the curated demo data into an empty local workspace, import `IOCL_2025.csv`, `NTPC_2024.csv`
+and `OIL_2023.csv` in **Material Catalogues**, then click **Harmonize Materials**. Upload
+`IOCL.csv` separately during the walkthrough.
+
+### Algorithm API (academic pipeline)
+
+The earlier algorithm-focused endpoints (`/api/dataset`, `/api/screen`, `/api/harmonize`) are available
+under the optional `pipeline-api` Spring profile for compatibility and algorithm demonstrations. The
+current MATRIQ interface uses the authenticated operational workspace API under `/api/workspace`.
+See [docs/api-documentation.md](docs/api-documentation.md) and the source controllers for route details.
 
 ---
 
-## 6. Quickstart — canonical project (repository root)
+## 7. Legacy algorithm explorer (`backend/`)
 
-Prerequisites: JDK 17+, Maven 3.9+.
-
-```bash
-cd matriq-material-harmonization        # repository root
-
-mvn clean test                          # 132 tests
-mvn spring-boot:run                     # API on http://localhost:8081
-```
-
-### REST API
-
-| Method | Path | Purpose |
-|---|---|---|
-| POST | `/api/dataset/upload` | multipart field `file`: CSV with `cpse,code,description[,uom]` |
-| GET | `/api/dataset/summary` | counts per company + upload warnings |
-| GET | `/api/autocomplete?prefix=seam&field=description&limit=10` | Trie prefix search |
-| POST | `/api/screen?fpr=0.01` | Bloom screening: confirmed pairs, skipped rows, statistics |
-| POST | `/api/harmonize` | **KMP matching + verification + DSU grouping** |
-| POST | `/api/harmonize/reject?recordA=1&recordB=3` | **reject a relationship and rebuild groups** |
-
-### Sample execution
-
-```bash
-curl -F "file=@data/demo_small.csv" http://localhost:8081/api/dataset/upload
-curl -X POST http://localhost:8081/api/harmonize
-```
-
-Against `data/demo_small.csv` (8 valid rows; 2 rows rejected on import as a duplicate code and a blank
-description) the harmonization stage currently returns:
-
-```json
-{
-  "totalRecords": 8,
-  "candidatePairs": 5,
-  "verifiedPairs": 5,
-  "rejectedPairs": 0,
-  "kmpComparisons": 363,
-  "groupCount": 4,
-  "groupedRecords": 7,
-  "groups": [
-    {
-      "id": "GRP-…",
-      "nationalCode": "NMC-2026-00000001",
-      "members": [
-        { "id": 1, "cpse": "CPCL", "code": "MAT-10234", "description": "Pipe, seamless, 6 inch, ASTM A106 Gr.B" },
-        { "id": 2, "cpse": "NTPC", "code": "PX-889",   "description": "SEAMLESS PIPE 150mm CS A106-B" },
-        { "id": 3, "cpse": "SAIL", "code": "4410022",  "description": "Pipe smls 6\" ASTM A106 grade B" }
-      ]
-    },
-    { "id": "GRP-…", "nationalCode": "NMC-2026-00000002", "members": [ { "id": 4 }, { "id": 5 } ] },
-    { "id": "GRP-…", "nationalCode": "NMC-2026-00000003", "members": [ { "id": 6 }, { "id": 7 } ] },
-    { "id": "GRP-…", "nationalCode": null,              "members": [ { "id": 8 } ] }
-  ],
-  "verifiedEdges": [
-    {
-      "recordA": 1,
-      "recordB": 2,
-      "evidence": {
-        "sharedSpecifications": [
-          { "specification": "ASTM A106", "positionInA": 24, "positionInB": 23,
-            "comparisonsA": 48, "comparisonsB": 35 }
-        ],
-        "checks": { "type": true, "form": true, "metal": true, "grade": true,
-                    "dimensions": true, "specification": true },
-        "rejectionReason": ""
-      }
-    }
-  ]
-}
-```
-
-(The counts are from an actual run and depend on the uploaded file; members, edges and other groups are
-abbreviated above for readability.)
-
----
-
-## 7. Quickstart — standalone demo application (`backend/` + `frontend/`)
-
-```bash
-cd backend
-mvn test                 # 32 existing tests
-mvn spring-boot:run      # http://localhost:8080
-
-cd ../frontend
-npm install
-npm run dev              # http://localhost:5173
-```
-
-The React app consumes the `com.matriq` API (`/api/materials`, `/api/harmonization`, `/api/matching`,
-`/api/national-codes`, `/api/algorithms/...`, `/api/benchmarks`) and visualises the pipeline, the KMP
-trace player and the DSU demo.
-
-### Using the integrated pipeline from the same frontend
-
-The website can also drive the canonical root application. Start **both** backends, then the Vite dev
-server:
-
-```bash
-mvn spring-boot:run                 # repository root  → integrated harmonizer on 8081
-cd backend && mvn spring-boot:run   # legacy demo app                  → 8080
-cd frontend && npm run dev          # UI on 5173
-```
-
-`frontend/vite.config.ts` proxies `/api/dataset`, `/api/harmonize`, `/api/autocomplete` and `/api/screen`
-to **8081** and every other `/api` path to **8080**, so one frontend serves both applications. The
-**Integrated Pipeline** tab uploads a CSV to the root app, runs KMP + evidence gate + DSU, shows the
-three-state attribute evidence per edge, rejects a relationship, and lists groups with their national
-codes. No legacy endpoint was removed or renamed.
-
-```bash
-#!/usr/bin/env bash
-# or on Windows: run-backend.bat / run-frontend.bat at the repository root
-```
-
----
+This earlier Spring Boot application remains for compatibility and algorithm-explorer work. It is
+separate from the active React operational UI and canonical root backend. Use its own `pom.xml` and
+legacy profile only when working on that application; it is not needed to run MATRIQ locally.
 
 ## 8. Testing
 
@@ -320,90 +217,74 @@ Headlines from the recorded run (details in [docs/TESTING.md](docs/TESTING.md)):
 
 ---
 
-## 10. Live viva walkthrough
+## 10. Live demo walkthrough
 
-**A. Canonical pipeline (terminal, no UI needed)**
+1. Start the reviewer-enabled backend and React frontend using the commands in **Quickstart**.
+2. Import the three base catalogues from `data/catalogues/`, then run **Harmonize Materials**. Show
+   safe matches appearing in the Unified Registry and grade discrepancies remaining in Pending Reviews.
+3. Open a real pipe-grade discrepancy (`TP304L` versus `TP316L`) and show its attribute comparison.
+4. Enter a rationale and demonstrate **Approve Match**, **Keep Separate**, and **Request Clarification**.
+   Show the reviewer note and decision history. Approval is an explicit, auditable override.
+5. Use catalogue or registry search with terms such as `PIPE` and `SEAMLESS PIPE`. Explain that substring
+   and subsequence similarity rank candidates but do not decide equivalence.
+6. Upload `IOCL.csv` to demonstrate ten additional IOCL source rows joining existing
+   identities without adding another review discrepancy.
 
-1. `mvn clean test` — 132 green tests.
-2. `mvn spring-boot:run` (port 8081), then upload a CSV and `POST /api/harmonize`.
-3. Show `verifiedEdges[].evidence.sharedSpecifications` — the KMP positions and comparison counts that
-   justified each pair.
-4. Show a rejected pair in `rejectedCandidates` with its `rejectionReason` (grade or dimension).
-5. `POST /api/harmonize/reject?recordA=1&recordB=3` and show the rebuilt groups.
+## 11. Current limits
 
-**B. React demo app (visual)**
-
-1. Open `http://localhost:5173`, load the PSU demo catalogues on the **Command Center**.
-2. **Run Harmonization Engine** — watch normalisation, Bloom screening, KMP specification extraction,
-   attribute verification and DSU grouping.
-3. Inspect pairs in the **Harmonization Workspace** (attribute badges: category, grade, dimensions,
-   KMP spec found).
-4. Reject a match in **Review & Approvals** and explain the DSU rebuild.
-5. Assign and inspect national codes in the **National Registry**; expand a row to see the original
-   company part numbers.
-6. **Algorithm Lab** → KMP player (character comparisons, LPS fallback) and DSU visualiser.
-7. **Benchmarks & Viva** → measured scaling charts.
-8. **Integrated Pipeline** → upload a CSV, run the root harmonizer (KMP + evidence gate + DSU), reject
-   an edge and watch the rebuilt groups and their national codes.
-
----
-
-## 11. Limits (stated, not hidden)
-
-* Rule-based attribute extraction: only the catalogued item types, forms, metals, grades and standards
-  are recognised; unrecognised descriptions are never paired.
-* Candidate generation compares every pair inside an item-type block — quadratic in the largest block,
-  fine for the demo datasets.
-* Nominal pipe sizes are not modelled: 6 inch is treated as 152.4 mm and accepted against 150 mm with a
-  2% tolerance, but a bare `DN150` record has no millimetre value to compare.
-* National codes are deterministic for a given sequence of calls, not globally: a group that grows keeps
-  its code, a split subgroup keeps it only while its material identity is unchanged, and the history keeps
-  every issuance. The registry — like the dataset and the rejection set — is **in memory**, so restarting
-  renumbers from `NMC-<year>-00000001` and a different import order gives different numbers.
-* Rejected relationships survive repeated `run()` calls in the same process, but not a restart. Durable
-  review state requires a database.
-* Two parallel implementations exist until the team consolidates `backend/` into the root project.
-* Benchmarks are single-machine measurements; quote the comparison counts (deterministic) and the
-  hardware next to any timing table.
-
----
+* Attribute extraction uses a finite vocabulary; unsupported descriptions remain unknown and require
+  review rather than being treated as equivalent.
+* Candidate generation compares pairs within material-type blocks, which is quadratic in the largest
+  block. The current demo data is small enough for interactive use.
+* Dimensions normalize supported mm and inch values. Nominal-size codes such as `DN150` may remain
+  unknown unless a numeric size can be extracted.
+* National codes and review decisions are stored in the workspace. Local data persists in
+  `.matriq-state/`; hosted state is held in PostgreSQL. Changing machines or deployments does not
+  automatically transfer workspace data.
+* The legacy `backend/` project remains alongside the canonical root backend for compatibility.
+* Benchmarks are single-machine measurements; quote the comparison counts and hardware next to any
+  timing table.
 
 ## 12. Documentation index
 
 | Document | Contents |
 |---|---|
-| [docs/KMP.md](docs/KMP.md) | KMP theory, LPS walkthrough, API, evidence usage, complexity, benchmark, viva Q&A |
-| [docs/DSU.md](docs/DSU.md) | DSU structure, operations, path compression, union by size, rebuild-on-rejection, benchmark, viva Q&A |
-| [docs/INTEGRATION.md](docs/INTEGRATION.md) | Phase 1/2 integration report: what existed, what was added, decisions, risks, limitations |
-| [docs/TESTING.md](docs/TESTING.md) | Per-class test results, seven scenarios, actual benchmark output, what is not tested |
-| [docs/algorithms.md](docs/algorithms.md) | Existing algorithm notes (Bloom filter, Trie, screening) |
-| [docs/architecture.md](docs/architecture.md) | Existing architecture notes |
-| [docs/api-documentation.md](docs/api-documentation.md) | Existing API reference |
-| [README_part1.md](README_part1.md) | The teammate's original notes for the Bloom/Trie/API half |
-
----
+| [docs/OPERATIONS.md](docs/OPERATIONS.md) | Local startup, catalogue import, reviewer access, persistence and deployment |
+| [data/catalogues/README_DEMO.md](data/catalogues/README_DEMO.md) | Curated dataset provenance and demo behavior |
+| [docs/KMP.md](docs/KMP.md) | KMP theory, LPS walkthrough, evidence usage, complexity and benchmark |
+| [docs/DSU.md](docs/DSU.md) | DSU operations, path compression, grouping and benchmark |
+| [docs/INTEGRATION.md](docs/INTEGRATION.md) | Architecture and integration decisions |
+| [docs/TESTING.md](docs/TESTING.md) | Test scenarios, recorded output and limitations |
+| [docs/algorithms.md](docs/algorithms.md) | Bloom filter, Trie and screening notes |
+| [docs/architecture.md](docs/architecture.md) | System architecture |
+| [docs/api-documentation.md](docs/api-documentation.md) | API reference |
 
 ## 13. Team contributions
 
+This summary follows commit authorship on the repository's `main` branch. Commits group features at
+different levels, so these are feature-level credits rather than a line-by-line ownership measure. See
+the [full GitHub commit history](https://github.com/xnshikaa/matriq-material-harmonization/commits/main).
+
 **Anshika Gupta**
-* KMP: implementation, unit tests, benchmarks, and integration into specification matching.
-* DSU: implementation, unit tests, benchmarks, grouping service, rebuild-on-rejection.
-* Verification gate (attribute extraction + evidence), national code registry, harmonization pipeline
-  and `POST /api/harmonize`, rejection API.
-* Integration of both halves into one project, documentation (`docs/KMP.md`, `docs/DSU.md`,
-  `docs/INTEGRATION.md`, `docs/TESTING.md`), this README.
-* Standalone demo application (`backend/`) and its React UI (`frontend/`).
+* Built the initial standalone application and authored the integrated KMP and DSU implementation,
+  specification matching, grouping pipeline, and related tests and benchmarks.
+* Led the authenticated operational-workspace commit: account and review flows, catalogue import,
+  registry views, navigation and pages, integration documentation, and root application structure.
+* Added the Render/PostgreSQL deployment setup, Vercel routing and readable authentication errors.
+  ([initial application](https://github.com/xnshikaa/matriq-material-harmonization/commit/6c88fdebb54d34c2f2140c83a41551e627246723),
+  [operational workspace](https://github.com/xnshikaa/matriq-material-harmonization/commit/b0eb9f12d3dca4cd4d97163dcc6ae2b3e33c68f5),
+  [hosting](https://github.com/xnshikaa/matriq-material-harmonization/commit/560c62b945714f8f175ede37baacba1cab855716))
 
 **Hetanshi Vora**
-* Bloom filter (double hashing, FNV-1a + SplitMix64), false-positive analysis and benchmarks.
-* Prefix trie with autocomplete.
-* Catalogue and registry search ranks similar descriptions with exact phrase, longest common substring, and longest common subsequence signals. It helps surface candidate records (for example, `PIPE` and `SEAMLESS PIPE`) and does not make harmonization decisions; engineering attributes still determine matching and review.
-* Text normaliser (unit conversion, abbreviation expansion, canonical signature).
-* Duplicate screener (Bloom pre-screen + exact confirmation), CSV parser, dataset store, REST API layer
-  and CORS.
-* The 47-test baseline this integration builds on.
+* Built the original Bloom filter, prefix trie, text normalization, duplicate screening, CSV parser,
+  dataset store and supporting API layer.
+* Refined final matching and harmonization behavior: safe automatic unification, unit-aware dimension
+  comparison, reviewer conflict overrides and decision withdrawal, plus description search using exact,
+  longest-common-substring and longest-common-subsequence signals.
+* Curated the synthetic three-organisation catalogue set and live-upload CSV, and updated the reviewer
+  launcher and operational demo documentation.
+  ([algorithm foundation](https://github.com/xnshikaa/matriq-material-harmonization/commit/1a8d545863f4c6f516443b50d895e0ef74350812),
+  [final workflow and demo](https://github.com/xnshikaa/matriq-material-harmonization/commit/509e1c643527174fc4b31a764587f07c4c0f5026))
 
----
-
-*Academic attribution: MATRIQ is a university CIA 3 Advanced Algorithms project for Smart India
-Hackathon 2026 problem statement SIH26099 (Ministry of Petroleum & Natural Gas / CPCL).*
+The operational workspace and final integration evolved across both sets of commits; the bullets
+highlight work visible in each contributor's commit history.

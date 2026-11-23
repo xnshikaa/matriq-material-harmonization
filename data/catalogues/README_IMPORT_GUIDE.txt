@@ -15,7 +15,7 @@ Other rows and company variants are synthetic examples. Codes are synthetic demo
 official company codes; these records are not real company procurement records. Do not present them as
 production material data.
 
-`LIVE_DEMO_UPLOAD_2025.csv` is a separate 10-row IOCL upload for demonstrating new records joining
+`IOCL.csv` in the repository root is a separate 10-row IOCL upload for demonstrating new records joining
 existing identities. Keep it out of the base import; upload it during the live walkthrough.
 
 Original source-grounded catalogues and their import guide are retained in ../archive/catalogues-original/
