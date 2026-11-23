@@ -97,25 +97,8 @@ for a genuine technical conflict, with a rationale.
 |---|---|---|---|---|
 | **KMP** | Locates technical specifications (`ASTM A106`, `A106-B`, `API 5L`, `SS316`, `ANSI B16.5`, `IS 1239`, …) inside descriptions and records where they were found | **Anshika Gupta** | `O(n + m)` per pattern | `O(m)` LPS |
 | **DSU (Union–Find)** | Groups records joined by verified equivalence relationships; transitive groups, independent groups | **Anshika Gupta** | `O(α(n))` amortised per find/union | `O(n)` |
-| **Bloom filter** | Pre-screens duplicate signatures without touching the authoritative store | Hetanshi Vora | `O(k)` per lookup | `O(m)` bits |
-| **Prefix trie** | Industrial abbreviation expansion + prefix autocomplete | Hetanshi Vora | `O(p)` lookup | `O(Σ·L)` |
-
-### KMP in one paragraph
-
-A naive search is `O(n·m)`. KMP pre-computes the LPS array (longest prefix that is also a suffix) in
-`O(m)` and uses it to slide the pattern on a mismatch without re-reading text, giving `O(n + m)` and
-supporting overlapping matches. In MATRIQ it runs per catalogued pattern over every description; each
-hit is recorded as `SpecHit(pattern, canonical specification, positions, comparisons)`. A shared
-specification is only evidence — the verification gate still decides. Full viva explanation, proofs and
-benchmark: **[docs/KMP.md](docs/KMP.md)**.
-
-### DSU in one paragraph
-
-`makeSet` puts every record in its own set; `union` merges the sets of a verified pair (smaller tree
-under larger); `find` returns the representative and compresses the path, giving `O(α(n))` amortised.
-`getGroups()` returns every component deterministically, singletons included. Because a DSU cannot undo a
-union, changing a relationship triggers a rebuild from the remaining eligible edges. Full explanation
-and benchmark: **[docs/DSU.md](docs/DSU.md)**.
+| **Bloom filter** | Pre-screens duplicate signatures without touching the authoritative store | **Hetanshi Vora** | `O(k)` per lookup | `O(m)` bits |
+| **Prefix trie** | Industrial abbreviation expansion + prefix autocomplete | **Hetanshi Vora** | `O(p)` lookup | `O(Σ·L)` |
 
 ---
 
